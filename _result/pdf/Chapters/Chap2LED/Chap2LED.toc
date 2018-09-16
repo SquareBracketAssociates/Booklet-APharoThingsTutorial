@@ -1,0 +1,4 @@
+\changetocdepth {1}
+\contentsline {chapter}{Illustrations}{ii}{section*.1}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {1}Lesson 1 – Turn on/off LED }{1}{chapter.1}
