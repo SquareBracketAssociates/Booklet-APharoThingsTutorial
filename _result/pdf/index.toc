@@ -21,5 +21,15 @@
 \contentsline {section}{\numberline {1.7}Execute PharoThings on Raspberry}{8}{section.1.7}
 \contentsline {subsection}{Turn on your Raspberry and connect it to the network.}{8}{section*.12}
 \contentsline {subsection}{Start Server}{8}{section*.13}
+\contentsline {section}{\numberline {1.8}Connecting Pharo client on remote Pharo}{9}{section.1.8}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {2}Lesson 1 – Turn on/off LED }{9}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}Lesson 1 – Turning on/off LED }{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}What we need?}{11}{section.2.1}
+\contentsline {subsection}{Components}{11}{section*.14}
+\contentsline {section}{\numberline {2.2}Experimental theory}{12}{section.2.2}
+\contentsline {subsection}{The LED}{12}{section*.15}
+\contentsline {subsection}{The Resistor}{12}{section*.16}
+\contentsline {section}{\numberline {2.3}Experimental procedure}{13}{section.2.3}
+\contentsline {section}{\numberline {2.4}Experimental code}{13}{section.2.4}
+\contentsline {section}{\numberline {2.5}What did we learn?}{15}{section.2.5}
+\contentsline {section}{\numberline {2.6}In the next lesson…}{15}{section.2.6}

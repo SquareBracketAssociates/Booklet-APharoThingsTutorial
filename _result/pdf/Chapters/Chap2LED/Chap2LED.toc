@@ -1,4 +1,13 @@
 \changetocdepth {1}
 \contentsline {chapter}{Illustrations}{ii}{section*.1}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {1}Lesson 1 – Turn on/off LED }{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Lesson 1 – Turning on/off LED }{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}What we need?}{1}{section.1.1}
+\contentsline {subsection}{Components}{1}{section*.2}
+\contentsline {section}{\numberline {1.2}Experimental theory}{2}{section.1.2}
+\contentsline {subsection}{The LED}{2}{section*.3}
+\contentsline {subsection}{The Resistor}{2}{section*.4}
+\contentsline {section}{\numberline {1.3}Experimental procedure}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Experimental code}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}What did we learn?}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}In the next lesson…}{5}{section.1.6}

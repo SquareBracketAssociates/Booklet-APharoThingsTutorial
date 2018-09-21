@@ -139,3 +139,7 @@ If all is right, you will see the answer:
 So now we have the Raspberry running the TelePharo on TCP port 40423 (as shown in Figure *@Commandline*) and we can connect into it from another computer.
 
 +Server up and running.>figures/Commandline.png|width=60|label=Commandline+
+
+!!! Connecting Pharo client on remote Pharo
+
+more to come.

@@ -21,3 +21,4 @@
 \contentsline {section}{\numberline {1.7}Execute PharoThings on Raspberry}{6}{section.1.7}
 \contentsline {subsection}{Turn on your Raspberry and connect it to the network.}{6}{section*.12}
 \contentsline {subsection}{Start Server}{6}{section*.13}
+\contentsline {section}{\numberline {1.8}Connecting Pharo client on remote Pharo}{7}{section.1.8}

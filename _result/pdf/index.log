@@ -1,19 +1,20 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.6)  16 SEP 2018 17:13
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  21 SEP 2018 18:16
  restricted system commands enabled.
-**/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-A
-PharoThingTutorial/_result/pdf/index.tex
+**/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+index.tex
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.tex
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.tex
 LaTeX2e <2018-04-01> patch level 2
 Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
 Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
-llection.(using write cache: /Users/ducasse/Library/texlive/2018/texmf-var/luate
-x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
-e/generic /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic)
-luaotfload | conf : Root cache directory is /Users/ducasse/Library/texlive/2018/
-texmf-var/luatex-cache/generic/names.
+llection.(using write cache: /Users/allexoliveira/Library/texlive/2018/texmf-var
+/luatex-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luate
+x-cache/generic /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache
+/generic)
+luaotfload | conf : Root cache directory is /Users/allexoliveira/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names.
 luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
 -resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
 oader-2017-02-11.lua”.
@@ -25,8 +26,8 @@ Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is /Users/ducasse/Library/texlive/2018/
-texmf-var/luatex-cache/generic/names.
+luaotfload | conf : Root cache directory is /Users/allexoliveira/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names.
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
@@ -37,11 +38,11 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.131 seconds
+luaotfload | main : initialization completed in 0.227 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/_support/latex/sbabook/sbabook.cls
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_
+support/latex/sbabook/sbabook.cls
 
 LaTeX Warning: You have requested document class `_support/latex/sbabook/sbabook
 ',
@@ -77,10 +78,10 @@ Package ifluatex Info: LuaTeX detected.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/memoir/mem10.clo
 File: mem10.clo 2008/01/30 v0.3 memoir class 10pt size option
-luaotfload | db : Font names database loaded from /Users/ducasse/Library/texlive
-/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
-/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
--regular.luc))
+luaotfload | db : Font names database loaded from /Users/allexoliveira/Library/t
+exlive/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: 
+/Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/o
+tl/lmroman10-regular.luc))
 \binding=\skip48
 \spinemargin=\skip49
 \foremargin=\skip50
@@ -285,8 +286,8 @@ LaTeX Info: Redefining \emph on input line 7586.
 \m@m@k=\count112
 \m@m@h=\dimen142
 \m@mipn@skip=\skip165
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/lmroman8-regular.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/lmroman8-regular.luc)
 \sidefootins=\insert195
 \sidefootadjust=\skip166
 \sidefootheight=\skip167
@@ -333,8 +334,8 @@ LaTeX Info: Redefining \! on input line 12102.
 \c@sheetsequence=\count131
 \c@lastsheet=\count132
 \c@lastpage=\count133
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/lmroman9-regular.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/lmroman9-regular.luc)
 \c@figure=\count134
 \c@lofdepth=\count135
 \cftbeforefigureskip=\skip179
@@ -784,9 +785,9 @@ LaTeX Info: Redefining \scshape on input line 3635.
 LaTeX Info: Redefining \upshape on input line 3640.
 LaTeX Info: Redefining \em on input line 3670.
 LaTeX Info: Redefining \emph on input line 3695.
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/lmroman10-bold.luc)(load luc: /Users/ducasse/Library/texlive/2018/texmf-
-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/lmroman10-bold.luc)(load luc: /Users/allexoliveira/Library/texlive
+/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
 LaTeX Info: Redefining \- on input line 3749.
 .................................................
 . LaTeX info: "xparse/redefine-command"
@@ -799,22 +800,22 @@ LaTeX Info: Redefining \- on input line 3749.
 . Defining command \liningnums with sig. 'm' on line 3848.
 .................................................
 ))
-luaotfload | cache : Lookup cache loaded from /Users/ducasse/Library/texlive/201
-8/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /U
-sers/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/genbk
-basr.luc)
+luaotfload | cache : Lookup cache loaded from /Users/allexoliveira/Library/texli
+ve/2018/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load l
+uc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
+ts/otl/genbkbasr.luc)
 \g__fontspec_family_GentiumBasic_int=\count304
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/genbkbasi.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/genbkbasi.luc)
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "GentiumBookBasicItalic/B" (it probably doesn't
 . exist).
 .................................................
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/genbkbasbi.luc)(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/
-luatex-cache/generic/fonts/otl/genbkbasb.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/genbkbasbi.luc)(load luc: /Users/allexoliveira/Library/texlive/201
+8/texmf-var/luatex-cache/generic/fonts/otl/genbkbasb.luc)
 luaotfload | aux : font no 28 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 28
@@ -850,24 +851,24 @@ luaotfload | aux : no font with id 30
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 LaTeX Info: Redefining \rmfamily on input line 51.
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/opensans-regular.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/opensans-regular.luc)
 .................................................
 . fontspec info: "set-scale"
 . 
 . OpenSans scale = 0.8485401459854015.
 .................................................
 \g__fontspec_family_OpenSans_int=\count305
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/opensans-bold.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/opensans-bold.luc)
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "OpenSansBold/I" (it probably doesn't exist).
 .................................................
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/opensans-bolditalic.luc)(load luc: /Users/ducasse/Library/texlive/2018/t
-exmf-var/luatex-cache/generic/fonts/otl/opensans-italic.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/opensans-bolditalic.luc)(load luc: /Users/allexoliveira/Library/te
+xlive/2018/texmf-var/luatex-cache/generic/fonts/otl/opensans-italic.luc)
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -927,8 +928,8 @@ g;+onum;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 LaTeX Info: Redefining \sffamily on input line 57.
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/firamono-regular.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/firamono-regular.luc)
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -946,8 +947,8 @@ nts/otl/firamono-regular.luc)
 . 
 . Could not resolve font "FiraMono/BI" (it probably doesn't exist).
 .................................................
-(load luc: /Users/ducasse/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
-nts/otl/firamono-bold.luc)
+(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
+ric/fonts/otl/firamono-bold.luc)
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1479,8 +1480,8 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
 )
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/_support/latex/common.tex
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_
+support/latex/common.tex
 
 ******************************************************
 Stock height and width: 234.94724mm by 158.74812mm
@@ -1522,8 +1523,8 @@ Sidefootvsep and sidefootheight: 4.21747mm and 192.73828mm
 ******************************************************
 
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/_support/latex/sbabook/pharo-titlepage.sty
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_
+support/latex/sbabook/pharo-titlepage.sty
 File: pharo-titlepage.sty 2017/05/10 0.1 title page design for SBA booklets
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
@@ -1736,16 +1737,16 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@dima=\skip273
 \bigstrutjot=\dimen324
 )
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/_support/latex/lstsmalltalk.sty
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_
+support/latex/lstsmalltalk.sty
 File: lstsmalltalk.sty 2009/07/03 0.2 listings Smalltalk definitions file
 )
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/_support/latex/lsthttp.sty
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_
+support/latex/lsthttp.sty
 File: lsthttp.sty 2015/09/23 0.1 listings HTTP definitions file
 ))
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.aux)
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.aux)
 \openout1 = index.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -1885,10 +1886,10 @@ LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.out)
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.out
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.out)
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.out
 warning  (pdf backend): objcompresslevel > 0 requires minorversion > 4
 )
 \@outlinefile=\write7
@@ -1913,7 +1914,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 64.
-<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=109, 120.45pt x 42.1575pt>
+<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=149, 120.45pt x 42.1575pt>
 
 File: _support/latex/sbabook/CreativeCommons-BY-SA.pdf Graphic file (type pdf)
 <use _support/latex/sbabook/CreativeCommons-BY-SA.pdf>
@@ -1930,11 +1931,10 @@ LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
 (Font)              scaled to size 7.75511pt on input line 82.
 [2
 
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/_support/latex/sbabook/CreativeCommons-BY-SA.pdf>]
-
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.toc
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_s
+upport/latex/sbabook/CreativeCommons-BY-SA.pdf>]
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.toc
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
 (Font)              scaled to size 8.48541pt on input line 2.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
@@ -1948,8 +1948,8 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
 
 
 ]
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.lof) [2
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.lof) [2
 
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
@@ -2114,125 +2114,112 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
 (Font)              scaled to size 10.1825pt on input line 104.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
 (Font)              scaled to size 9.98218pt on input line 104.
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-in
-stall-raspberry-pi-raspbian-osx-arm.png, id=172, 816.04875pt x 421.575pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothin
-gs-install-raspberry-pi-raspbian-osx-arm.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothing
-s-install-raspberry-pi-raspbian-osx-arm.png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/pharothings-install-raspberry-pi-raspbian-osx-arm.png  used on input l
-ine 116.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-osx
+-arm.png, id=223, 816.04875pt x 421.575pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbia
+n-osx-arm.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian
+-osx-arm.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-r
+aspberry-pi-raspbian-osx-arm.png  used on input line 116.
 (luatex.def)             Requested size: 195.00198pt x 100.7362pt.
  [3]
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-in
-stall-raspberry-pi-raspbian-linux-arm-copy.png, id=181, 771.88374pt x 293.095pt>
-
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothin
-gs-install-raspberry-pi-raspbian-linux-arm-copy.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothing
-s-install-raspberry-pi-raspbian-linux-arm-copy.png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/pharothings-install-raspberry-pi-raspbian-linux-arm-copy.png  used on 
-input line 129.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-lin
+ux-arm-copy.png, id=232, 771.88374pt x 293.095pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbia
+n-linux-arm-copy.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian
+-linux-arm-copy.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-r
+aspberry-pi-raspbian-linux-arm-copy.png  used on input line 129.
 (luatex.def)             Requested size: 195.00198pt x 74.04279pt.
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-in
-stall-raspberry-pi-raspbian-linux-arm-install.png, id=183, 530.98375pt x 274.023
-74pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothin
-gs-install-raspberry-pi-raspbian-linux-arm-install.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothing
-s-install-raspberry-pi-raspbian-linux-arm-install.png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/pharothings-install-raspberry-pi-raspbian-linux-arm-install.png  used 
-on input line 139.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-lin
+ux-arm-install.png, id=234, 530.98375pt x 274.02374pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbia
+n-linux-arm-install.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian
+-linux-arm-install.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-r
+aspberry-pi-raspbian-linux-arm-install.png  used on input line 139.
 (luatex.def)             Requested size: 195.00198pt x 100.63457pt.
- [4</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-
-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings
--install-raspberry-pi-raspbian-osx-arm.png></Users/ducasse/Workspace/FirstCircle
-/MyBooks/Bk-Writing/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters
-/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-linux-arm
--copy.png>]
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/InstallLaunche
-r.png, id=190, 414.79968pt x 300.3722pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/InstallLa
-uncher.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/InstallLau
-ncher.png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/InstallLauncher.png  used on input line 155.
+ [4</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf
+/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-
+osx-arm.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_r
+esult/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-
+raspbian-linux-arm-copy.png>]
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/InstallLauncher.png, id=241, 414.79968pt x 30
+0.3722pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/InstallLauncher.png Graphic file (type p
+ng)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/InstallLauncher.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/InstallLauncher.png  
+used on input line 155.
 (luatex.def)             Requested size: 195.00198pt x 141.20702pt.
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Select61.png, 
-id=192, 437.38406pt x 174.6525pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Select61.
-png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Select61.p
-ng>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/Select61.png  used on input line 165.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/Select61.png, id=243, 437.38406pt x 174.6525p
+t>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/Select61.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/Select61.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Select61.png  used on
+ input line 165.
 (luatex.def)             Requested size: 195.00198pt x 77.86536pt.
 LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
 (Font)              scaled to size 8.61679pt on input line 169.
- [5</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-
-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings
--install-raspberry-pi-raspbian-linux-arm-install.png></Users/ducasse/Workspace/F
-irstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APharoThingTutorial/_result/pd
-f/Chapters/Chap1GettingStarted/figures/InstallLauncher.png>]
+ [5</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf
+/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-
+linux-arm-install.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingT
+utorial/_result/pdf/Chapters/Chap1GettingStarted/figures/InstallLauncher.png>]
 Overfull \hbox (22.35632pt too wide) in paragraph at lines 171--172
 []\TU/GentiumBasic(0)/m/n/10 In this ex-am-ple the folder is \TU/FiraMono(0)/m/
 n/10 /User-s/my_user_name/-Doc-u-ments/Pharo/Pharo6.1  
  []
 
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Execute61.png,
- id=199, 287.57437pt x 127.97812pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Execute61
-.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Execute61.
-png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/Execute61.png  used on input line 177.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/Execute61.png, id=250, 287.57437pt x 127.9781
+2pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/Execute61.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/Execute61.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Execute61.png  used o
+n input line 177.
 (luatex.def)             Requested size: 195.00198pt x 86.78377pt.
 
 \openout5 = index.listing
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.listing)
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/LoadingPharoTh
-ings.png, id=201, 537.50812pt x 110.66344pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/LoadingPh
-aroThings.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/LoadingPha
-roThings.png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/LoadingPharoThings.png  used on input line 194.
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/LoadingPharoThings.png, id=252, 537.50812pt x
+ 110.66344pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/LoadingPharoThings.png Graphic file (typ
+e png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/LoadingPharoThings.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/LoadingPharoThings.pn
+g  used on input line 194.
 (luatex.def)             Requested size: 195.00198pt x 40.1478pt.
 
 Overfull \hbox (6.14258pt too wide) in paragraph at lines 198--199
@@ -2243,78 +2230,70 @@ lu-g-ins (in-stead re-mote browser
 
 \openout5 = index.listing
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.listing) [6</Users/ducasse/Workspace/FirstCi
-rcle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chap
-ters/Chap1GettingStarted/figures/Select61.png></Users/ducasse/Workspace/FirstCir
-cle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapt
-ers/Chap1GettingStarted/figures/Execute61.png></Users/ducasse/Workspace/FirstCir
-cle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapt
-ers/Chap1GettingStarted/figures/LoadingPharoThings.png>]
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing) [6</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutoria
+l/_result/pdf/Chapters/Chap1GettingStarted/figures/Select61.png></Users/allexoli
+veira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1Gett
+ingStarted/figures/Execute61.png></Users/allexoliveira/PharoThingsBook/Booklet-A
+PharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/LoadingPharo
+Things.png>]
 Overfull \hbox (29.0289pt too wide) in paragraph at lines 211--212
 []\TU/GentiumBasic(0)/m/n/10 Copy the files shown in FIg-ure []1-8[] to Pharo f
 older \TU/FiraMono(0)/m/n/10 /User-s/y-our_user_name/- 
  []
 
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/CopyARM.png, i
-d=214, 361.35pt x 216.81pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/CopyARM.p
-ng Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/CopyARM.pn
-g>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/CopyARM.png  used on input line 218.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/CopyARM.png, id=265, 361.35pt x 216.81pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/CopyARM.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/CopyARM.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/CopyARM.png  used on 
+input line 218.
 (luatex.def)             Requested size: 195.00198pt x 117.00287pt.
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/OnRasp.png, id
-=216, 573.64313pt x 288.3272pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/OnRasp.pn
-g Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/OnRasp.png
->
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/OnRasp.png  used on input line 230.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/OnRasp.png, id=267, 573.64313pt x 288.3272pt>
+
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/OnRasp.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/OnRasp.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/OnRasp.png  used on i
+nput line 230.
 (luatex.def)             Requested size: 195.00198pt x 98.01234pt.
-[7</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-A
-PharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/CopyARM.png>
-]
+[7</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap1GettingStarted/figures/CopyARM.png>]
 \openout5 = index.listing
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.listing)
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
 \openout5 = index.listing
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.listing)
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
 \openout5 = index.listing
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.listing)
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Commandline.pn
-g, id=227, 577.40718pt x 194.22563pt>
-File: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Bookle
-t-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Commandli
-ne.png Graphic file (type png)
-<use /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet
--APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Commandlin
-e.png>
-Package luatex.def Info: /Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing
-/PharoBooks2/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarte
-d/figures/Commandline.png  used on input line 262.
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap1GettingStarted/figures/Commandline.png, id=278, 577.40718pt x 194.22
+563pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap1GettingStarted/figures/Commandline.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap1GettingStarted/figures/Commandline.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Commandline.png  used
+ on input line 262.
 (luatex.def)             Requested size: 195.00198pt x 65.59425pt.
- [8</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-
-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/OnRasp.png>
-</Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-APh
-aroThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/Commandline.pn
-g>]
+ [8</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf
+/Chapters/Chap1GettingStarted/figures/OnRasp.png></Users/allexoliveira/PharoThin
+gsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figu
+res/Commandline.png>] [9] [10
+
+]
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -2325,9 +2304,64 @@ g>]
 . 
 . OpenSans scale = 0.8485397528283549.
 .................................................
- [9
+ [11]
+Overfull \hbox (1.85059pt too wide) in paragraph at lines 305--306
+[]\TU/GentiumBasic(0)/m/n/10 To know how cal-cu-late and choose the cor-rect re
+-sis-tor, see this ar-ti-cle: Which 
+ []
 
-] [10
+[12]
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png, id=308
+, 246.521pt x 343.684pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png Gr
+aphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-raspberry-led-resist
+or-lesson-01.png  used on input line 326.
+(luatex.def)             Requested size: 195.00198pt x 271.864pt.
+
+Overfull \hbox (7.05566pt too wide) in paragraph at lines 341--342
+[]\TU/GentiumBasic(0)/m/n/10 In your in-spect win-dow (In-spec-tor on a PotRemo
+te-Board) you can see a scheme 
+ []
+
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png, id=309
+, 554.07pt x 690.58pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png Gr
+aphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-inspector-remote-boa
+rd-raspberry.png  used on input line 347.
+(luatex.def)             Requested size: 195.00198pt x 243.04486pt.
+[13]
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing) [14</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutori
+al/_result/pdf/Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-less
+on-01.png>] [15</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial
+/_result/pdf/Chapters/Chap2LED/figures/pharothings-inspector-remote-board-raspbe
+rry.png>] [16
 
 ]
 \tf@toc=\write8
@@ -2336,36 +2370,36 @@ g>]
 \tf@lof=\write9
 
 \openout9 = index.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
 
-(/Users/ducasse/Workspace/FirstCircle/MyBooks/Bk-Writing/PharoBooks2/Booklet-AP
-haroThingTutorial/_result/pdf/index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: D3DBFF7A2B9D59BF89C33FA951A367EE;4017.
+(rerunfilecheck)             Checksum: C6891331DE32F457DC96E8579125951B;5525.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39003 strings out of 494413
+ 39117 strings out of 494413
  100000,1144653 words of node,token memory allocated
  1409 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 2 glyph, 17 attribute, 209 glue_spec, 17 a
 ttribute_list, 2 write, 4 pdf_literal, 2 pdf_action nodes
-   avail lists: 1:3,2:1179,3:252,4:30,5:224,6:28,7:1705,8:127,9:497,10:7,11:87
- 41726 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:1195,3:293,4:40,5:229,6:39,7:2535,8:128,9:501,10:7,11:136
+ 41757 multiletter control sequences out of 65536+600000
  98 fonts using 14579079 bytes
- 67i,13n,122p,937b,950s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,13n,122p,906b,950s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on index.pdf (14 pages, 569873 bytes).
+Output written on index.pdf (20 pages, 830557 bytes).
 
-PDF statistics: 286 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 131072)
- 252 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 373 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 131072)
+ 332 words of extra memory for PDF output out of 10000 (max. 100000000)
 
