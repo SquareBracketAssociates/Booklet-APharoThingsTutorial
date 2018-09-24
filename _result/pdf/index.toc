@@ -22,7 +22,7 @@
 \contentsline {subsection}{Turn on your Raspberry and connect it to the network.}{8}{section*.12}
 \contentsline {subsection}{Start Server}{8}{section*.13}
 \contentsline {section}{\numberline {1.8}Connecting Pharo client on remote Pharo}{9}{section.1.8}
-\contentsline {section}{\numberline {1.9}In the next chapter}{9}{section.1.9}
+\contentsline {section}{\numberline {1.9}In the next chapter}{10}{section.1.9}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {2}Lesson 1 – Turning on/off LED }{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}What we need?}{11}{section.2.1}

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  24 SEP 2018 16:52
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  24 SEP 2018 18:06
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 index.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.183 seconds
+luaotfload | main : initialization completed in 0.189 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/_
@@ -2315,7 +2315,7 @@ ndex.listing)
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/PharoThingsInspector.png, id=311, 540.51938pt
+apters/Chap1GettingStarted/figures/PharoThingsInspector.png, id=312, 540.51938pt
  x 640.64343pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png Graphic file (t
@@ -2324,10 +2324,10 @@ ype png)
 f/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.
-png  used on input line 303.
+png  used on input line 311.
 (luatex.def)             Requested size: 195.00198pt x 231.12022pt.
 
-Overfull \hbox (0.25879pt too wide) in paragraph at lines 311--312
+Overfull \hbox (0.25879pt too wide) in paragraph at lines 319--320
 \TU/GentiumBasic(0)/m/n/10 value. Icons are up-dated ac-cord-ing to pin value c
 hanges. If you click on phys- 
  []
@@ -2347,14 +2347,14 @@ hanges. If you click on phys-
  [11
 
 ]
-Overfull \hbox (1.32813pt too wide) in paragraph at lines 360--361
+Overfull \hbox (1.32813pt too wide) in paragraph at lines 368--369
 \TU/GentiumBasic(0)/m/n/10 it is not nec-es-sary to use sol-der, this way you c
 an reuse the board. This makes 
  []
 
 [12]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-breadboard.png, id=341, 552.0625pt x 315.177
+apters/Chap2LED/figures/pharothings-breadboard.png, id=343, 552.0625pt x 315.177
 5pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-breadboard.png Graphic file (type png)
@@ -2362,10 +2362,10 @@ df/Chapters/Chap2LED/figures/pharothings-breadboard.png Graphic file (type png)
 f/Chapters/Chap2LED/figures/pharothings-breadboard.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-breadboard.png  used
- on input line 373.
+ on input line 381.
 (luatex.def)             Requested size: 195.00198pt x 111.32852pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png, id=342
+apters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png, id=345
 , 246.521pt x 343.684pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png Gr
@@ -2374,17 +2374,17 @@ aphic file (type png)
 f/Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-raspberry-led-resist
-or-lesson-01.png  used on input line 392.
+or-lesson-01.png  used on input line 400.
 (luatex.def)             Requested size: 195.00198pt x 271.864pt.
  [13</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
 f/Chapters/Chap2LED/figures/pharothings-breadboard.png>]
-Overfull \hbox (7.05566pt too wide) in paragraph at lines 407--408
+Overfull \hbox (7.05566pt too wide) in paragraph at lines 415--416
 []\TU/GentiumBasic(0)/m/n/10 In your in-spect win-dow (In-spec-tor on a PotRemo
 te-Board) you can see a scheme 
  []
 
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png, id=349
+apters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png, id=352
 , 554.07pt x 690.58pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png Gr
@@ -2393,7 +2393,7 @@ aphic file (type png)
 f/Chapters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-inspector-remote-boa
-rd-raspberry.png  used on input line 413.
+rd-raspberry.png  used on input line 421.
 (luatex.def)             Requested size: 195.00198pt x 243.04486pt.
 [14</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf
 /Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png>]
@@ -2436,13 +2436,13 @@ berry.png>] [16]
 \tf@lof=\write9
 
 \openout9 = index.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 466.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 466.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 466.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 466.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
 Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: F5F5F5407C121EB6BA057A73C1B36C1B;5994.
 )
@@ -2453,7 +2453,7 @@ Here is how much of LuaTeX's memory you used:
  1420 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 3 glyph, 18 attribute, 209 glue_spec, 18 a
 ttribute_list, 2 write, 4 pdf_literal, 2 pdf_action nodes
-   avail lists: 1:3,2:1407,3:314,4:36,5:327,6:45,7:2780,8:187,9:702,10:9,11:173
+   avail lists: 1:3,2:1437,3:320,4:42,5:327,6:45,7:2827,8:187,9:711,10:9,11:179
  41786 multiletter control sequences out of 65536+600000
  98 fonts using 14580327 bytes
  67i,13n,122p,906b,950s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -2463,9 +2463,9 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on index.pdf (22 pages, 962077 bytes).
+Output written on index.pdf (22 pages, 962921 bytes).
 
-PDF statistics: 419 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 422 PDF objects out of 1000 (max. 8388607)
  106 named destinations out of 1000 (max. 131072)
  356 words of extra memory for PDF output out of 10000 (max. 100000000)
 

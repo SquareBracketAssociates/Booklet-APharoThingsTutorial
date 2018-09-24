@@ -67,7 +67,7 @@ Now we will build the circuit. This circuit consists of an LED that lights up wh
 - Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
 - And insert a jumper wire connecting the rigth column and the PIN7 (GPIO7).
 
-The figure below shows how the electric connection is made:
+The Figure *@physicalLed* shows how the electric connection is made:
 
 +Physical connection LED.>figures/pharothings-raspberry-led-resistor-lesson-01.png|width=60|label=physicalLed+
 

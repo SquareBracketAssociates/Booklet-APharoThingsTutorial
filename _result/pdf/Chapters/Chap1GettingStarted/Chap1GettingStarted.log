@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  24 SEP 2018 16:52
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  24 SEP 2018 18:05
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap1GettingStarted/Chap1GettingStarted.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.181 seconds
+luaotfload | main : initialization completed in 0.177 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2305,7 +2305,7 @@ hapters/Chap1GettingStarted/Chap1GettingStarted.listing)
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap1GettingStarted/Chap1GettingStarted.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/PharoThingsInspector.png, id=239, 540.51938pt
+apters/Chap1GettingStarted/figures/PharoThingsInspector.png, id=240, 540.51938pt
  x 640.64343pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png Graphic file (t
@@ -2314,10 +2314,10 @@ ype png)
 f/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.
-png  used on input line 300.
+png  used on input line 308.
 (luatex.def)             Requested size: 195.00198pt x 231.12022pt.
 
-Overfull \hbox (0.25879pt too wide) in paragraph at lines 308--309
+Overfull \hbox (0.25879pt too wide) in paragraph at lines 316--317
 \TU/GentiumBasic(0)/m/n/10 value. Icons are up-dated ac-cord-ing to pin value c
 hanges. If you click on phys- 
  []
@@ -2330,13 +2330,13 @@ pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png>]
 \tf@lof=\write9
 
 \openout9 = Chap1GettingStarted.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap1GettingStarted/Chap1GettingStarted.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 Package rerunfilecheck Info: File `Chap1GettingStarted.out' has not changed.
 (rerunfilecheck)             Checksum: 8031DFA6CF941B26000CF75FD2A331CE;4241.
 )
@@ -2347,7 +2347,7 @@ Here is how much of LuaTeX's memory you used:
  1405 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 17 attribute, 209 glue_spec, 17 a
 ttribute_list, 3 write, 4 pdf_literal, 2 pdf_action nodes
-   avail lists: 1:3,2:1410,3:313,4:36,5:321,6:33,7:2766,8:187,9:702,10:9,11:173
+   avail lists: 1:3,2:1439,3:319,4:42,5:321,6:35,7:2813,8:187,9:711,10:9,11:179
  41750 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
  67i,13n,122p,949b,950s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -2357,9 +2357,9 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap1GettingStarted.pdf (12 pages, 686343 bytes).
+Output written on Chap1GettingStarted.pdf (12 pages, 687018 bytes).
 
-PDF statistics: 299 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 301 PDF objects out of 1000 (max. 8388607)
  72 named destinations out of 1000 (max. 131072)
  260 words of extra memory for PDF output out of 10000 (max. 100000000)
 

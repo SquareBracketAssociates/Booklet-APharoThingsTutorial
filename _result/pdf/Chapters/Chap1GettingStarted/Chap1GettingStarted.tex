@@ -15,12 +15,12 @@
 
 
 % =================================================================
-\title{A Pharo Thing Tutorial}
+\title{A PharoThings Tutorial}
 \author{Allex Oliveira}
 \series{Square Bracket tutorials}
 
 \hypersetup{
-  pdftitle = {A Pharo Thing Tutorial},
+  pdftitle = {A PharoThings Tutorial},
   pdfauthor = {Allex Oliveira},
   pdfkeywords = {IoT, Raspberry, PharoThings, Pharo}
 }
@@ -284,14 +284,22 @@ Here we are using specialized Raspberry tools. They require the auto-refresh fea
 GTInspector enableStepRefresh
 \end{displaycode}
 
-So for your board model you need to choose an appropriate board class. For Raspberry it will be one of the RpiBoard subclasses. With the chosen class evaluate the following code to open an inspector:
+So for your board model you need to choose an appropriate board class. For Raspberry, it will be one of the RpiBoard subclasses. Currently, you can use the following classes according to the models:
+
+\begin{itemize}
+\item RpiBoardBRev1: Raspberry Pi Model B Revision 1
+\item RpiBoardBRev2: Raspberry Pi Model B Revision 2
+\item RpiBoard3B: Raspberry Pi Model B(plus), Pi2 Model B, Pi3 Model B, Pi3 Model B(plus)
+\end{itemize}
+
+With the chosen class evaluate the following code to open an inspector:
 
 \begin{displaycode}{plain}
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect.
 \end{displaycode}
 
-And will be open the inspector showing the PIN scheme (as show in Figure )
+And will be open the inspector showing the PIN scheme (as show in Figure \ref{PharoThingsinspector})
 
 
 \begin{figure}
