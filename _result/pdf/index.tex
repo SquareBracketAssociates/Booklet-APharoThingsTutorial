@@ -300,7 +300,7 @@ And will be open the inspector showing the PIN scheme (as show in Figure )
 \begin{figure}
 
 \begin{center}
-\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png}\caption{Server up and running.\label{PharoThingsinspector}}\end{center}
+\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png}\caption{Remote GPIO inspector\label{PharoThingsinspector}}\end{center}
 \end{figure}
 
 
@@ -353,13 +353,28 @@ In this experiment, we will use a 330ohm resistor. To identify the correct resis
 \item If there are five bands, then the colours will be Orange, Orange, Black, Black, Brown.
 \end{itemize}
 
-To know how calculate and choose the correct resistor, see this article: Which resistor to use with LED?
-
 It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color.
 
 But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
+\section{The Breadboard}
+A breadboard is used to build prototyping of electronics. With a breadboard, it is not necessary to use solder, this way you can reuse the board. This makes it easy to use to create temporary prototypes and experiment with circuit design.
+
+The holes in the breadboard are connected following a pattern, as shown in the Picture \ref{Breadboard}.
+
+\begin{itemize}
+\item The red (+) and blue (-) rail are connected horizontally;
+\item The holes in the middle are connected vertically.
+\end{itemize}
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-breadboard.png}\caption{Breadboard scheme.\label{Breadboard}}\end{center}
+\end{figure}
+
 \section{Experimental procedure}
-Now we will build the circuit. This circuit consists of an LED that lights up when power is applied, a resistor to limit current and a power supply (the Rasp){[}3{]}.
+Now we will build the circuit. This circuit consists of an LED that lights up when power is applied, a resistor to limit current and a power supply (the Rasp).
 
 \begin{itemize}
 \item Connect the Ground PIN from Raspberry in the breadboard blue rail (-). Raspeberry Pi models with 40 pins has 8 GPIO ground pins. You can connect with anyone. In this experiment we will use the PIN6 (Ground);
@@ -440,7 +455,7 @@ You can:
 \end{itemize}
 \section{In the next lesson…}
 Let’s use what we learned in this lesson and write a simple code to blink the LED.
-
+\chapter{Lesson 2 – Blinking LED }
 
 % lulu requires an empty page at the end. That's why I'm using
 % \backmatter here.

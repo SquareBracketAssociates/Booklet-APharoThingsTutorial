@@ -6,4 +6,6 @@ ${inputFile:path=Chapters/Chap1GettingStarted/Chap1GettingStarted.pillar}$
 
 ${inputFile:path=Chapters/Chap2LED/Chap2LED.pillar}$
 
+${inputFile:path=Chapters/Chap3BlinkingLED/Chap3BlinkingLED.pillar}$
+
 

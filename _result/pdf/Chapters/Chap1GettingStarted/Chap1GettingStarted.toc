@@ -2,7 +2,7 @@
 \contentsline {chapter}{Illustrations}{ii}{section*.1}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {1}Installations }{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Installating Os on RASPBERRY (RASPBIAN)}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Installating OS on RASPBERRY (RASPBIAN)}{1}{section.1.1}
 \contentsline {subsection}{Download}{1}{section*.2}
 \contentsline {subsection}{Copying}{1}{section*.3}
 \contentsline {section}{\numberline {1.2}Copying Raspbian files on MAC OSX}{2}{section.1.2}

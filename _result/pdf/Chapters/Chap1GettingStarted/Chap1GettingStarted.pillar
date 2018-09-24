@@ -2,7 +2,7 @@
 
 The first step you need to get started with PharoThings is to install an Operating System in your Raspberry Pi. When you buy a Raspberry Pi, the OS is not factory installed.
 
-!!! Installating Os on RASPBERRY (RASPBIAN)
+!!! Installating OS on RASPBERRY (RASPBIAN)
 
 In this tutorial, we will download and install NOOBS (New Out Of the Box Software). NOOBS is an easy operating system installer which contains Raspbian (*https://www.raspberrypi.org/downloads/raspbian/*) and LibreELEC (*https://libreelec.tv*).
 
@@ -172,7 +172,7 @@ remoteBoard inspect.
 
 And will be open the inspector showing the PIN scheme (as show in Figure *PharoThingsinspector*)
 
-+Server up and running.>figures/PharoThingsInspector.png|width=60|label=PharoThingsinspector+
++Remote GPIO inspector>figures/PharoThingsInspector.png|width=60|label=PharoThingsinspector+
 
 The board inspector provides a scheme of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state.
 

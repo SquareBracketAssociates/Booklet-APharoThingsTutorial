@@ -42,22 +42,32 @@ In this experiment, we will use a 330ohm resistor. To identify the correct resis
 
 - If there are four colour bands, they will be Orange, Orange, Brown, and then Gold;
 - If there are five bands, then the colours will be Orange, Orange, Black, Black, Brown.
-To know how calculate and choose the correct resistor, see this article: Which resistor to use with LED?
 
 It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color.
 
 But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
 
+!!! The Breadboard
+
+A breadboard is used to build prototyping of electronics. With a breadboard, it is not necessary to use solder, this way you can reuse the board. This makes it easy to use to create temporary prototypes and experiment with circuit design.
+
+The holes in the breadboard are connected following a pattern, as shown in the Picture *@Breadboard*.
+
+- The red (+) and blue (-) rail are connected horizontally;
+- The holes in the middle are connected vertically.
+
++Breadboard scheme.>figures/pharothings-breadboard.png|width=60|label=Breadboard+
+
 !!! Experimental procedure
 
-Now we will build the circuit. This circuit consists of an LED that lights up when power is applied, a resistor to limit current and a power supply (the Rasp)[3].
+Now we will build the circuit. This circuit consists of an LED that lights up when power is applied, a resistor to limit current and a power supply (the Rasp).
 
 - Connect the Ground PIN from Raspberry in the breadboard blue rail (-). Raspeberry Pi models with 40 pins has 8 GPIO ground pins. You can connect with anyone. In this experiment we will use the PIN6 (Ground);
 - Then connect the resistor from the same row on the breadboard to a column on the breadboard, as shown below;
 - Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
 - And insert a jumper wire connecting the rigth column and the PIN7 (GPIO7).
 
-The figure below shows how the electric connection is made:
+The Figure *@physicalLed* shows how the electric connection is made:
 
 +Physical connection LED.>figures/pharothings-raspberry-led-resistor-lesson-01.png|width=60|label=physicalLed+
 
