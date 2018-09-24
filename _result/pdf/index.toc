@@ -2,7 +2,7 @@
 \contentsline {chapter}{Illustrations}{ii}{section*.1}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {1}Installations }{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Installating Os on RASPBERRY (RASPBIAN)}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}Installating OS on RASPBERRY (RASPBIAN)}{3}{section.1.1}
 \contentsline {subsection}{Download}{3}{section*.2}
 \contentsline {subsection}{Copying}{3}{section*.3}
 \contentsline {section}{\numberline {1.2}Copying Raspbian files on MAC OSX}{4}{section.1.2}
@@ -22,6 +22,7 @@
 \contentsline {subsection}{Turn on your Raspberry and connect it to the network.}{8}{section*.12}
 \contentsline {subsection}{Start Server}{8}{section*.13}
 \contentsline {section}{\numberline {1.8}Connecting Pharo client on remote Pharo}{9}{section.1.8}
+\contentsline {section}{\numberline {1.9}In the next chapter}{9}{section.1.9}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {2}Lesson 1 – Turning on/off LED }{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}What we need?}{11}{section.2.1}

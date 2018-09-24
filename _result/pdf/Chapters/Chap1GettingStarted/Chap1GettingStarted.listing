@@ -1,1 +1,2 @@
-'a TlpRemoteUIManager is registered on port 40423'
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
