@@ -167,7 +167,7 @@ So for your board model you need to choose an appropriate board class. For Raspb
 
 - RpiBoardBRev1: Raspberry Pi Model B Revision 1
 - RpiBoardBRev2: Raspberry Pi Model B Revision 2
-- RpiBoard3B: Raspberry Pi Model B(plus), Pi2 Model B, Pi3 Model B, Pi3 Model B(plus)
+- RpiBoard3B: Raspberry Pi Model B\+, Pi2 Model B, Pi3 Model B, Pi3 Model B\+
 
 With the chosen class evaluate the following code to open an inspector:
 

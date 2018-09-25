@@ -43,9 +43,11 @@ In this experiment, we will use a 330ohm resistor. To identify the correct resis
 - If there are four colour bands, they will be Orange, Orange, Brown, and then Gold;
 - If there are five bands, then the colours will be Orange, Orange, Black, Black, Brown.
 
-It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color.
+It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color, as show in the Picture *@Ledpolarity*.
 
 But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
+
++Led polarity and resistor.>figures/pharothings-led-resistor-positive-negative.png|width=60|label=Ledpolarity+
 
 !!! The Breadboard
 

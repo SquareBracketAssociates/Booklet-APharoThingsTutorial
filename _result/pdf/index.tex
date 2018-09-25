@@ -292,7 +292,7 @@ So for your board model you need to choose an appropriate board class. For Raspb
 \begin{itemize}
 \item RpiBoardBRev1: Raspberry Pi Model B Revision 1
 \item RpiBoardBRev2: Raspberry Pi Model B Revision 2
-\item RpiBoard3B: Raspberry Pi Model B(plus), Pi2 Model B, Pi3 Model B, Pi3 Model B(plus)
+\item RpiBoard3B: Raspberry Pi Model B+, Pi2 Model B, Pi3 Model B, Pi3 Model B+
 \end{itemize}
 
 With the chosen class evaluate the following code to open an inspector:
@@ -361,9 +361,17 @@ In this experiment, we will use a 330ohm resistor. To identify the correct resis
 \item If there are five bands, then the colours will be Orange, Orange, Black, Black, Brown.
 \end{itemize}
 
-It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color.
+It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color, as show in the Picture \ref{Ledpolarity}.
 
 But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-led-resistor-positive-negative.png}\caption{Led polarity and resistor.\label{Ledpolarity}}\end{center}
+\end{figure}
+
 \section{The Breadboard}
 A breadboard is used to build prototyping of electronics. With a breadboard, it is not necessary to use solder, this way you can reuse the board. This makes it easy to use to create temporary prototypes and experiment with circuit design.
 
