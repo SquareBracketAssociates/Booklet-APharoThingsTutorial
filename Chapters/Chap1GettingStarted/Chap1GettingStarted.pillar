@@ -4,7 +4,7 @@ The first step you need to get started with PharoThings is to install an Operati
 
 !!! Installating OS on RASPBERRY (RASPBIAN)
 
-In this tutorial, we will download and install NOOBS (New Out Of the Box Software). NOOBS is an easy operating system installer which contains Raspbian (*https://www.raspberrypi.org/downloads/raspbian/*) and LibreELEC (*https://libreelec.tv*).
+In this chapter, we will download and install NOOBS (New Out Of the Box Software). NOOBS is an easy operating system installer which contains Raspbian (*https://www.raspberrypi.org/downloads/raspbian/*) and LibreELEC (*https://libreelec.tv*).
 
 Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run in ARM processors.
 
@@ -43,7 +43,7 @@ In a few minutes, you will have your Raspberry Pi running Raspbian OS.
 Now you can install PharoThings and control devices remotely. 
 
 !!! Installing PharoThings on Raspberry Pi
-Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. 
+Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. We will build the image on our local computer with the correct files and after we will copy to a Raspberry Pi and execute it there. In the third step, we will connect the Pharo from the local computer into Pharo of Raspberry Pi.
 
 !!!! Download PharoLauncher
 
@@ -101,7 +101,7 @@ ClySystemEnvironmentPlugin disableSlowPlugins.
 
 
 !!!! Copying Sources
-Copy the file sources from the folder ==/Applications/Pharo.app/Contents/MacOS== to folder ==/Users/your_user_name/Documents/Pharo/images/pharo_image_folder/lib/pharo/5.0-201804182009/==
+Copy the file PharoV60.sources from the folder ==/Applications/Pharo.app/Contents/MacOS== to folder ==/Users/your_user_name/Documents/Pharo/images/pharo_image_folder/lib/pharo/5.0-201804182009/==
 
 !!!! Copy to the Raspberry
 
@@ -176,9 +176,11 @@ remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect.
 ]]]
 
-And will be open the inspector showing the PIN scheme (as show in Figure *@PharoThingsinspector*)
+And will be open the inspector showing the PIN scheme (as shown in Figure *@PharoThingsinspector*)
 
 +Remote GPIO inspector>figures/PharoThingsInspector.png|width=60|label=PharoThingsinspector+
+
+!!!! GPIOs
 
 The board inspector provides a scheme of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state.
 

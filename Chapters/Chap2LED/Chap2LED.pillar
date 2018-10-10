@@ -43,13 +43,13 @@ In this experiment, we will use a 330ohm resistor. To identify the correct resis
 - If there are four colour bands, they will be Orange, Orange, Brown, and then Gold;
 - If there are five bands, then the colours will be Orange, Orange, Black, Black, Brown.
 
-It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color, as show in the Picture *@Ledpolarity*.
+It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color, as shown in the Picture *@Ledpolarity*.
 
 But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
 
-+Led polarity and resistor.>figures/pharothings-led-resistor-positive-negative.png|width=60|label=Ledpolarity+
++Led polarity and resistors.>figures/pharothings-led-polarity-resistors.png|width=60|label=Ledpolarity+
 
-!!! The Breadboard
+!!!! The Breadboard
 
 A breadboard is used to build prototyping of electronics. With a breadboard, it is not necessary to use solder, this way you can reuse the board. This makes it easy to use to create temporary prototypes and experiment with circuit design.
 
@@ -82,7 +82,18 @@ Now, we can write some code in Pharo to control the GPIOs using PharoThings and 
 
 In this experiment, we will use the second option: connect and do all the work remotely. 
 
-If you didn’t see how to install the PharoThings on your Raspberry Pi and how to control it remotely, take a look in this tutorial: Installing PharoThings on your Raspberry Pi
+If you didn’t see how to install the PharoThings on your Raspberry Pi and how to control it remotely, take a look in the Chapter 1: Instalattions.
+
+!!!!Connecting remotely
+
+Through your local Pharo image, let's connect in the Pharo image running on Raspberry, enable the auto-refresh feature of the inspector and open the inspector. Run this code in your local playground:
+
+[[[
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+GTInspector enableStepRefresh
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
+]]]
 
 In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state[4].
 

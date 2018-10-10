@@ -1,5 +1,77 @@
 !! Lesson 2 – Blinking LED 
 
+Now we can play with the LEDs, turn on and off them. Let's use this basic setup to write some code on the inspector playground to blink the LED. Then we will learn how to create a very simple application remotely using classes, methods, and instances to control the LED.
+
+!!!!Components
+We are using the same last lesson setup: 1 Raspberry Pi, 1 Breadboard, 1 LED, 1 Resistor 330ohms. If you didn't do the last lesson to understand how to do the connections, go back to chapter 2 and do it.
+
+!!!!Connecting remotely
+Through your local Pharo image, let's connect in the Pharo image running on Raspberry, enable the auto-refresh feature of the inspector and open the inspector.
+
+Run this code in your local playground:
+
+[[[
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+GTInspector enableStepRefresh
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
+]]]
+
+!!! Experimental playground code
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+
+[[[
+led := gpio7.
+led beDigitalOutput.
+]]]
+
+To blink the LED let's create a simple loop to change the LED value in each 1 second per 10 times. To change the object value (led value), let's call the method toggleDigitalValue, as we saw earlier:
+
+[[[
+10 timesRepeat: [
+  led toggleDigitalValue.
+  (Delay forSeconds: 1) wait
+].
+]]]
+
+Execute this code and... Cool! Now your LED is blinking!
+
+Change the values to repeat more times and wait less time between the toggle. This will cause the LED to blink faster.
+
+!!!Developing a simple LED blinker
+
+The last code was executed inside the remote inspector. To get started using classes, methods, and instances, we invite you to implement a simple application to blink the LEDs.
+
+This part of this chapter and application was based on the exercise Developing a Simple Counter, of Week 1 of Pharo MOOC (https://mooc.pharo.org/). I recommend strongly you read and to do the "counter exercise" to better understanding the concepts explained here. And of course, to do the MOOC to learn how to develop using Pharo and the OOP concept (Object-oriented programming).
+
+!!!!Our use case
+We want to create a blinker led using a few parameters such as the GPIO number, duration to blink the LED and how many times the LED blink per second. The following code should run in the remote playground when we finish this lesson:
+
+[[[
+|blinker|
+blinker := Blinker new
+blinker gpio: 7 durationSeconds: 10 timesPerSecond: 2
+]]]
+
+Here is a short explanation of this code:
+
+- In the first line, we declare the blinker variable. We can use any name. We will use this variable to create an object using the Blinker class;
+- In the second line, we instantiate the Blinker class (with B upper case) in blinker variable, creating an object. In this lesson, we will create this class and methods to control the LED;
+- In the third line, we send some messages to blinker object, telling it that the GPIO will blink, for how long and how many times per second. This will make the GPIO behave according to the parameters sent.
+
+Now we will develop all the mandatory class and methods to support this scenario.
+
+!!!!Create your own class remotely
+
+Let's create our first class. To create a class in Pharo, we need first to create a package. Inside the package, you can create many classes and inside the classes, you can create many methods. The methods are organized in protocols, to become more easily navigate between them.
+
+In your local playground, call the Remote System Browser of your Raspberry Pi. If you are already logged in, you do not need to run the first line below again:
+
+[[[
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+remotePharo openBrowser.
+]]]
+
 
 
 

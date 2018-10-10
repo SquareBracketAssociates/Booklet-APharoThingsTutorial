@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  25 SEP 2018 10:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  27 SEP 2018 13:59
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap1GettingStarted/Chap1GettingStarted.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.205 seconds
+luaotfload | main : initialization completed in 0.170 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2242,6 +2242,12 @@ Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/CopyARM.png  used on 
 input line 218.
 (luatex.def)             Requested size: 195.00198pt x 117.00287pt.
+
+Overfull \hbox (10.49503pt too wide) in paragraph at lines 222--223
+\TU/FiraMono(0)/m/n/10 p/-Con-tents/-Ma-cOS \TU/GentiumBasic(0)/m/n/10 to folde
+r \TU/FiraMono(0)/m/n/10 /User-s/y-our_user_name/-Doc-u-ments/Pharo/im- 
+ []
+
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap1GettingStarted/figures/OnRasp.png, id=215, 573.64313pt x 288.3272pt>
 
@@ -2353,7 +2359,7 @@ Here is how much of LuaTeX's memory you used:
  1405 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 17 attribute, 209 glue_spec, 17 a
 ttribute_list, 3 write, 4 pdf_literal, 2 pdf_action nodes
-   avail lists: 1:3,2:1439,3:319,4:42,5:321,6:35,7:2803,8:187,9:711,10:9,11:179
+   avail lists: 1:3,2:1439,3:319,4:42,5:321,6:35,7:2804,8:187,9:711,10:9,11:179
  41750 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
  67i,13n,122p,949b,950s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -2363,7 +2369,7 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap1GettingStarted.pdf (12 pages, 687013 bytes).
+Output written on Chap1GettingStarted.pdf (12 pages, 687017 bytes).
 
 PDF statistics: 301 PDF objects out of 1000 (max. 8388607)
  72 named destinations out of 1000 (max. 131072)

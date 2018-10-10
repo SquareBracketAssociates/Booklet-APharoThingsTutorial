@@ -95,7 +95,7 @@
 \chapter{Installations }
 The first step you need to get started with PharoThings is to install an Operating System in your Raspberry Pi. When you buy a Raspberry Pi, the OS is not factory installed.
 \section{Installating OS on RASPBERRY (RASPBIAN)}
-In this tutorial, we will download and install NOOBS (New Out Of the Box Software). NOOBS is an easy operating system installer which contains Raspbian (\url{https://www.raspberrypi.org/downloads/raspbian/}) and LibreELEC (\url{https://libreelec.tv}).
+In this chapter, we will download and install NOOBS (New Out Of the Box Software). NOOBS is an easy operating system installer which contains Raspbian (\url{https://www.raspberrypi.org/downloads/raspbian/}) and LibreELEC (\url{https://libreelec.tv}).
 
 Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run in ARM processors.
 \subsection{Download}
@@ -219,7 +219,7 @@ ClySystemEnvironmentPlugin disableSlowPlugins.
 \end{figure}
 
 \subsection{Copying Sources}
-Copy the file sources from the folder \textcode{/Applications/Pharo.app/Contents/MacOS} to folder \textcode{/Users/your\_user\_name/Documents/Pharo/images/pharo\_image\_folder/lib/pharo/5.0-201804182009/}
+Copy the file PharoV60.sources from the folder \textcode{/Applications/Pharo.app/Contents/MacOS} to folder \textcode{/Users/your\_user\_name/Documents/Pharo/images/pharo\_image\_folder/lib/pharo/5.0-201804182009/}
 \subsection{Copy to the Raspberry}
 Copy this folder to your Raspberry Pi (via flashdrive, network etc). The folder must have the structure shown in Figure \ref{OnRasp}.
 
@@ -299,7 +299,7 @@ remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect.
 \end{displaycode}
 
-And will be open the inspector showing the PIN scheme (as show in Figure \ref{PharoThingsinspector})
+And will be open the inspector showing the PIN scheme (as shown in Figure \ref{PharoThingsinspector})
 
 
 \begin{figure}
