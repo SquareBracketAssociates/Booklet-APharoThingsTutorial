@@ -25,7 +25,7 @@ led := gpio7.
 led beDigitalOutput.
 ]]]
 
-To blink the LED let's create a simple loop to change the LED value in each 1 second per 10 times. To change the object value (led value), let's call the method toggleDigitalValue, as we saw earlier:
+To blink the LED let's create a simple loop to change the LED value in each 1 second per 10 times. To change the object value (led value), let's call the method ==toggleDigitalValue==, as we saw earlier:
 
 [[[
 10 timesRepeat: [
@@ -40,7 +40,7 @@ Change the values to repeat more times and wait less time between the toggle. 
 
 !!!Developing a simple LED blinker
 
-The last code was executed inside the remote inspector. To get started using classes, methods, and instances, we invite you to implement a simple application to blink the LEDs.
+The last code was executed inside the remote inspector. To get started using classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
 
 This part of this chapter and application was based on the exercise Developing a Simple Counter, of Week 1 of Pharo MOOC (https://mooc.pharo.org/). I recommend strongly you read and to do the "counter exercise" to better understanding the concepts explained here. And of course, to do the MOOC to learn how to develop using Pharo and the OOP concept (Object-oriented programming).
 
@@ -68,19 +68,36 @@ Let's create our first class. To create a class in Pharo, we need first to creat
 In your local playground, call the Remote System Browser of your Raspberry Pi. If you are already logged in, you do not need to run the first line below again:
 
 [[[
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
 remotePharo openBrowser.
 ]]]
 
+!!!!Create a package
+Let’s create a package using the Remote Browser. Right click on the package area and type the package name, as shown in the Picture *@CreatingPackage*. In this example, we will create a package named ==PharoThings-Lessons==.
+
++Creating a package remotely.>figures/pharothings-creating-package.png|width=60|label=CreatingPackage+
+
+!!!!Create a class
+To create a new class, edit the default class template changing the #NameOfSubclass to the name of your new class. In this example let’s create the class ==#Blinker==. Take care that the name of the class starts with a capital letter and that you do not remove the octothorpe symbol (#) in front of NameOfSubClass. 
 
 
+[[[
+Object subclass: #Blinker
+  instanceVariableNames: ''
+  classVariableNames: ''
+  package: 'PharoThings-Lessons'
+]]]
 
+Now we need to compile it. Right click on the code area and select Accept menu item. The class ==Blinker== is now compiled and added to the system, like Picture *@CreatingClass*.
 
++Creating a package remotely.>figures/pharothings-creating-class|width=60|label=CreatingClass+
 
+!!!!Create protocols and methods
+Let’s create a new protocol to organize the methods. The first protocol that we will create is initialization, like Picture *@CreatingProtocol*.
 
++Creating a package remotely.>figures/pharothings-creating-protocol|width=60|label=CreatingProtocol+
 
-
-
+Inside this protocol, we will create a initialize method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to set some parameters in the new object.
 
 
 
