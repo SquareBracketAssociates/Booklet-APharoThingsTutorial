@@ -38,6 +38,12 @@ Execute this code and... Cool! Now your LED is blinking!
 
 Change the values to repeat more times and wait less time between the toggle. This will cause the LED to blink faster.
 
+!!A brief introduction to Pharo object-oriented language
+
+Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
+Pharo will fundamentally change your perception about what OOP is.
+
+
 !!!Developing a simple LED blinker
 
 The last code was executed inside the remote inspector. To get started using classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
@@ -50,14 +56,14 @@ We want to create a blinker led using a few parameters such as the GPIO number, 
 [[[
 |blinker|
 blinker := Blinker new
-blinker gpio: 7 durationSeconds: 10 timesPerSecond: 2
+blinker timesRepeat: 10 waitForSeconds: 1.
 ]]]
 
 Here is a short explanation of this code:
 
 - In the first line, we declare the blinker variable. We can use any name. We will use this variable to create an object using the Blinker class;
 - In the second line, we instantiate the Blinker class (with B upper case) in blinker variable, creating an object. In this lesson, we will create this class and methods to control the LED;
-- In the third line, we send some messages to blinker object, telling it that the GPIO will blink, for how long and how many times per second. This will make the GPIO behave according to the parameters sent.
+- In the third line, we send some messages to blinker object, for how long and how many times per second. This will make the GPIO behave according to the parameters sent.
 
 Now we will develop all the mandatory class and methods to support this scenario.
 
@@ -80,10 +86,12 @@ Let’s create a package using the Remote Browser. Right click on the package ar
 !!!!Create a class
 To create a new class, edit the default class template changing the #NameOfSubclass to the name of your new class. In this example let’s create the class ==#Blinker==. Take care that the name of the class starts with a capital letter and that you do not remove the octothorpe symbol (#) in front of NameOfSubClass. 
 
+Then, you should fill in the names of the instance variables of this class. We need one instance variable called ==led==. Take care that you leave the string quotes!
+
 
 [[[
 Object subclass: #Blinker
-  instanceVariableNames: ''
+  instanceVariableNames: 'led'
   classVariableNames: ''
   package: 'PharoThings-Lessons'
 ]]]
@@ -92,12 +100,116 @@ Now we need to compile it. Right click on the code area and select Accept menu i
 
 +Creating a package remotely.>figures/pharothings-creating-class|width=60|label=CreatingClass+
 
-!!!!Create protocols and methods
+!!!!Create a protocol
 Let’s create a new protocol to organize the methods. The first protocol that we will create is initialization, like Picture *@CreatingProtocol*.
 
 +Creating a package remotely.>figures/pharothings-creating-protocol|width=60|label=CreatingProtocol+
 
-Inside this protocol, we will create a initialize method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to set some parameters in the new object.
+!!!!Creating an initialize method
+
+Inside this protocol, we will create a ==initialize== method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to set some parameters in the new object.
+
+Lets to use the instance variable ==led==, that we defined when we created the class. The instance variable is private to the object and accessible by any methods inside this class. These methods can access this variable to either get or set any value to it.
+
+[[[
+initialize 
+  led := PotClockGPIOPin id: 4 number: 7. 
+  led board: RpiBoard3B new; beDigitalOutput
+]]]
+
+Here is a short explanation of this code:
+
+- The first line defines the name of the method;
+- In the second line, we set up wich GPIO we wanna to use. Note that we need the GPIO number and ID. The ID is necessary to communicate with Wiring Pi Library. You can see the ==ID== and ==GPIO number== in PotRemoteBoard inspector, like in *@RemoteInspector*;
+- The third line we set the model of Raspberry board and configure that GPIO to beDigitalOutput. This means that when the GPIO change to value:1, the power will get out from GPIO to supply the LED.
+
+
++Looking for ID and GPIO number on Remote Inspector.>figures/pharothings-board-inspector-id-number.png|width=60|label=RemoteInspector+
+
+Compile your code (cmd + S) and  the method will be shown in the remote browser like in the *@InitializeMethod*:
+
++Creating a initialize method.>figures/pharothings-creating-method-initialize.png|width=60|label=InitializeMethod+
+
+!!!!Creating a method to do actions
+
+Now let’s create a method to control the object led inside the class Blinker. Let’s take the code that we used in PotRemoteBoard inspector to do the LED to blink and add some *receivers*. Create protocol operations and inside this protocol, create the following method:
+
+[[[
+timesRepeat: asNumber waitForSeconds: asInteger 
+    [ asNumber timesRepeat: [  
+        led toggleDigitalValue. 
+        (Delay forSeconds: asInteger) wait  
+    ] ] forkNamed: 'BlinkerProcess'.
+]]]
+
+Here is a short explanation of this code:
+
+- In the first line, we define two *receivers*, timesRepeat: and waitForSeconds:. We inform the kind of value will be received, creating 2 variables: asNumber and asInteger.
+- We replace these variables in the code and now we have the control to say how many times repeat and for how many seconds.
+- We finish the code putting everything inside a fork to create a process in Pharo. While the process is running, you can open the Remote Process Browser (remotePharo openProcessBrowser) and see the process. This is useful when you wanna kill the remote process.
+
+Compile your code (cmd + S) and  the method will be shown in the remote browser like in the *@OperationsMethod*:
+
++Creating a operations method.>figures/pharothings-creating-method-operations.png|width=60|label=OperationsMethod+
+
+!!!!Using your new class
+
+Now we can use the class that we created, the Blinker class. To do this, let’s open the Remote Playground:
+
+[[[
+remotePharo openPlayground.
+]]]
+
+and run the code that we saw in the begin of this lesson:
+
+[[[
+|blinker|
+blinker := Blinker new 
+blinker timesRepeat: 10 waitForSeconds: 1.
+]]]
+
+Execute line by line and… ==cool==! Now your LED is blinking! And the better, you did this using Object-oriented programming!
+
++Creating a operations method.>figures/pharothings-remote-playground-blinker.png|width=60|label=OperationsMethod+
+
+!!!!Save your work
+
+Don’t forget to save your work remotely. To do this run this command in your local playground:
+
+[[[
+remotePharo saveImage.
+]]]
+
+!!!!Conclusion
+
+In this tutorial, you learned how to define packages, classes, methods, and define tests. The flow of programming that we chose for this first tutorial is similar to most of the programming languages.
+
+With PharoThings you can develop remotely and control your Raspberry GPIOs. Very easy and powerful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
