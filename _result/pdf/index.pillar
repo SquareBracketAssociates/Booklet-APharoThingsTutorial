@@ -8,4 +8,6 @@ ${inputFile:path=Chapters/Chap2LED/Chap2LED.pillar}$
 
 ${inputFile:path=Chapters/Chap3BlinkingLED/Chap3BlinkingLED.pillar}$
 
+${inputFile:path=Chapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.pillar}$
+
 

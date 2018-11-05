@@ -143,7 +143,7 @@ Insert the SD Card on Raspberry and turn it on. Select “Raspbian” and “Yes
 In a few minutes, you will have your Raspberry Pi running Raspbian OS.
 Now you can install PharoThings and control devices remotely. 
 \section{Installing PharoThings on Raspberry Pi}
-Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. 
+Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. We will build the image on our local computer with the correct files and after we will copy to a Raspberry Pi and execute it there. In the third step, we will connect the Pharo from the local computer into Pharo of Raspberry Pi.
 \subsection{Download PharoLauncher}
 Use the PharoLauncher (an application to help you running multiple versions and images of Pharo) and install Pharo 6.1. You can get the launcher from \url{http://pharo.org/download}.
 You can also directly install a version of Pharo from the same place.
@@ -308,7 +308,7 @@ And will be open the inspector showing the PIN scheme (as shown in Figure \ref{P
 \includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png}\caption{Remote GPIO inspector\label{PharoThingsinspector}}\end{center}
 \end{figure}
 
-
+\subsection{GPIOs}
 The board inspector provides a scheme of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state.
 
 In the picture the board is shown with two configured pins: gpio3 and gpio4 which are connected to physical button and led accordingly.

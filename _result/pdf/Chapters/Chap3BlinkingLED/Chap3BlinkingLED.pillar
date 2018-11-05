@@ -1,18 +1,46 @@
 !! Lesson 2 – Blinking LED 
 
+Now we can play with the LEDs, turn them on and off. Let's use this basic setup to write some code on the inspector playground to blink the LED. Next, we will learn how to remotely create a very simple application using classes, methods, and instances to control the LED.
 
+!!! What we need?
 
+We are using the same last lesson setup: 1 Raspberry Pi, 1 Breadboard, 1 LED, 1 Resistor 330ohms. If you didn't do the last lesson to understand how to do the connections, go back to Chapter 2 and do it.
 
+!!!!Connecting remotely
+Through your local Pharo image, let's connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
 
+Run this code in your local playground:
 
+[[[
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+GTInspector enableStepRefresh.
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
+]]]
 
+!!! Experimental playground code
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
 
+[[[
+led := gpio7.
+led beDigitalOutput.
+]]]
 
+To blink the LED let's create a simple loop to change the value of the LED every 1 second by 10 times. To change the value of the object (led value), let's call the method ==toggleDigitalValue==, as we saw previously:
 
+[[[
+[ 10 timesRepeat: [
+	led toggleDigitalValue.
+ 	(Delay forSeconds: 1) wait
+] ] forkNamed: 'BlinkerProcess'.
+]]]
 
+Run this code, as shown in Figure *@RemoteInspector* and... ==cool==! Now your LED is blinking!
 
++Remote playground.>figures/pharothings-board-inspector-blink-led.png|width=70|label=RemoteInspector+
 
+Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
 
+!!!In the next lesson
 
-
-
+In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! Pharo is a new generation reflective language and programming environment. And in the next lesson, let’s start to using object-oriented programming, OOP. Let's create a simple aplication, writing classes and methods, all remotely.

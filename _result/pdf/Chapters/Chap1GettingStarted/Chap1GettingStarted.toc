@@ -11,15 +11,16 @@
 \contentsline {section}{\numberline {1.5}Installing the Raspbian in Raspberry Pi}{2}{section.1.5}
 \contentsline {section}{\numberline {1.6}Installing PharoThings on Raspberry Pi}{3}{section.1.6}
 \contentsline {subsection}{Download PharoLauncher}{3}{section*.4}
-\contentsline {subsection}{Download Pharo 61}{3}{section*.5}
+\contentsline {subsection}{Download Pharo 61}{4}{section*.5}
 \contentsline {subsection}{Execute your Pharo image}{4}{section*.6}
 \contentsline {subsection}{Load PharoThings}{4}{section*.7}
 \contentsline {subsection}{Snapshot your Image}{5}{section*.8}
 \contentsline {subsection}{Download the VM}{5}{section*.9}
 \contentsline {subsection}{Copying Sources}{5}{section*.10}
-\contentsline {subsection}{Copy to the Raspberry}{5}{section*.11}
+\contentsline {subsection}{Copy to the Raspberry}{6}{section*.11}
 \contentsline {section}{\numberline {1.7}Execute PharoThings on Raspberry}{6}{section.1.7}
 \contentsline {subsection}{Turn on your Raspberry and connect it to the network.}{6}{section*.12}
 \contentsline {subsection}{Start Server}{6}{section*.13}
 \contentsline {section}{\numberline {1.8}Connecting Pharo client on remote Pharo}{7}{section.1.8}
+\contentsline {subsection}{GPIOs}{8}{section*.14}
 \contentsline {section}{\numberline {1.9}In the next chapter}{8}{section.1.9}

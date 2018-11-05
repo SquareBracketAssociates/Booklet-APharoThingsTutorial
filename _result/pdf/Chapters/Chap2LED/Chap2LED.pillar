@@ -49,7 +49,7 @@ But the LEDs will only work if the power is supplied correctly (if the polarity 
 
 +Led polarity and resistors.>figures/pharothings-led-polarity-resistors.png|width=60|label=Ledpolarity+
 
-!!! The Breadboard
+!!!! The Breadboard
 
 A breadboard is used to build prototyping of electronics. With a breadboard, it is not necessary to use solder, this way you can reuse the board. This makes it easy to use to create temporary prototypes and experiment with circuit design.
 
@@ -140,7 +140,7 @@ You can:
 - Run the code dynamically.
 - Easy, powerful.
 
-!!! In the next lesson…
+!!! In the next lesson
 
 Let’s use what we learned in this lesson and write a simple code to blink the LED.
 

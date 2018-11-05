@@ -146,7 +146,7 @@ Insert the SD Card on Raspberry and turn it on. Select “Raspbian” and “Yes
 In a few minutes, you will have your Raspberry Pi running Raspbian OS.
 Now you can install PharoThings and control devices remotely. 
 \section{Installing PharoThings on Raspberry Pi}
-Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. 
+Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. We will build the image on our local computer with the correct files and after we will copy to a Raspberry Pi and execute it there. In the third step, we will connect the Pharo from the local computer into Pharo of Raspberry Pi.
 \subsection{Download PharoLauncher}
 Use the PharoLauncher (an application to help you running multiple versions and images of Pharo) and install Pharo 6.1. You can get the launcher from \url{http://pharo.org/download}.
 You can also directly install a version of Pharo from the same place.
@@ -311,7 +311,7 @@ And will be open the inspector showing the PIN scheme (as shown in Figure \ref{P
 \includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png}\caption{Remote GPIO inspector\label{PharoThingsinspector}}\end{center}
 \end{figure}
 
-
+\subsection{GPIOs}
 The board inspector provides a scheme of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state.
 
 In the picture the board is shown with two configured pins: gpio3 and gpio4 which are connected to physical button and led accordingly.
@@ -372,7 +372,7 @@ But the LEDs will only work if the power is supplied correctly (if the polarity 
 \includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-led-polarity-resistors.png}\caption{Led polarity and resistors.\label{Ledpolarity}}\end{center}
 \end{figure}
 
-\section{The Breadboard}
+\subsection{The Breadboard}
 A breadboard is used to build prototyping of electronics. With a breadboard, it is not necessary to use solder, this way you can reuse the board. This makes it easy to use to create temporary prototypes and experiment with circuit design.
 
 The holes in the breadboard are connected following a pattern, as shown in the Picture \ref{Breadboard}.
@@ -478,9 +478,235 @@ You can:
 \item Run the code dynamically.
 \item Easy, powerful.
 \end{itemize}
-\section{In the next lesson…}
+\section{In the next lesson}
 Let’s use what we learned in this lesson and write a simple code to blink the LED.
 \chapter{Lesson 2 – Blinking LED }
+Now we can play with the LEDs, turn them on and off. Let's use this basic setup to write some code on the inspector playground to blink the LED. Next, we will learn how to remotely create a very simple application using classes, methods, and instances to control the LED.
+\section{What we need?}
+We are using the same last lesson setup: 1 Raspberry Pi, 1 Breadboard, 1 LED, 1 Resistor 330ohms. If you didn't do the last lesson to understand how to do the connections, go back to Chapter 2 and do it.
+\subsection{Connecting remotely}
+Through your local Pharo image, let's connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
+
+Run this code in your local playground:
+
+\begin{displaycode}{plain}
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+GTInspector enableStepRefresh.
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
+\end{displaycode}
+\section{Experimental playground code}
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+
+\begin{displaycode}{plain}
+led := gpio7.
+led beDigitalOutput.
+\end{displaycode}
+
+To blink the LED let's create a simple loop to change the value of the LED every 1 second by 10 times. To change the value of the object (led value), let's call the method \textcode{toggleDigitalValue}, as we saw previously:
+
+\begin{displaycode}{plain}
+[ 10 timesRepeat: [
+	led toggleDigitalValue.
+ 	(Delay forSeconds: 1) wait
+] ] forkNamed: 'BlinkerProcess'.
+\end{displaycode}
+
+Run this code, as shown in Figure \ref{RemoteInspector} and... \textcode{cool}! Now your LED is blinking!
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png}\caption{Remote playground.\label{RemoteInspector}}\end{center}
+\end{figure}
+
+
+Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
+\section{In the next lesson}
+In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! Pharo is a new generation reflective language and programming environment. And in the next lesson, let’s start to using object-oriented programming, OOP. Let's create a simple aplication, writing classes and methods, all remotely.
+\chapter{A brief introduction to Pharo object-oriented language}
+Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-oriented programming) with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
+Pharo will fundamentally change your perception about what OOP is.
+\section{Developing a simple LED blinker}
+The following part of this chapter and application was based on the exercise \textcode{Developing a Simple Counter}, of Week 1 of Pharo MOOC (https://mooc.pharo.org/). I strongly recommend that you read and do the \symbol{34}counter exercise\symbol{34} to better understand the concepts explained here. And, of course, do the MOOC to learn how to develop using Pharo and the OOP concept, Object-oriented programming.
+\section{Our use case}
+We want to create a blinker led using a few parameters such as time to repeat the blinking LED and how many seconds to wait between blinks. The following code should run in the playground when we finish this lesson:
+
+\begin{displaycode}{plain}
+|blinker|
+blinker := Blinker new.
+blinker timesRepeat: 10 waitForSeconds: 1.
+\end{displaycode}
+
+Here is a short explanation of this code:
+
+\begin{itemize}
+\item In the first line, we declare the variable \textcode{blinker}. We can use any name. We will use this variable to create an object using the Blinker class;
+\item In the second line, we instantiate the Blinker class (with uppercase B) in the \textcode{blinker} variable, creating an object. In this lesson, we will create this class and methods to control the LED;
+\item In the third line, we send some messages to \textcode{blinker} object, for how long and how many times per second. This will make the GPIO behave according to the parameters sent.
+\end{itemize}
+
+Now we will develop all the mandatory class and methods to support this scenario.
+\section{Create your own class remotely}
+Let's create our first class. To create a class in Pharo, we need first to create a package. Inside the package, you can create many classes and inside the classes, you can create many methods. The methods are organized in protocols, to become more easily navigate between them. Take a look in Figure \ref{RemoteBrowser} to better understanding. *edit image, put name in windows
+
+In your local playground, call the Remote System Browser of your Raspberry Pi. If you are already connected in your Raspberry Pharo, you do not need to run the first line below again. This will open a window as shown in Figure \ref{RemoteBrowser} 
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browser.png}\caption{Remote System Browser.\label{RemoteBrowser}}\end{center}
+\end{figure}
+
+
+\begin{displaycode}{plain}
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423).
+remotePharo openBrowser.
+\end{displaycode}
+\section{Create a package}
+Let's create a package using the Remote Browser. Right-click the package area and enter the package name, as shown in Figure \ref{CreatingPackage}. In this example, we will create a package named \textcode{PharoThings-Lessons}.
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-package.png}\caption{Creating a package remotely.\label{CreatingPackage}}\end{center}
+\end{figure}
+
+\section{Create a class}
+To create a new class, edit the default class template by changing the \#NameOfSubclass to the name of the new class. In this example let's create the class \textcode{\#Blinker}. Take care that the class name begins with a capital letter and that you do not remove the octothorpe symbol (\#) in front of NameOfSubClass. 
+
+You must then fill in the names of the instance variables for this class. We need an instance variable called \textcode{led}. Be careful to leave the strings quotes!
+
+\begin{displaycode}{plain}
+Object subclass: #Blinker
+  instanceVariableNames: 'led'
+  classVariableNames: ''
+  package: 'PharoThings-Lessons'
+\end{displaycode}
+
+Now we need to compile it. Right click on the code area and select Accept option. The \textcode{Blinker} class is now compiled and added to the system, as shown in Figure \ref{CreatingClass}.
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-class}\caption{Creating a class remotely.\label{CreatingClass}}\end{center}
+\end{figure}
+
+\section{Create a protocol}
+Let's create a new protocol to organize the methods. The first protocol we are going to create is \textcode{initialization}, as shown in Figure \ref{CreatingProtocol}.
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-protocol}\caption{Creating a package remotely.\label{CreatingProtocol}}\end{center}
+\end{figure}
+
+\section{Creating an initialize method}
+Inside this protocol, we will create a \textcode{initialize} method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to define some parameters in the new object.
+
+Let's use the instance variable \textcode{led}, which we defined when we created the class. The instance variable is private to the object and accessible by any methods inside this class. These methods can access this variable to get or set any value to it.
+
+\begin{displaycode}{plain}
+initialize 
+  led := PotClockGPIOPin id: 4 number: 7. 
+  led board: RpiBoard3B new; beDigitalOutput
+\end{displaycode}
+
+Here is a short explanation of this code:
+
+\begin{itemize}
+\item The first line defines the name of the method;
+\item In the second line, we configure the GPIO that we wanna use. Note that we need the GPIO number and ID. The ID is required to communicate with Wiring Pi Library. You can see the \textcode{ID} and \textcode{GPIO number} in PotRemoteBoard inspector, as shown in Figure \ref{RemoteInspector};
+\item In the third line, we define the model of the Raspberry board and configure this GPIO as beDigitalOutput. This means that when the GPIO change to value:1, the power will go out of the GPIO to power the LED.
+\end{itemize}
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-board-inspector-id-number.png}\caption{Looking for ID and GPIO number on Remote Inspector.\label{RemoteInspector}}\end{center}
+\end{figure}
+
+
+Compile your code (cmd + S) and the method will be shown in the remote browser, as shown in Figure \ref{InitializeMethod}:
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-initialize.png}\caption{Creating a initialize method.\label{InitializeMethod}}\end{center}
+\end{figure}
+
+\subsection{Creating a method to do actions}
+Now let's create a method to control the object led inside the class Blinker. Let's take the code that we used in PotRemoteBoard inspector to do the LED to blink and replace the numbers on code for two arguments. Create the protocol \textcode{operations} and inside this protocol, create the following method:
+
+\begin{displaycode}{plain}
+timesRepeat: asNumber waitForSeconds: asInteger 
+    [ asNumber timesRepeat: [  
+        led toggleDigitalValue. 
+        (Delay forSeconds: asInteger) wait  
+    ] ] forkNamed: 'BlinkerProcess'.
+\end{displaycode}
+
+Here is a short explanation of this code:
+
+\begin{itemize}
+\item In the first line, we define the message with timesRepeat: and waitForSeconds:. We inform the kind of value will be received, creating 2 variables: aNumber and anInteger;
+\item We replace these variables in the code and now we have the control to say how many times repeat and for how many seconds;
+\item We finished the code by putting everything inside a fork to create a process in Pharo. While the process is running, you can open the Remote Process Browser (remotePharo openProcessBrowser) and see the process. This is useful when you wanna kill the remote process.
+\end{itemize}
+
+Compile your code (cmd + S) and  the method will be shown in the remote browser, as shown in Figure \ref{OperationsMethod}:
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-operations.png}\caption{Creating an operation method.\label{OperationsMethod}}\end{center}
+\end{figure}
+
+\section{Using your new class}
+Now we can use the class that we created, the Blinker class. To do this, let's open the Remote Playground:
+
+\begin{displaycode}{plain}
+remotePharo openPlayground.
+\end{displaycode}
+
+and run the code that we saw in the begin of this lesson:
+
+\begin{displaycode}{plain}
+|blinker|
+blinker := Blinker new. 
+blinker timesRepeat: 10 waitForSeconds: 1.
+\end{displaycode}
+
+Run this code, as shown in Figure \ref{RemotePlayground} and... \textcode{cool}! Now your LED is blinking! And the better, you did this using Object-oriented programming! 
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-blinker.png}\caption{Remote playground.\label{RemotePlayground}}\end{center}
+\end{figure}
+
+\section{Save your work}
+Don't forget to save your work remotely. To do this, run this command on your local playground:
+
+\begin{displaycode}{plain}
+remotePharo saveImage.
+\end{displaycode}
+\section{Conclusion}
+In this tutorial, you learned how to define packages, classes, and methods. The flow of programming that we chose for this first tutorial is similar to most of the programming languages.
+
+With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
+
+In the next lesson, let’s use what we learned in this lesson and write a simple code to flowing lights using 4 LEDs.
+
 
 % lulu requires an empty page at the end. That's why I'm using
 % \backmatter here.
