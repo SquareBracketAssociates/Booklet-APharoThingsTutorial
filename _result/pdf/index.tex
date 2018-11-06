@@ -333,7 +333,7 @@ If you didn’t see how to install the PharoThings on your Raspberry Pi and how 
 In this lesson we will use a very simple setup.
 \subsection{Components}
 \begin{itemize}
-\item 1 Raspberry Pi (any model) connected to your network (wired or wireless)
+\item 1 Raspberry Pi connected to your network (wired or wireless)
 \item 1 Breadboard
 \item 1 LED
 \item 1 Resistor (330ohms)
@@ -490,12 +490,12 @@ Through your local Pharo image, let's connect in the Pharo image by running on 
 Run this code in your local playground:
 
 \begin{displaycode}{plain}
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
 GTInspector enableStepRefresh.
 remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect.
 \end{displaycode}
-\section{Experimental playground code}
+\section{Experimental code}
 In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
 
 \begin{displaycode}{plain}
@@ -524,7 +524,7 @@ Run this code, as shown in Figure \ref{RemoteInspector} and... \textcode{cool}! 
 
 Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
 \section{In the next lesson}
-In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! Pharo is a new generation reflective language and programming environment. And in the next lesson, let’s start to using object-oriented programming, OOP. Let's create a simple aplication, writing classes and methods, all remotely.
+In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! Pharo is a new generation reflective language and programming environment. And in the next lesson, let’s start using object-oriented programming, OOP. Let's create a simple application, writing classes and methods, all remotely.
 \chapter{A brief introduction to Pharo object-oriented language}
 Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-oriented programming) with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
 Pharo will fundamentally change your perception about what OOP is.
@@ -646,10 +646,10 @@ Compile your code (cmd + S) and the method will be shown in the remote browser, 
 Now let's create a method to control the object led inside the class Blinker. Let's take the code that we used in PotRemoteBoard inspector to do the LED to blink and replace the numbers on code for two arguments. Create the protocol \textcode{operations} and inside this protocol, create the following method:
 
 \begin{displaycode}{plain}
-timesRepeat: asNumber waitForSeconds: asInteger 
-    [ asNumber timesRepeat: [  
+timesRepeat: anInteger waitForSeconds: aNumber
+    [ anInteger timesRepeat: [  
         led toggleDigitalValue. 
-        (Delay forSeconds: asInteger) wait  
+        (Delay forSeconds: aNumber) wait  
     ] ] forkNamed: 'BlinkerProcess'.
 \end{displaycode}
 
@@ -685,7 +685,9 @@ blinker := Blinker new.
 blinker timesRepeat: 10 waitForSeconds: 1.
 \end{displaycode}
 
-Run this code, as shown in Figure \ref{RemotePlayground} and... \textcode{cool}! Now your LED is blinking! And the better, you did this using Object-oriented programming! 
+Run this code, as shown in Figure \ref{RemotePlayground} and... \textcode{cool}! Now your LED is blinking! And the better, you did this using object-oriented programming! 
+
+This is very cool, you do not need to change your code every time you wanna change these parameters. Just change the messages you send to the object and it will behave as you want.
 
 
 \begin{figure}
@@ -705,7 +707,58 @@ In this tutorial, you learned how to define packages, classes, and methods. The 
 
 With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
 
-In the next lesson, let’s use what we learned in this lesson and write a simple code to flowing lights using 4 LEDs.
+In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 4 LEDs.
+\chapter{Lesson 3 - LED Flowing Lights}
+Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights.
+\section{What we need?}
+We are using the lesson 1 setup, but with 8 LEDs and 8 resistors.
+\subsection{Components}
+\begin{itemize}
+\item 1 Raspberry Pi connected to your network (wired or wireless)
+\item 1 Breadboard
+\item 8 LEDs
+\item 8 Resistors 330ohms
+\item Jumper wires
+\end{itemize}
+\section{Experimental theory}
+We saw in the lesson 1 how to connect the LED and resistors on breadboard. Now we will do the same, but putting more 7 LEDs and resistors in the breadboard. 
+
+.
+.
+.
+\subsection{Connecting remotely}
+Through your local Pharo image, let's connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
+
+Run this code in your local playground:
+
+\begin{displaycode}{plain}
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
+GTInspector enableStepRefresh.
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
+\end{displaycode}
+\section{Experimental code}
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+
+\begin{displaycode}{plain}
+led := gpio7.
+led beDigitalOutput.
+\end{displaycode}
+
+To blink the LED let's create a simple loop to change the value of the LED every 1 second by 10 times. To change the value of the object (led value), let's call the method \textcode{toggleDigitalValue}, as we saw previously:
+
+\begin{displaycode}{plain}
+[ 10 timesRepeat: [
+	led toggleDigitalValue.
+ 	(Delay forSeconds: 1) wait
+] ] forkNamed: 'BlinkerProcess'.
+\end{displaycode}
+
+Run this code, as shown in Figure *and... \textcode{cool}! Now your LED is blinking!
+
+Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
+\section{In the next lesson}
+In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! Pharo is a new generation reflective language and programming environment. And in the next lesson, let’s start using object-oriented programming, OOP. Let's create a simple application, writing classes and methods, all remotely.
 
 
 % lulu requires an empty page at the end. That's why I'm using

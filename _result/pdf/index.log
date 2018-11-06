@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  5 NOV 2018 18:18
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  6 NOV 2018 15:17
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 index.tex
@@ -1917,7 +1917,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 64.
-<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=233, 120.45pt x 42.1575pt>
+<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=261, 120.45pt x 42.1575pt>
 
 File: _support/latex/sbabook/CreativeCommons-BY-SA.pdf Graphic file (type pdf)
 <use _support/latex/sbabook/CreativeCommons-BY-SA.pdf>
@@ -1944,21 +1944,20 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
 (Font)              scaled to size 8.31848pt on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
-)
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
-(Font)              scaled to size 7.48663pt on input line 91.
+(Font)              scaled to size 7.48663pt on input line 59.
  [1
 
 
-]
+]) [2]
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
-ndex.lof) [2
+ndex.lof) [3
+
+] [4
 
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1
-
-]
+[1]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2
 
@@ -2120,7 +2119,7 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
  [3]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-osx
--arm.png, id=355, 816.04875pt x 421.575pt>
+-arm.png, id=397, 816.04875pt x 421.575pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbia
 n-osx-arm.png Graphic file (type png)
@@ -2133,7 +2132,7 @@ aspberry-pi-raspbian-osx-arm.png  used on input line 124.
 (luatex.def)             Requested size: 227.49901pt x 117.52557pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-lin
-ux-arm-copy.png, id=356, 771.88374pt x 293.095pt>
+ux-arm-copy.png, id=398, 771.88374pt x 293.095pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbia
 n-linux-arm-copy.png Graphic file (type png)
@@ -2146,7 +2145,7 @@ aspberry-pi-raspbian-linux-arm-copy.png  used on input line 132.
 (luatex.def)             Requested size: 227.49901pt x 86.38176pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-lin
-ux-arm-install.png, id=358, 530.98375pt x 274.02374pt>
+ux-arm-install.png, id=400, 530.98375pt x 274.02374pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbia
 n-linux-arm-install.png Graphic file (type png)
@@ -2163,7 +2162,7 @@ osx-arm.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_r
 esult/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-
 raspbian-linux-arm-copy.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/InstallLauncher.png, id=365, 414.79968pt x 30
+apters/Chap1GettingStarted/figures/InstallLauncher.png, id=407, 414.79968pt x 30
 0.3722pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/InstallLauncher.png Graphic file (type p
@@ -2179,7 +2178,7 @@ used on input line 158.
 linux-arm-install.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingT
 utorial/_result/pdf/Chapters/Chap1GettingStarted/figures/InstallLauncher.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/Select61.png, id=372, 437.38406pt x 174.6525p
+apters/Chap1GettingStarted/figures/Select61.png, id=415, 437.38406pt x 174.6525p
 t>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/Select61.png Graphic file (type png)
@@ -2198,7 +2197,7 @@ n/10 /User-s/my_user_name/-Doc-u-ments/Pharo/Pharo6.1
  []
 
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/Execute61.png, id=374, 287.57437pt x 127.9781
+apters/Chap1GettingStarted/figures/Execute61.png, id=417, 287.57437pt x 127.9781
 2pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/Execute61.png Graphic file (type png)
@@ -2214,7 +2213,7 @@ n input line 180.
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/LoadingPharoThings.png, id=376, 537.50812pt x
+apters/Chap1GettingStarted/figures/LoadingPharoThings.png, id=419, 537.50812pt x
  110.66344pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/LoadingPharoThings.png Graphic file (typ
@@ -2245,7 +2244,7 @@ older \TU/FiraMono(0)/m/n/10 /User-s/y-our_user_name/-
  []
 
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/CopyARM.png, id=389, 361.35pt x 216.81pt>
+apters/Chap1GettingStarted/figures/CopyARM.png, id=432, 361.35pt x 216.81pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/CopyARM.png Graphic file (type png)
 <use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
@@ -2261,7 +2260,7 @@ r \TU/FiraMono(0)/m/n/10 /User-s/y-our_user_name/-Doc-u-ments/Pharo/im-
  []
 
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/OnRasp.png, id=391, 573.64313pt x 288.3272pt>
+apters/Chap1GettingStarted/figures/OnRasp.png, id=434, 573.64313pt x 288.3272pt>
 
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/OnRasp.png Graphic file (type png)
@@ -2288,7 +2287,7 @@ ndex.listing)
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/Commandline.png, id=402, 577.40718pt x 194.22
+apters/Chap1GettingStarted/figures/Commandline.png, id=444, 577.40718pt x 194.22
 563pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/Commandline.png Graphic file (type png)
@@ -2329,7 +2328,7 @@ Pi3 Model B, Pi3 Model
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap1GettingStarted/figures/PharoThingsInspector.png, id=417, 540.51938pt
+apters/Chap1GettingStarted/figures/PharoThingsInspector.png, id=459, 540.51938pt
  x 640.64343pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap1GettingStarted/figures/PharoThingsInspector.png Graphic file (t
@@ -2363,7 +2362,7 @@ hanges. If you click on phys-
 
 ]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-led-polarity-resistors.png, id=444, 926.4612
+apters/Chap2LED/figures/pharothings-led-polarity-resistors.png, id=486, 926.4612
 4pt x 393.47pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-led-polarity-resistors.png Graphic file
@@ -2382,7 +2381,7 @@ an reuse the board. This makes
 
 [12]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-breadboard.png, id=451, 552.0625pt x 315.177
+apters/Chap2LED/figures/pharothings-breadboard.png, id=493, 552.0625pt x 315.177
 5pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-breadboard.png Graphic file (type png)
@@ -2397,7 +2396,7 @@ f/Chapters/Chap2LED/figures/pharothings-led-polarity-resistors.png></Users/allex
 oliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap2L
 ED/figures/pharothings-breadboard.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png, id=460
+apters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png, id=502
 , 246.521pt x 343.684pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-raspberry-led-resistor-lesson-01.png Gr
@@ -2420,7 +2419,7 @@ te-Board) you can see a scheme
  []
 
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png, id=466
+apters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png, id=508
 , 554.07pt x 690.58pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap2LED/figures/pharothings-inspector-remote-board-raspberry.png Gr
@@ -2475,8 +2474,8 @@ ndex.listing) [17
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png, id=50
-0, 487.8225pt x 378.41376pt>
+apters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png, id=54
+2, 487.8225pt x 378.41376pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png G
 raphic file (type png)
@@ -2512,7 +2511,7 @@ FiraMono(0)/m/n/10 blinker\TU/GentiumBasic(0)/m/n/10 . We can use any name.
 
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browser.png
-, id=524, 865.2325pt x 302.12875pt>
+, id=566, 865.2325pt x 302.12875pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browse
 r.png Graphic file (type png)
@@ -2532,7 +2531,7 @@ al/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-s
 ystem-browser.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-package.png, id=
-534, 864.22874pt x 315.1775pt>
+576, 864.22874pt x 315.1775pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-package.png
  Graphic file (type png)
@@ -2549,8 +2548,8 @@ reating-package.png  used on input line 575.
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-class.png, id=53
-6, 865.2325pt x 600.2425pt>
+apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-class.png, id=57
+8, 865.2325pt x 600.2425pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-class.png G
 raphic file (type png)
@@ -2562,7 +2561,7 @@ reating-class.png  used on input line 596.
 (luatex.def)             Requested size: 325.0pt x 225.4659pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-protocol.png, id
-=538, 863.225pt x 313.17pt>
+=580, 863.225pt x 313.17pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-protocol.pn
 g Graphic file (type png)
@@ -2598,7 +2597,7 @@ rs/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-protocol.png>]
 ndex.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-board-inspector-id-number
-.png, id=554, 482.80376pt x 228.855pt>
+.png, id=596, 482.80376pt x 228.855pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-board-inspector-id-n
 umber.png Graphic file (type png)
@@ -2611,7 +2610,7 @@ oard-inspector-id-number.png  used on input line 632.
 (luatex.def)             Requested size: 227.49901pt x 107.83772pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-initializ
-e.png, id=556, 864.22874pt x 274.02374pt>
+e.png, id=598, 864.22874pt x 274.02374pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-init
 ialize.png Graphic file (type png)
@@ -2631,7 +2630,7 @@ al/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-board-in
 spector-id-number.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-operation
-s.png, id=567, 865.2325pt x 302.12875pt>
+s.png, id=609, 865.2325pt x 302.12875pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-oper
 ations.png Graphic file (type png)
@@ -2655,7 +2654,7 @@ al/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating
 -method-initialize.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-blinker
-.png, id=582, 722.7pt x 129.48375pt>
+.png, id=624, 722.7pt x 129.48375pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-bl
 inker.png Graphic file (type png)
@@ -2664,7 +2663,7 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-bli
 nker.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-r
-emote-playground-blinker.png  used on input line 694.
+emote-playground-blinker.png  used on input line 696.
 (luatex.def)             Requested size: 325.0pt x 58.2296pt.
 
 \openout5 = index.listing
@@ -2674,24 +2673,47 @@ ndex.listing) [25</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutori
 al/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating
 -method-operations.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThing
 Tutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-re
-mote-playground-blinker.png>] [26
+mote-playground-blinker.png>] [26]
+.................................................
+. fontspec info: "set-scale"
+. 
+. OpenSans scale = 0.8485398099545182.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. OpenSans scale = 0.8485397528283549.
+.................................................
+ [27
 
 ]
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing)
+\openout5 = index.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
+ndex.listing) [28]
 \tf@toc=\write8
 
 \openout8 = index.toc
 \tf@lof=\write9
 
 \openout9 = index.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 717.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 717.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 770.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 770.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/i
 ndex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 717.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 717.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 770.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 770.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 3A40CB16A045581B815A13386E305023;9008.
+(rerunfilecheck)             Checksum: 2DA5CF4433134D98093E0C5E70B1F6B1;9992.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2699,15 +2721,15 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39625 strings out of 494413
+ 39700 strings out of 494413
  100000,1144653 words of node,token memory allocated
- 1431 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 4 glyph, 19 attribute, 209 glue_spec, 19 a
-ttribute_list, 2 write, 4 pdf_literal, 2 pdf_action nodes
-   avail lists: 1:3,2:1511,3:329,4:46,5:581,6:71,7:2997,8:329,9:1000,10:11,11:19
-8
- 41892 multiletter control sequences out of 65536+600000
- 98 fonts using 14581575 bytes
+ 1449 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 5 glyph, 21 attribute, 209 glue_spec, 21 a
+ttribute_list, 3 write, 4 pdf_literal, 2 pdf_action nodes
+   avail lists: 1:3,2:1507,3:328,4:46,5:582,6:71,7:3044,8:329,9:1000,10:11,11:19
+6
+ 41902 multiletter control sequences out of 65536+600000
+ 98 fonts using 14582823 bytes
  67i,13n,122p,906b,963s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
@@ -2715,9 +2737,9 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on index.pdf (30 pages, 1405709 bytes).
+Output written on index.pdf (34 pages, 1417180 bytes).
 
-PDF statistics: 639 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 131072)
- 500 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 704 PDF objects out of 1000 (max. 8388607)
+ 214 named destinations out of 1000 (max. 131072)
+ 556 words of extra memory for PDF output out of 10000 (max. 100000000)
 

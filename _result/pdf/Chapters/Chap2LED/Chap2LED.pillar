@@ -12,7 +12,7 @@ In this lesson we will use a very simple setup.
 
 !!!! Components
 
-- 1 Raspberry Pi (any model) connected to your network (wired or wireless)
+- 1 Raspberry Pi connected to your network (wired or wireless)
 - 1 Breadboard
 - 1 LED
 - 1 Resistor (330ohms)

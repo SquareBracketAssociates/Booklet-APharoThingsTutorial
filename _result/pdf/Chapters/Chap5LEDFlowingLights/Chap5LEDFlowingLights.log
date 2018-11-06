@@ -1,10 +1,10 @@
 This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  6 NOV 2018 15:16
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap3BlinkingLED/Chap3BlinkingLED.tex
+Chapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.tex
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.tex
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.tex
 LaTeX2e <2018-04-01> patch level 2
 Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
 Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.234 seconds
+luaotfload | main : initialization completed in 0.194 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -1738,8 +1738,8 @@ File: lstsmalltalk.sty 2009/07/03 0.2 listings Smalltalk definitions file
 File: lsthttp.sty 2015/09/23 0.1 listings HTTP definitions file
 ))
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.aux)
-\openout1 = Chap3BlinkingLED.aux
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.aux)
+\openout1 = Chap5LEDFlowingLights.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -1879,14 +1879,14 @@ LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.out)
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.out)
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.out
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.out
 warning  (pdf backend): objcompresslevel > 0 requires minorversion > 4
 )
 \@outlinefile=\write7
 
-\openout7 = Chap3BlinkingLED.out
+\openout7 = Chap5LEDFlowingLights.out
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
 (Font)              scaled to size 21.11171pt on input line 34.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
@@ -1906,7 +1906,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 64.
-<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=45, 120.45pt x 42.1575pt>
+<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=53, 120.45pt x 42.1575pt>
 File: _support/latex/sbabook/CreativeCommons-BY-SA.pdf Graphic file (type pdf)
 <use _support/latex/sbabook/CreativeCommons-BY-SA.pdf>
 Package luatex.def Info: _support/latex/sbabook/CreativeCommons-BY-SA.pdf  used 
@@ -1924,7 +1924,7 @@ LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
 
 <./_support/latex/sbabook/CreativeCommons-BY-SA.pdf>]
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.toc
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.toc
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
 (Font)              scaled to size 8.48541pt on input line 2.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
@@ -1939,7 +1939,7 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
 
 ]
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.lof) [2
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.lof) [2
 
 ]
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
@@ -2097,78 +2097,64 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
 (Font)              scaled to size 9.98218pt on input line 99.
 
-\openout5 = Chap3BlinkingLED.listing
-
-(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.listing)
-\openout5 = Chap3BlinkingLED.listing
-
-(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.listing)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
 ]
-LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
-(Font)              scaled to size 8.61679pt on input line 118.
-
-\openout5 = Chap3BlinkingLED.listing
+\openout5 = Chap5LEDFlowingLights.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.listing)
-</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png, id=85
-, 487.8225pt x 378.41376pt>
-File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
-df/Chapters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png G
-raphic file (type png)
-<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
-f/Chapters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png>
-Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
-gTutorial/_result/pdf/Chapters/Chap3BlinkingLED/figures/pharothings-board-inspec
-tor-blink-led.png  used on input line 133.
-(luatex.def)             Requested size: 227.49901pt x 176.47447pt.
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+\openout5 = Chap5LEDFlowingLights.listing
 
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
+(Font)              scaled to size 8.61679pt on input line 132.
+
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png>]
+[2]
 \tf@toc=\write8
 
-\openout8 = Chap3BlinkingLED.toc
+\openout8 = Chap5LEDFlowingLights.toc
 \tf@lof=\write9
 
-\openout9 = Chap3BlinkingLED.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+\openout9 = Chap5LEDFlowingLights.lof
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap3BlinkingLED/Chap3BlinkingLED.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
-Package rerunfilecheck Info: File `Chap3BlinkingLED.out' has not changed.
-(rerunfilecheck)             Checksum: 248A6DC0DD4899C51E56E9B9078EE5D9;863.
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package rerunfilecheck Info: File `Chap5LEDFlowingLights.out' has not changed.
+(rerunfilecheck)             Checksum: DAFCCB7D1F3A6009BE026D8257313804;1142.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38814 strings out of 494413
- 100000,953878 words of node,token memory allocated
+ 38802 strings out of 494413
+ 100000,1144653 words of node,token memory allocated
  1385 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
 ttribute_list, 3 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:870,3:179,4:23,5:302,6:24,7:1618,8:169,9:547,10:9,11:109
- 41656 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:1324,3:245,4:25,5:442,6:29,7:2167,8:257,9:849,10:9,11:153
+ 41649 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
- 67i,12n,122p,943b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,12n,122p,953b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap3BlinkingLED.pdf (6 pages, 125920 bytes).
+Output written on Chap5LEDFlowingLights.pdf (6 pages, 79943 bytes).
 
-PDF statistics: 132 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 131072)
- 124 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 135 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 131072)
+ 140 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -213,10 +213,10 @@ Compile your code (cmd + S) and the method will be shown in the remote browser, 
 Now let's create a method to control the object led inside the class Blinker. Let's take the code that we used in PotRemoteBoard inspector to do the LED to blink and replace the numbers on code for two arguments. Create the protocol \textcode{operations} and inside this protocol, create the following method:
 
 \begin{displaycode}{plain}
-timesRepeat: asNumber waitForSeconds: asInteger 
-    [ asNumber timesRepeat: [  
+timesRepeat: anInteger waitForSeconds: aNumber
+    [ anInteger timesRepeat: [  
         led toggleDigitalValue. 
-        (Delay forSeconds: asInteger) wait  
+        (Delay forSeconds: aNumber) wait  
     ] ] forkNamed: 'BlinkerProcess'.
 \end{displaycode}
 
@@ -252,7 +252,9 @@ blinker := Blinker new.
 blinker timesRepeat: 10 waitForSeconds: 1.
 \end{displaycode}
 
-Run this code, as shown in Figure \ref{RemotePlayground} and... \textcode{cool}! Now your LED is blinking! And the better, you did this using Object-oriented programming! 
+Run this code, as shown in Figure \ref{RemotePlayground} and... \textcode{cool}! Now your LED is blinking! And the better, you did this using object-oriented programming! 
+
+This is very cool, you do not need to change your code every time you wanna change these parameters. Just change the messages you send to the object and it will behave as you want.
 
 
 \begin{figure}
@@ -272,7 +274,7 @@ In this tutorial, you learned how to define packages, classes, and methods. The 
 
 With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
 
-In the next lesson, let’s use what we learned in this lesson and write a simple code to flowing lights using 4 LEDs.
+In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 4 LEDs.
 
 
 % lulu requires an empty page at the end. That's why I'm using

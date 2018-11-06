@@ -1,5 +1,5 @@
 \changetocdepth {1}
-\contentsline {chapter}{Illustrations}{ii}{section*.1}
+\contentsline {chapter}{Illustrations}{iii}{section*.1}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {1}Installations }{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Installating OS on RASPBERRY (RASPBIAN)}{3}{section.1.1}
@@ -41,7 +41,7 @@
 \contentsline {chapter}{\chapternumberline {3}Lesson 2 – Blinking LED }{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}What we need?}{17}{section.3.1}
 \contentsline {subsection}{Connecting remotely}{17}{section*.20}
-\contentsline {section}{\numberline {3.2}Experimental playground code}{18}{section.3.2}
+\contentsline {section}{\numberline {3.2}Experimental code}{18}{section.3.2}
 \contentsline {section}{\numberline {3.3}In the next lesson}{18}{section.3.3}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {4}A brief introduction to Pharo object-oriented language}{19}{chapter.4}
@@ -56,3 +56,11 @@
 \contentsline {section}{\numberline {4.8}Using your new class}{24}{section.4.8}
 \contentsline {section}{\numberline {4.9}Save your work}{25}{section.4.9}
 \contentsline {section}{\numberline {4.10}Conclusion}{25}{section.4.10}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {5}Lesson 3 - LED Flowing Lights}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}What we need?}{27}{section.5.1}
+\contentsline {subsection}{Components}{27}{section*.22}
+\contentsline {section}{\numberline {5.2}Experimental theory}{27}{section.5.2}
+\contentsline {subsection}{Connecting remotely}{28}{section*.23}
+\contentsline {section}{\numberline {5.3}Experimental code}{28}{section.5.3}
+\contentsline {section}{\numberline {5.4}In the next lesson}{28}{section.5.4}

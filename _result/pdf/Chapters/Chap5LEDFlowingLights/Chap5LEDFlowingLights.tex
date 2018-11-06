@@ -92,10 +92,24 @@
 
 \mainmatter
 
-\chapter{Lesson 2 – Blinking LED }
-Now we can play with the LEDs, turn them on and off. Let's use this basic setup to write some code on the inspector playground to blink the LED. Next, we will learn how to remotely create a very simple application using classes, methods, and instances to control the LED.
+\chapter{Lesson 3 - LED Flowing Lights}
+Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights.
 \section{What we need?}
-We are using the same last lesson setup: 1 Raspberry Pi, 1 Breadboard, 1 LED, 1 Resistor 330ohms. If you didn't do the last lesson to understand how to do the connections, go back to Chapter 2 and do it.
+We are using the lesson 1 setup, but with 8 LEDs and 8 resistors.
+\subsection{Components}
+\begin{itemize}
+\item 1 Raspberry Pi connected to your network (wired or wireless)
+\item 1 Breadboard
+\item 8 LEDs
+\item 8 Resistors 330ohms
+\item Jumper wires
+\end{itemize}
+\section{Experimental theory}
+We saw in the lesson 1 how to connect the LED and resistors on breadboard. Now we will do the same, but putting more 7 LEDs and resistors in the breadboard. 
+
+.
+.
+.
 \subsection{Connecting remotely}
 Through your local Pharo image, let's connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
 
@@ -124,15 +138,7 @@ To blink the LED let's create a simple loop to change the value of the LED ever
 ] ] forkNamed: 'BlinkerProcess'.
 \end{displaycode}
 
-Run this code, as shown in Figure \ref{RemoteInspector} and... \textcode{cool}! Now your LED is blinking!
-
-
-\begin{figure}
-
-\begin{center}
-\includegraphics[width=0.7\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap3BlinkingLED/figures/pharothings-board-inspector-blink-led.png}\caption{Remote playground.\label{RemoteInspector}}\end{center}
-\end{figure}
-
+Run this code, as shown in Figure *and... \textcode{cool}! Now your LED is blinking!
 
 Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
 \section{In the next lesson}
