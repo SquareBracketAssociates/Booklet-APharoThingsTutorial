@@ -707,11 +707,11 @@ In this tutorial, you learned how to define packages, classes, and methods. The 
 
 With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
 
-In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 4 LEDs.
+In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 8 LEDs.
 \chapter{Lesson 3 - LED Flowing Lights}
 Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights.
 \section{What we need?}
-We are using the lesson 1 setup, but with 8 LEDs and 8 resistors.
+We are using the lesson 1 setup, but let's use 8 LEDs and 8 resistors.
 \subsection{Components}
 \begin{itemize}
 \item 1 Raspberry Pi connected to your network (wired or wireless)
@@ -720,12 +720,25 @@ We are using the lesson 1 setup, but with 8 LEDs and 8 resistors.
 \item 8 Resistors 330ohms
 \item Jumper wires
 \end{itemize}
-\section{Experimental theory}
-We saw in the lesson 1 how to connect the LED and resistors on breadboard. Now we will do the same, but putting more 7 LEDs and resistors in the breadboard. 
+\section{Experimental procedure}
+We saw in the lesson 1 how to connect the LED and resistors on the breadboard. Now let's do the same, but putting more 7 LEDs and resistors on the breadboard.
 
-.
-.
-.
+\begin{itemize}
+\item Connect the Ground PIN from Raspberry in the breadboard blue rail (-). 
+\item Then connect the 8 resistors from the blue rail (-) to a column on the breadboard, as shown below;
+\item Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
+\item And insert the jumper wires connecting the rigth column of each LED to GPIO from 0 to 7, as shown in the Picture \ref{Physical8Leds}.
+\end{itemize}
+
+The Figure \ref{Physical8Leds} shows how the electric connection is made:
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors-lesson-01.png}\caption{Physical connection 8 LEDs.\label{Physical8Leds}}\end{center}
+\end{figure}
+
 \subsection{Connecting remotely}
 Through your local Pharo image, let's connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
 
@@ -738,27 +751,17 @@ remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect.
 \end{displaycode}
 \section{Experimental code}
-In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the 8 LEDs and set the GPIOs to be in digital output mode:
 
 \begin{displaycode}{plain}
-led := gpio7.
-led beDigitalOutput.
+code...
 \end{displaycode}
 
 To blink the LED let's create a simple loop to change the value of the LED every 1 second by 10 times. To change the value of the object (led value), let's call the method \textcode{toggleDigitalValue}, as we saw previously:
 
 \begin{displaycode}{plain}
-[ 10 timesRepeat: [
-	led toggleDigitalValue.
- 	(Delay forSeconds: 1) wait
-] ] forkNamed: 'BlinkerProcess'.
+code...
 \end{displaycode}
-
-Run this code, as shown in Figure *and... \textcode{cool}! Now your LED is blinking!
-
-Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
-\section{In the next lesson}
-In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! Pharo is a new generation reflective language and programming environment. And in the next lesson, let’s start using object-oriented programming, OOP. Let's create a simple application, writing classes and methods, all remotely.
 
 
 % lulu requires an empty page at the end. That's why I'm using

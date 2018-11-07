@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  6 NOV 2018 15:16
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  7 NOV 2018 14:01
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.tex
@@ -9,12 +9,9 @@ LaTeX2e <2018-04-01> patch level 2
 Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
 Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
-llection.(using write cache: /Users/allexoliveira/Library/texlive/2018/texmf-var
-/luatex-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luate
-x-cache/generic /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache
-/generic)
-luaotfload | conf : Root cache directory is /Users/allexoliveira/Library/texlive
-/2018/texmf-var/luatex-cache/generic/names.
+llection.(using cache: /usr/local/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
+atex-cache/generic/names.
 luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
 -resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
 oader-2017-02-11.lua”.
@@ -26,8 +23,8 @@ Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is /Users/allexoliveira/Library/texlive
-/2018/texmf-var/luatex-cache/generic/names.
+luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
+atex-cache/generic/names.
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
@@ -38,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.194 seconds
+luaotfload | main : initialization completed in 0.178 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -76,10 +73,9 @@ Package ifluatex Info: LuaTeX detected.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/memoir/mem10.clo
 File: mem10.clo 2008/01/30 v0.3 memoir class 10pt size option
-luaotfload | db : Font names database loaded from /Users/allexoliveira/Library/t
-exlive/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: 
-/Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/o
-tl/lmroman10-regular.luc))
+luaotfload | db : Font names database loaded from /usr/local/texlive/2018/texmf-
+var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /usr/local/texlive
+/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc))
 \binding=\skip48
 \spinemargin=\skip49
 \foremargin=\skip50
@@ -284,8 +280,8 @@ LaTeX Info: Redefining \emph on input line 7586.
 \m@m@k=\count112
 \m@m@h=\dimen142
 \m@mipn@skip=\skip165
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/lmroman8-regular.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man8-regular.luc)
 \sidefootins=\insert195
 \sidefootadjust=\skip166
 \sidefootheight=\skip167
@@ -332,8 +328,8 @@ LaTeX Info: Redefining \! on input line 12102.
 \c@sheetsequence=\count131
 \c@lastsheet=\count132
 \c@lastpage=\count133
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/lmroman9-regular.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man9-regular.luc)
 \c@figure=\count134
 \c@lofdepth=\count135
 \cftbeforefigureskip=\skip179
@@ -783,9 +779,9 @@ LaTeX Info: Redefining \scshape on input line 3635.
 LaTeX Info: Redefining \upshape on input line 3640.
 LaTeX Info: Redefining \em on input line 3670.
 LaTeX Info: Redefining \emph on input line 3695.
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/lmroman10-bold.luc)(load luc: /Users/allexoliveira/Library/texlive
-/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmro
+man10-bold.luc)(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic
+/fonts/otl/lmroman10-italic.luc)
 LaTeX Info: Redefining \- on input line 3749.
 .................................................
 . LaTeX info: "xparse/redefine-command"
@@ -798,22 +794,21 @@ LaTeX Info: Redefining \- on input line 3749.
 . Defining command \liningnums with sig. 'm' on line 3848.
 .................................................
 ))
-luaotfload | cache : Lookup cache loaded from /Users/allexoliveira/Library/texli
-ve/2018/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load l
-uc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/genbkbasr.luc)
+luaotfload | cache : Lookup cache loaded from /usr/local/texlive/2018/texmf-var/
+luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /usr/local/tex
+live/2018/texmf-var/luatex-cache/generic/fonts/otl/genbkbasr.luc)
 \g__fontspec_family_GentiumBasic_int=\count304
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/genbkbasi.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/genb
+kbasi.luc)
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "GentiumBookBasicItalic/B" (it probably doesn't
 . exist).
 .................................................
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/genbkbasbi.luc)(load luc: /Users/allexoliveira/Library/texlive/201
-8/texmf-var/luatex-cache/generic/fonts/otl/genbkbasb.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/genb
+kbasbi.luc)(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fon
+ts/otl/genbkbasb.luc)
 luaotfload | aux : font no 28 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 28
@@ -849,24 +844,24 @@ luaotfload | aux : no font with id 30
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 LaTeX Info: Redefining \rmfamily on input line 51.
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/opensans-regular.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/open
+sans-regular.luc)
 .................................................
 . fontspec info: "set-scale"
 . 
 . OpenSans scale = 0.8485401459854015.
 .................................................
 \g__fontspec_family_OpenSans_int=\count305
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/opensans-bold.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/open
+sans-bold.luc)
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "OpenSansBold/I" (it probably doesn't exist).
 .................................................
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/opensans-bolditalic.luc)(load luc: /Users/allexoliveira/Library/te
-xlive/2018/texmf-var/luatex-cache/generic/fonts/otl/opensans-italic.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/open
+sans-bolditalic.luc)(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/ge
+neric/fonts/otl/opensans-italic.luc)
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -926,8 +921,8 @@ g;+onum;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 LaTeX Info: Redefining \sffamily on input line 57.
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/firamono-regular.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/fira
+mono-regular.luc)
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -945,8 +940,8 @@ ric/fonts/otl/firamono-regular.luc)
 . 
 . Could not resolve font "FiraMono/BI" (it probably doesn't exist).
 .................................................
-(load luc: /Users/allexoliveira/Library/texlive/2018/texmf-var/luatex-cache/gene
-ric/fonts/otl/firamono-bold.luc)
+(load luc: /usr/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/fira
+mono-bold.luc)
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1906,7 +1901,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 64.
-<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=53, 120.45pt x 42.1575pt>
+<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=49, 120.45pt x 42.1575pt>
 File: _support/latex/sbabook/CreativeCommons-BY-SA.pdf Graphic file (type pdf)
 <use _support/latex/sbabook/CreativeCommons-BY-SA.pdf>
 Package luatex.def Info: _support/latex/sbabook/CreativeCommons-BY-SA.pdf  used 
@@ -2102,59 +2097,77 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 
 ]
-\openout5 = Chap5LEDFlowingLights.listing
-
-(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
-\openout5 = Chap5LEDFlowingLights.listing
-
-(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
-LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
-(Font)              scaled to size 8.61679pt on input line 132.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors-less
+on-01.png, id=85, 248.127pt x 372.592pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors
+-lesson-01.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors-
+lesson-01.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspber
+ry-8leds-8resistors-lesson-01.png  used on input line 123.
+(luatex.def)             Requested size: 195.00198pt x 292.8151pt.
 
 \openout5 = Chap5LEDFlowingLights.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2]
+[2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors-le
+sson-01.png>]
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
+(Font)              scaled to size 8.61679pt on input line 144.
+
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing) [3] [4
+
+]
 \tf@toc=\write8
 
 \openout8 = Chap5LEDFlowingLights.toc
 \tf@lof=\write9
 
 \openout9 = Chap5LEDFlowingLights.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `Chap5LEDFlowingLights.out' has not changed.
-(rerunfilecheck)             Checksum: DAFCCB7D1F3A6009BE026D8257313804;1142.
+(rerunfilecheck)             Checksum: AC29E1DEC73CFA20195C571C14C8F8F8;1004.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38802 strings out of 494413
+ 38804 strings out of 494413
  100000,1144653 words of node,token memory allocated
- 1385 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
-ttribute_list, 3 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:1324,3:245,4:25,5:442,6:29,7:2167,8:257,9:849,10:9,11:153
- 41649 multiletter control sequences out of 65536+600000
+ 1378 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 14 attribute, 209 glue_spec, 14 a
+ttribute_list, 2 write, 4 pdf_literal nodes
+   avail lists: 1:3,2:1016,3:209,4:22,5:265,6:21,7:1567,8:151,9:514,10:9,11:87
+ 41647 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
- 67i,12n,122p,953b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,12n,122p,953b,968s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap5LEDFlowingLights.pdf (6 pages, 79943 bytes).
+Output written on Chap5LEDFlowingLights.pdf (8 pages, 263250 bytes).
 
-PDF statistics: 135 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 131072)
- 140 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 141 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 131072)
+ 132 words of extra memory for PDF output out of 10000 (max. 100000000)
 

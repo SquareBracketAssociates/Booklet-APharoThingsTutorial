@@ -1,4 +1,1 @@
-[ 10 timesRepeat: [
-	led toggleDigitalValue.
- 	(Delay forSeconds: 1) wait
-] ] forkNamed: 'BlinkerProcess'.
+code...

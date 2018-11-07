@@ -60,7 +60,6 @@
 \contentsline {chapter}{\chapternumberline {5}Lesson 3 - LED Flowing Lights}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}What we need?}{27}{section.5.1}
 \contentsline {subsection}{Components}{27}{section*.22}
-\contentsline {section}{\numberline {5.2}Experimental theory}{27}{section.5.2}
+\contentsline {section}{\numberline {5.2}Experimental procedure}{27}{section.5.2}
 \contentsline {subsection}{Connecting remotely}{28}{section*.23}
-\contentsline {section}{\numberline {5.3}Experimental code}{28}{section.5.3}
-\contentsline {section}{\numberline {5.4}In the next lesson}{28}{section.5.4}
+\contentsline {section}{\numberline {5.3}Experimental code}{29}{section.5.3}
