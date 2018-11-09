@@ -25,7 +25,7 @@
 \contentsline {subsection}{GPIOs}{10}{section*.14}
 \contentsline {section}{\numberline {1.9}In the next chapter}{10}{section.1.9}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {2}Lesson 1 – Turning on/off LED }{11}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}Lesson 1 – Turning LED on/off}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}What we need?}{11}{section.2.1}
 \contentsline {subsection}{Components}{11}{section*.15}
 \contentsline {section}{\numberline {2.2}Experimental theory}{12}{section.2.2}
@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {2.6}In the next lesson}{16}{section.2.6}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {3}Lesson 2 – Blinking LED }{17}{chapter.3}
-\contentsline {section}{\numberline {3.1}What we need?}{17}{section.3.1}
+\contentsline {section}{\numberline {3.1}What do we need?}{17}{section.3.1}
 \contentsline {subsection}{Connecting remotely}{17}{section*.20}
 \contentsline {section}{\numberline {3.2}Experimental code}{18}{section.3.2}
 \contentsline {section}{\numberline {3.3}In the next lesson}{18}{section.3.3}
@@ -48,10 +48,10 @@
 \contentsline {section}{\numberline {4.1}Developing a simple LED blinker}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Our use case}{19}{section.4.2}
 \contentsline {section}{\numberline {4.3}Create your own class remotely}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Create a package}{21}{section.4.4}
+\contentsline {section}{\numberline {4.4}Create a package}{20}{section.4.4}
 \contentsline {section}{\numberline {4.5}Create a class}{21}{section.4.5}
 \contentsline {section}{\numberline {4.6}Create a protocol}{21}{section.4.6}
-\contentsline {section}{\numberline {4.7}Creating an initialize method}{23}{section.4.7}
+\contentsline {section}{\numberline {4.7}Creating an initialize method}{21}{section.4.7}
 \contentsline {subsection}{Creating a method to do actions}{23}{section*.21}
 \contentsline {section}{\numberline {4.8}Using your new class}{24}{section.4.8}
 \contentsline {section}{\numberline {4.9}Save your work}{25}{section.4.9}

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  7 NOV 2018 14:01
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  9 NOV 2018 15:57
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.258 seconds
+luaotfload | main : initialization completed in 0.188 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2088,22 +2088,23 @@ g;+pnum;+lnum;"
 LaTeX Font Info:    Font shape `TU/OpenSans(2)/bx/n' will be
 (Font)              scaled to size 20.69638pt on input line 95.
 LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
-(Font)              scaled to size 8.61679pt on input line 99.
+(Font)              scaled to size 8.61679pt on input line 98.
 
 \openout5 = Chap4IntroductiontoPharoOOP.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.listing)
+Overfull \hbox (1.26865pt too wide) in paragraph at lines 111--112
+[]\TU/GentiumBasic(0)/m/n/10 In the first line, we de-clare the vari-able \TU/
+FiraMono(0)/m/n/10 blinker\TU/GentiumBasic(0)/m/n/10 . We can use any name. 
+ []
+
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
 ]
-Overfull \hbox (1.26865pt too wide) in paragraph at lines 112--113
-[]\TU/GentiumBasic(0)/m/n/10 In the first line, we de-clare the vari-able \TU/
-FiraMono(0)/m/n/10 blinker\TU/GentiumBasic(0)/m/n/10 . We can use any name. 
- []
-
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browser.png
 , id=134, 865.2325pt x 302.12875pt>
@@ -2115,20 +2116,16 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browser
 .png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-r
-emote-system-browser.png  used on input line 127.
+emote-system-browser.png  used on input line 126.
 (luatex.def)             Requested size: 325.0pt x 113.48701pt.
 
 \openout5 = Chap4IntroductiontoPharoOOP.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.listing)
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browser.p
-ng>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-package.png, id=
-143, 864.22874pt x 315.1775pt>
+136, 864.22874pt x 315.1775pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-package.png
  Graphic file (type png)
@@ -2137,9 +2134,13 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-package.png>
 
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-c
-reating-package.png  used on input line 142.
+reating-package.png  used on input line 141.
 (luatex.def)             Requested size: 325.0pt x 118.5231pt.
 
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-system-browser.p
+ng>]
 \openout5 = Chap4IntroductiontoPharoOOP.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
@@ -2154,7 +2155,7 @@ raphic file (type png)
 f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-class.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-c
-reating-class.png  used on input line 163.
+reating-class.png  used on input line 162.
 (luatex.def)             Requested size: 325.0pt x 225.4659pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-protocol.png, id
@@ -2167,7 +2168,7 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-protocol.png
 >
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-c
-reating-protocol.png  used on input line 173.
+reating-protocol.png  used on input line 172.
 (luatex.def)             Requested size: 325.0pt x 117.90675pt.
 
 [3
@@ -2204,7 +2205,7 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-board-inspector-id-nu
 mber.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-b
-oard-inspector-id-number.png  used on input line 199.
+oard-inspector-id-number.png  used on input line 198.
 (luatex.def)             Requested size: 227.49901pt x 107.83772pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-initializ
@@ -2217,12 +2218,12 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-initi
 alize.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-c
-reating-method-initialize.png  used on input line 209.
+reating-method-initialize.png  used on input line 208.
 (luatex.def)             Requested size: 325.0pt x 103.04715pt.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 10.1825pt on input line 212.
+(Font)              scaled to size 10.1825pt on input line 211.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
-(Font)              scaled to size 9.98218pt on input line 212.
+(Font)              scaled to size 9.98218pt on input line 211.
 
 \openout5 = Chap4IntroductiontoPharoOOP.listing
 
@@ -2233,7 +2234,7 @@ Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-board-inspector-id-numb
 er.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-operation
-s.png, id=176, 865.2325pt x 302.12875pt>
+s.png, id=182, 865.2325pt x 302.12875pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-oper
 ations.png Graphic file (type png)
@@ -2242,23 +2243,25 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-opera
 tions.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-c
-reating-method-operations.png  used on input line 237.
+reating-method-operations.png  used on input line 236.
 (luatex.def)             Requested size: 325.0pt x 113.48701pt.
 
 \openout5 = Chap4IntroductiontoPharoOOP.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.listing)
+[6</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-initial
+ize.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_resul
+t/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-o
+perations.png>]
 \openout5 = Chap4IntroductiontoPharoOOP.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.listing)
-[6</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-initial
-ize.png>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-blinker
-.png, id=191, 722.7pt x 129.48375pt>
+.png, id=189, 722.7pt x 129.48375pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-bl
 inker.png Graphic file (type png)
@@ -2267,7 +2270,7 @@ f/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-bli
 nker.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-r
-emote-playground-blinker.png  used on input line 263.
+emote-playground-blinker.png  used on input line 262.
 (luatex.def)             Requested size: 325.0pt x 58.2296pt.
 
 \openout5 = Chap4IntroductiontoPharoOOP.listing
@@ -2275,23 +2278,23 @@ emote-playground-blinker.png  used on input line 263.
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.listing)
 [7</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-creating-method-operati
-ons.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_resul
-t/pdf/Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground
--blinker.png>] [8]
+Chapters/Chap4IntroductiontoPharoOOP/figures/pharothings-remote-playground-blink
+er.png>] [8
+
+]
 \tf@toc=\write8
 
 \openout8 = Chap4IntroductiontoPharoOOP.toc
 \tf@lof=\write9
 
 \openout9 = Chap4IntroductiontoPharoOOP.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `Chap4IntroductiontoPharoOOP.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 4E9BB80DAF77C8E7FE868721BECC9AB3;2247.
@@ -2300,21 +2303,21 @@ ged.
 Here is how much of LuaTeX's memory you used:
  39016 strings out of 494413
  100000,1144653 words of node,token memory allocated
- 1385 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
-ttribute_list, 3 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:1320,3:213,4:36,5:581,6:31,7:2624,8:329,9:1000,10:11,11:19
-6
+ 1378 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 14 attribute, 209 glue_spec, 14 a
+ttribute_list, 2 write, 4 pdf_literal nodes
+   avail lists: 1:3,2:1337,3:238,4:32,5:589,6:31,7:2410,8:328,9:1015,10:11,11:17
+8
  41718 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
- 67i,13n,122p,965b,963s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,12n,122p,965b,961s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap4IntroductiontoPharoOOP.pdf (12 pages, 435195 bytes).
+Output written on Chap4IntroductiontoPharoOOP.pdf (12 pages, 434639 bytes).
 
 PDF statistics: 245 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 131072)

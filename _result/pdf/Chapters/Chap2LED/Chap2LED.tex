@@ -92,12 +92,12 @@
 
 \mainmatter
 
-\chapter{Lesson 1 – Turning on/off LED }
-One of the classic analogies in electronics to “Hello World” is turn on a led or lamp. In this first lesson, we will learn how to connect correctly an LED in your Raspberry Pi and how to use PharoThings to control this led by turning it on and off.
+\chapter{Lesson 1 – Turning LED on/off}
+One of the classic analogies in electronics to “Hello World” is turn on a led or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this led by turning it on and off.
 
 Coding in Pharo is very simple, but it is very powerful and you can control all the GPIOs of your Raspberry Pi remotely.
 
-If you didn’t see how to install the PharoThings on your Raspberry Pi and how to control it remotely, you can find the instructions on Chapter 1.
+If you did not yet see how to install the PharoThings on your Raspberry Pi and how to control it remotely, you can find the instructions in Chapter 1.
 \section{What we need?}
 In this lesson we will use a very simple setup.
 \subsection{Components}
@@ -111,7 +111,7 @@ In this lesson we will use a very simple setup.
 \section{Experimental theory}
 Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
 \subsection{The LED}
-To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be high, otherwise, the led will burn, or in some cases, damage the Raspberry.
+To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be too high, otherwise, the led will burn, or in some cases, damage the Raspberry.
 
 Typically, the forward voltage of an LED is between 1.8 and 3.3 volts. It varies by the color of the LED. A red LED typically drops 1.8 volts, but voltage drop normally rises as the light frequency increases, so a blue LED may drop from 3 to 3.3 volts{[}1{]}.
 
@@ -163,7 +163,7 @@ Now we will build the circuit. This circuit consists of an LED that lights up wh
 
 \begin{itemize}
 \item Connect the Ground PIN from Raspberry in the breadboard blue rail (-). Raspeberry Pi models with 40 pins has 8 GPIO ground pins. You can connect with anyone. In this experiment we will use the PIN6 (Ground);
-\item Then connect the resistor from the same row on the breadboard to a column on the breadboard, as shown below;
+\item Then connect the resistor from the blue rail on the breadboard (-) to a column on the breadboard, as shown in the Picture \ref{physicalLed};
 \item Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
 \item And insert a jumper wire connecting the rigth column and the PIN7 (GPIO7).
 \end{itemize}
@@ -178,6 +178,8 @@ The Figure \ref{physicalLed} shows how the electric connection is made:
 \end{figure}
 
 \section{Experimental code}
+
+
 Now, we can write some code in Pharo to control the GPIOs using PharoThings and turn the LED on. We have 2 options to do this:
 
 \begin{itemize}
@@ -187,7 +189,7 @@ Now, we can write some code in Pharo to control the GPIOs using PharoThings and 
 
 In this experiment, we will use the second option: connect and do all the work remotely. 
 
-If you didn’t see how to install the PharoThings on your Raspberry Pi and how to control it remotely, take a look in the Chapter 1: Instalattions.
+If you didn’t see how to install the PharoThings on your Raspberry Pi and how to control it remotely, take a look in the Chapter 1: Installations.
 \subsection{Connecting remotely}
 Through your local Pharo image, let's connect in the Pharo image running on Raspberry, enable the auto-refresh feature of the inspector and open the inspector. Run this code in your local playground:
 
@@ -198,7 +200,7 @@ remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
 remoteBoard inspect.
 \end{displaycode}
 
-In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state{[}4{]}.
+In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of pins similar to the Raspberry Pi docs. But here it is a live tool which represents the current pins state.
 
 
 \begin{figure}
@@ -210,20 +212,20 @@ In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of p
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value.
 
-For control the led we first introduced named variable \#led which we assigned to GPIO7 pin instance:
+To control the led we first introduce the named variable \#led which we assigned to GPIO7 pin instance:
 
 \begin{displaycode}{plain}
 led := gpio7.
 \end{displaycode}
 
-Then we configured the pin to be in digital output mode and set the value:
+Then we configure the pin to be in digital output mode and set the value:
 
 \begin{displaycode}{plain}
 led beDigitalOutput.
 led value: 1.
 \end{displaycode}
 
-It turned the led on.
+It turnes the led on.
 
 You can notice that gpio variables are not just numbers/ids. PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle a value:
 
