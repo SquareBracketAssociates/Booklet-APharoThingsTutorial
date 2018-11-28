@@ -58,8 +58,13 @@
 \contentsline {section}{\numberline {4.10}Conclusion}{25}{section.4.10}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {5}Lesson 3 - LED Flowing Lights}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}What we need?}{27}{section.5.1}
+\contentsline {section}{\numberline {5.1}What do we need?}{27}{section.5.1}
 \contentsline {subsection}{Components}{27}{section*.22}
 \contentsline {section}{\numberline {5.2}Experimental procedure}{27}{section.5.2}
-\contentsline {subsection}{Connecting remotely}{28}{section*.23}
+\contentsline {subsection}{Connecting remotely}{29}{section*.23}
 \contentsline {section}{\numberline {5.3}Experimental code}{29}{section.5.3}
+\contentsline {section}{\numberline {5.4}Improving the code}{29}{section.5.4}
+\contentsline {section}{\numberline {5.5}Reversing the flow}{30}{section.5.5}
+\contentsline {section}{\numberline {5.6}Going and backing the flow}{31}{section.5.6}
+\contentsline {section}{\numberline {5.7}Terminating the process}{31}{section.5.7}
+\contentsline {section}{\numberline {5.8}In the next lesson}{31}{section.5.8}

@@ -2,7 +2,7 @@
 
 Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights.
 
-!!! What we need?
+!!! What do we need?
 
 We are using the lesson 1 setup, but let's use 8 LEDs and 8 resistors.
 
@@ -16,16 +16,17 @@ We are using the lesson 1 setup, but let's use 8 LEDs and 8 resistors.
 
 !!! Experimental procedure
 
-We saw in the lesson 1 how to connect the LED and resistors on the breadboard. Now let's do the same, but putting more 7 LEDs and resistors on the breadboard.
+We saw in lesson 1 how to connect the LED and resistors on the breadboard. Now let's do the same, but putting more 7 LEDs and resistors on the breadboard.
 
 - Connect the Ground PIN from Raspberry in the breadboard blue rail (-). 
 - Then connect the 8 resistors from the blue rail (-) to a column on the breadboard, as shown below;
 - Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
-- And insert the jumper wires connecting the rigth column of each LED to GPIO from 0 to 7, as shown in the Picture *@Physical8Leds*.
+- And insert the jumper wires connecting the right column of each LED to GPIO from 0 to 7, as shown in the Picture *@Schema8Leds*.
 
 The Figure *@Physical8Leds* shows how the electric connection is made:
 
-+Physical connection 8 LEDs.>figures/pharothings-raspberry-8leds-8resistors-lesson-01.png|width=60|label=Physical8Leds+
++Schema connection 8 LEDs.>figures/pharothings-raspberry-8leds-8resistors-board.jpeg|width=60|label=Schema8Leds+
++Physical connection 8 LEDs.>figures/pharothings-raspberry-raspberry-leds-breadboard-01.jpeg|width=60|label=Physical8Leds+
 
 !!!!Connecting remotely
 Through your local Pharo image, let's connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
@@ -40,19 +41,75 @@ remoteBoard inspect.
 ]]]
 
 !!! Experimental code
-In your inspect window (Inspector on a PotRemoteBoard), let's initialize the 8 LEDs and set the GPIOs to be in digital output mode:
-
+In your inspect window (Inspector on a PotRemoteBoard), let’s create an array and initialize the 8 LEDs, putting each one in a position of the array.  This way we can send messages more easily to all objects. Look at the third line, we set the GPIOs to ==beDigitalOutput== only using the method ==do:== to move through the entire array:
 [[[
-code...
+gpioArray := { gpio0. gpio1. gpio2. gpio3. gpio4. gpio5. gpio6. gpio7 }.
+gpioArray do: [ :item | item beDigitalOutput ].
 ]]]
 
-To blink the LED let's create a simple loop to change the value of the LED every 1 second by 10 times. To change the value of the object (led value), let's call the method ==toggleDigitalValue==, as we saw previously:
+To change the value of the object (led value), let’s call the method ==toggleDigitalValue==, as we saw previously. Let’s put a Delay after changing the led value, to wait a bit time before to change the next LED value. To do this fast and simple, let’s use again the method ==do:== to send the parameters to all objects on the array. Let’s also put this inside a process using ==forkNamed==:
 
 [[[
-code...
+[
+    gpioArray do: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.3) wait ].
+] forkNamed: 'FlowingProcess'.
+]]]
+Execute this code and… cool! Now your LEDs are on by flowing an ordering!
+
+Change the value of the method ==forSeconds==: to wait less time between toggling it. This will cause the line LEDs to turn on faster. The Figure *@Inspector8LEDs* and *@8LEDs* shows the code and the LEDs turn On.
+
++Code on Inspector>figures/pharothings-raspberry-8leds-code-lesson-01.png|width=80|label=Inspector8LEDs+
++LEDs turn On.>figures/pharothings-raspberry-raspberry-leds-breadboard-02.jpeg|width=60|label=8LEDs+
+
+!!!Improving the code
+
+Every time you run this code, the LEDs toggles the state, from Off to On or vice versa. Let’s reduce the delay time and add the ==timesRepeat:== method, as we did in the last lesson, to repeat the alternation as many times as we want:
+[[[
+[ 2 timesRepeat: [
+    gpioArray do: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.1) wait ].
+] ] forkNamed: 'FlowingProcess'.
+]]]
+Execute this code and… cool! Now your LEDs are flowing On and Off!
+
+!!!Reversing the flow
+
+We can have more fun with this experiment by changing the order of where to start changing the value of LEDs. To do this is very easy, just call the method ==reverseDo:== and it will solve it all for you:
+[[[
+[ 2 timesRepeat: [
+    gpioArray reverseDo: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.1) wait ].
+] ] forkNamed: 'FlowingProcess'.
+]]]
+Execute this code and… cool! Now your LEDs are flowing on reverse order!
+
+!!!Going and backing the flow
+
+To finish this experiment, let’s combine the flowing On and Off with the Reverse!
+[[[
+[ 2 timesRepeat: [
+    gpioArray do: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.1) wait ].
+    gpioArray reverseDo: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.1) wait ].
+] ] forkNamed: 'FlowingProcess'.
+]]]
+Execute this code and… cool! Now your LEDs are flowing On and Off and on normal and reverse order!
+
+
+!!!Terminating the process
+
+As we saw in the Blinking LED lesson, you can finish this process remotely, case you don’t want to wait it finish. To do this, call the Remote Process Browser:
+
+[[[
+remotePharo openProcessBrowser.
 ]]]
 
+Search the FlowingProcess and terminate it, like in *@Process8LEDs*, using one of these options:
 
+- selecting the process and using the shortcut “Cmd + T”;
+- selecting the process and using the button Terminate;
+- or right-click and select Terminate.
 
++Process Browser terminate.>figures/pharothings-raspberry-remoteprocess.png|width=80|label=Process8LEDs+
 
+!!!In the next lesson
+In this tutorial, you learned how to use an Array and control 8 objects at the same time by typing some code in the remote inspector. But with Pharo we can do more!
 
+And in the next lesson, let’s use object-oriented programming, OOP to create a simple program, using these codes, to control the flow like as we want.
