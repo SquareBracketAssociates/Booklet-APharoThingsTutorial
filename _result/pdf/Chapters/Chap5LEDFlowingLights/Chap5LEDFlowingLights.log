@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  28 NOV 2018 19:48
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  29 NOV 2018 19:02
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.212 seconds
+luaotfload | main : initialization completed in 0.196 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2099,7 +2099,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 ]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors-boar
-d.jpeg, id=118, 684.5575pt x 702.625pt>
+d.jpeg, id=120, 684.5575pt x 702.625pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-8resistors
 -board.jpeg Graphic file (type jpg)
@@ -2112,7 +2112,7 @@ ry-8leds-8resistors-board.jpeg  used on input line 123.
 (luatex.def)             Requested size: 195.00198pt x 200.14299pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-raspberry-leds-breadb
-oard-01.jpeg, id=119, 1606.0pt x 1033.8625pt>
+oard-01.jpeg, id=121, 1606.0pt x 1033.8625pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-raspberry-leds-b
 readboard-01.jpeg Graphic file (type jpg)
@@ -2151,9 +2151,13 @@ t’s call the method \TU/FiraMono(0)/m/n/10 tog-gleDig-
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesson-01.
-png, id=126, 714.67pt x 479.7925pt>
+png, id=128, 714.67pt x 479.7925pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesso
 n-01.png Graphic file (type png)
@@ -2162,11 +2166,11 @@ f/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesson
 -01.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspber
-ry-8leds-code-lesson-01.png  used on input line 168.
-(luatex.def)             Requested size: 260.00099pt x 174.5481pt.
+ry-8leds-code-lesson-01.png  used on input line 174.
+(luatex.def)             Requested size: 276.25198pt x 185.46376pt.
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-raspberry-leds-breadb
-oard-02.jpeg, id=127, 1606.0pt x 1049.9225pt>
+oard-02.jpeg, id=129, 1606.0pt x 1049.9225pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-raspberry-leds-b
 readboard-02.jpeg Graphic file (type jpg)
@@ -2175,39 +2179,64 @@ f/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-raspberry-leds-br
 eadboard-02.jpeg>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspber
-ry-raspberry-leds-breadboard-02.jpeg  used on input line 175.
+ry-raspberry-leds-breadboard-02.jpeg  used on input line 181.
 (luatex.def)             Requested size: 195.00198pt x 127.47516pt.
-
-\openout5 = Chap5LEDFlowingLights.listing
-
-(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing) [3]
-Overfull \hbox (7.08008pt too wide) in paragraph at lines 189--190
-\TU/GentiumBasic(0)/m/n/10 to start chang-ing the value of LEDs. To do this is 
-very easy, just call the method 
- []
-
-
-\openout5 = Chap5LEDFlowingLights.listing
-
-(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing) [4</Users/allexoliv
-eira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap5LEDFl
-owingLights/figures/pharothings-raspberry-8leds-code-lesson-01.png></Users/allex
-oliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap5L
-EDFlowingLights/figures/pharothings-raspberry-raspberry-leds-breadboard-02.jpeg>
-]
+ [3]
 \openout5 = Chap5LEDFlowingLights.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+Overfull \hbox (7.08008pt too wide) in paragraph at lines 195--196
+\TU/GentiumBasic(0)/m/n/10 to start chang-ing the value of LEDs. To do this is 
+very easy, just call the method 
+ []
+
+[4</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesson-0
+1.png></Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/
+pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-raspberry-leds-
+breadboard-02.jpeg>]
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
+\openout5 = Chap5LEDFlowingLights.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing) [5]
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesson-02.
+png, id=183, 660.4675pt x 494.84875pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesso
+n-02.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesson
+-02.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspber
+ry-8leds-code-lesson-02.png  used on input line 248.
+(luatex.def)             Requested size: 276.25198pt x 206.98183pt.
+
 \openout5 = Chap5LEDFlowingLights.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.listing)
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
 apters/Chap5LEDFlowingLights/figures/pharothings-raspberry-remoteprocess.png, id
-=154, 751.80875pt x 234.8775pt>
+=185, 751.80875pt x 234.8775pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-remoteprocess.pn
 g Graphic file (type png)
@@ -2216,48 +2245,53 @@ f/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-remoteprocess.png
 >
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspber
-ry-remoteprocess.png  used on input line 228.
+ry-remoteprocess.png  used on input line 270.
 (luatex.def)             Requested size: 260.00099pt x 81.22993pt.
- [5] [6</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result
-/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-remoteprocess.
-png>]
+ [6</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf
+/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-8leds-code-lesson-
+02.png>] [7</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_re
+sult/pdf/Chapters/Chap5LEDFlowingLights/figures/pharothings-raspberry-remoteproc
+ess.png>]
+[8
+
+]
 \tf@toc=\write8
 
 \openout8 = Chap5LEDFlowingLights.toc
 \tf@lof=\write9
 
 \openout9 = Chap5LEDFlowingLights.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `Chap5LEDFlowingLights.out' has not changed.
-(rerunfilecheck)             Checksum: 900A2AAAD5B1491F21475D4356DB40AC;1849.
+(rerunfilecheck)             Checksum: 60DBEF202B2D6F9B98A21F27A76F6EE0;1831.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38955 strings out of 494413
+ 39035 strings out of 494413
  100000,1144653 words of node,token memory allocated
- 1385 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
-ttribute_list, 3 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:2058,3:293,4:39,5:834,6:37,7:3119,8:477,9:1544,10:12,11:22
-7
- 41701 multiletter control sequences out of 65536+600000
+ 1378 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 14 attribute, 209 glue_spec, 14 a
+ttribute_list, 2 write, 4 pdf_literal nodes
+   avail lists: 1:3,2:2659,3:342,4:36,5:1247,6:37,7:3260,8:716,9:2238,10:12,11:2
+45
+ 41712 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
- 67i,12n,122p,953b,963s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,12n,122p,953b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap5LEDFlowingLights.pdf (10 pages, 657747 bytes).
+Output written on Chap5LEDFlowingLights.pdf (12 pages, 745635 bytes).
 
-PDF statistics: 211 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 131072)
+PDF statistics: 242 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 131072)
  172 words of extra memory for PDF output out of 10000 (max. 100000000)
 

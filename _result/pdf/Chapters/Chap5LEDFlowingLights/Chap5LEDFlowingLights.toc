@@ -7,8 +7,8 @@
 \contentsline {section}{\numberline {1.2}Experimental procedure}{1}{section.1.2}
 \contentsline {subsection}{Connecting remotely}{3}{section*.3}
 \contentsline {section}{\numberline {1.3}Experimental code}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Improving the code}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}Reversing the flow}{4}{section.1.5}
+\contentsline {section}{\numberline {1.4}Adding features}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Reversing the flow}{5}{section.1.5}
 \contentsline {section}{\numberline {1.6}Going and backing the flow}{5}{section.1.6}
-\contentsline {section}{\numberline {1.7}Terminating the process}{5}{section.1.7}
-\contentsline {section}{\numberline {1.8}In the next lesson}{5}{section.1.8}
+\contentsline {section}{\numberline {1.7}Terminating the process}{6}{section.1.7}
+\contentsline {section}{\numberline {1.8}In the next lesson}{7}{section.1.8}

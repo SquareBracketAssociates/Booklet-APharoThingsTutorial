@@ -63,8 +63,10 @@
 \contentsline {section}{\numberline {5.2}Experimental procedure}{27}{section.5.2}
 \contentsline {subsection}{Connecting remotely}{29}{section*.23}
 \contentsline {section}{\numberline {5.3}Experimental code}{29}{section.5.3}
-\contentsline {section}{\numberline {5.4}Improving the code}{29}{section.5.4}
-\contentsline {section}{\numberline {5.5}Reversing the flow}{30}{section.5.5}
+\contentsline {section}{\numberline {5.4}Adding features}{30}{section.5.4}
+\contentsline {section}{\numberline {5.5}Reversing the flow}{31}{section.5.5}
 \contentsline {section}{\numberline {5.6}Going and backing the flow}{31}{section.5.6}
-\contentsline {section}{\numberline {5.7}Terminating the process}{31}{section.5.7}
-\contentsline {section}{\numberline {5.8}In the next lesson}{31}{section.5.8}
+\contentsline {section}{\numberline {5.7}Terminating the process}{32}{section.5.7}
+\contentsline {section}{\numberline {5.8}In the next lesson}{33}{section.5.8}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {6}Lesson 4 - LED Flowing Lights using OOP}{35}{chapter.6}
