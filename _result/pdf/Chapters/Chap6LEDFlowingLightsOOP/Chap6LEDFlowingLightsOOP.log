@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  29 NOV 2018 19:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  18 DEC 2018 18:54
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.204 seconds
+luaotfload | main : initialization completed in 0.174 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2088,52 +2088,103 @@ g;+pnum;+lnum;"
 LaTeX Font Info:    Font shape `TU/OpenSans(2)/bx/n' will be
 (Font)              scaled to size 20.69638pt on input line 95.
 
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
 ]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2
+\openout5 = Chap6LEDFlowingLightsOOP.listing
 
-]
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+\openout5 = Chap6LEDFlowingLightsOOP.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.listing)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2]
 \tf@toc=\write8
 
 \openout8 = Chap6LEDFlowingLightsOOP.toc
 \tf@lof=\write9
 
 \openout9 = Chap6LEDFlowingLightsOOP.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
 Package rerunfilecheck Info: File `Chap6LEDFlowingLightsOOP.out' has not changed
 .
-(rerunfilecheck)             Checksum: 9EA8AB9F8FFE714404E9BD918555FC1D;368.
+(rerunfilecheck)             Checksum: 8369C2DCF722F4BF1C3F21F86A2B09D1;368.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38650 strings out of 494413
- 100000,953878 words of node,token memory allocated
- 1368 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 14 attribute, 207 glue_spec, 14 a
-ttribute_list, 2 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:204,3:99,4:14,5:61,6:17,7:1539,8:59,9:84,10:7,11:67
- 41553 multiletter control sequences out of 65536+600000
+ 39001 strings out of 494413
+ 100000,1144653 words of node,token memory allocated
+ 1375 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 207 glue_spec, 15 a
+ttribute_list, 3 write, 4 pdf_literal nodes
+   avail lists: 1:3,2:4356,3:739,4:75,5:1603,6:48,7:2713,8:947,9:3002,10:12,11:2
+54
+ 41696 multiletter control sequences out of 65536+600000
  94 fonts using 13908807 bytes
- 67i,11n,122p,959b,442s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,12n,122p,959b,1051s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap6LEDFlowingLightsOOP.pdf (6 pages, 65793 bytes).
+Output written on Chap6LEDFlowingLightsOOP.pdf (6 pages, 79133 bytes).
 
-PDF statistics: 94 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 131072)
+PDF statistics: 162 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 131072)
  92 words of extra memory for PDF output out of 10000 (max. 100000000)
 

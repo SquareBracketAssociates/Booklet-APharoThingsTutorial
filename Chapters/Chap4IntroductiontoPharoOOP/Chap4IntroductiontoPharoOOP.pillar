@@ -1,4 +1,4 @@
-!!A brief introduction to Pharo object-oriented language
+!! Lesson 3 – A brief introduction to Pharo object-oriented language
 
 Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-Oriented Programming) with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
 
@@ -71,7 +71,7 @@ Let's use the instance variable ==led==, which we defined when we created the cl
 [[[
 initialize 
   led := PotClockGPIOPin id: 4 number: 7. 
-  led board: RpiBoard3B new; beDigitalOutput
+  led board: RpiBoard3B current; beDigitalOutput
 ]]]
 
 Here is a short explanation of this code:

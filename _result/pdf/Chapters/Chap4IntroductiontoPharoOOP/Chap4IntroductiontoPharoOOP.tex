@@ -92,7 +92,7 @@
 
 \mainmatter
 
-\chapter{A brief introduction to Pharo object-oriented language}
+\chapter{Lesson 3 – A brief introduction to Pharo object-oriented language}
 Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-Oriented Programming) with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
 \section{Developing a simple LED blinker}
 The following part of this chapter and application was based on the exercise \textcode{Developing a Simple Counter}, of Week 1 of Pharo MOOC (https://mooc.pharo.org/). I strongly recommend that you read and do the \symbol{34}counter exercise\symbol{34} to better understand the concepts explained here. And, of course, do the MOOC to learn how to develop using Pharo and the OOP concept.
@@ -180,7 +180,7 @@ Let's use the instance variable \textcode{led}, which we defined when we created
 \begin{displaycode}{plain}
 initialize 
   led := PotClockGPIOPin id: 4 number: 7. 
-  led board: RpiBoard3B new; beDigitalOutput
+  led board: RpiBoard3B current; beDigitalOutput
 \end{displaycode}
 
 Here is a short explanation of this code:

@@ -1,4 +1,4 @@
-!! Lesson 3 - LED Flowing Lights
+!! Lesson 4 - LED Flowing Lights
 
 Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. Let's use some methods to change the flow direction and control the flow time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights. 
 
@@ -126,7 +126,17 @@ Now we can start the process just send the method forkNamed: to the object ==fl
 flowing forkNamed: 'FlowingProcess'.
 ]]]
 
-Your final code will seem like the Picture *@Process8LEDs*. Run this code once and when you want to flow the LEDs again, just run the last line. But remember, to each change in the code, you need to run the part that you changed.
+Your final code will seem like the Picture *@Process8LEDs*. Run this code once and when you want to flow the LEDs again, just run the last line. But remember, to each change in the code, you need to run the part that you changed. 
+
+[[[
+gpioArray := { gpio0. gpio1. gpio2. gpio3. gpio4. gpio5. gpio6. gpio7 }.
+gpioArray do: [ :item | item beDigitalOutput ].
+action := [ :item | item toggleDigitalValue. (Delay forSeconds: 0.1) wait ].
+flowing := [ 2 timesRepeat: [
+	gpioArray do: action.
+	gpioArray reverseDo: action.
+] ].
+]]]
 
 +Process Browser terminate.>figures/pharothings-raspberry-8leds-code-lesson-02.png|width=85|label=Process8LEDs+
 

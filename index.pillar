@@ -13,3 +13,15 @@ ${inputFile:path=Chapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOO
 ${inputFile:path=Chapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.pillar}$
 
 ${inputFile:path=Chapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.pillar}$
+
+${inputFile:path=Chapters/Chap7LEDBreathingPWM/Chap7LEDBreathingPWM.pillar}$
+
+${inputFile:path=Chapters/Chap8ControllingLEDByButton/Chap8ControllingLEDByButton.pillar}$
+
+${inputFile:path=Chapters/Chap9I2CSensors/Chap9I2CSensors.pillar}$
+
+${inputFile:path=Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.pillar}$
+
+${inputFile:path=Chapters/Chap11LCDDisplay/Chap11LCDDisplay.pillar}$
+
+${inputFile:path=Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.pillar}$

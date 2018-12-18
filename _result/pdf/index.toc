@@ -44,20 +44,20 @@
 \contentsline {section}{\numberline {3.2}Experimental code}{18}{section.3.2}
 \contentsline {section}{\numberline {3.3}In the next lesson}{18}{section.3.3}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {4}A brief introduction to Pharo object-oriented language}{19}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}Lesson 3 – A brief introduction to Pharo object-oriented language}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Developing a simple LED blinker}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Our use case}{19}{section.4.2}
 \contentsline {section}{\numberline {4.3}Create your own class remotely}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Create a package}{20}{section.4.4}
+\contentsline {section}{\numberline {4.4}Create a package}{21}{section.4.4}
 \contentsline {section}{\numberline {4.5}Create a class}{21}{section.4.5}
 \contentsline {section}{\numberline {4.6}Create a protocol}{21}{section.4.6}
-\contentsline {section}{\numberline {4.7}Creating an initialize method}{21}{section.4.7}
+\contentsline {section}{\numberline {4.7}Creating an initialize method}{23}{section.4.7}
 \contentsline {subsection}{Creating a method to do actions}{23}{section*.21}
 \contentsline {section}{\numberline {4.8}Using your new class}{24}{section.4.8}
 \contentsline {section}{\numberline {4.9}Save your work}{25}{section.4.9}
 \contentsline {section}{\numberline {4.10}Conclusion}{25}{section.4.10}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {5}Lesson 3 - LED Flowing Lights}{27}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Lesson 4 - LED Flowing Lights}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}What do we need?}{27}{section.5.1}
 \contentsline {subsection}{Components}{27}{section*.22}
 \contentsline {section}{\numberline {5.2}Experimental procedure}{27}{section.5.2}
@@ -69,4 +69,16 @@
 \contentsline {section}{\numberline {5.7}Terminating the process}{32}{section.5.7}
 \contentsline {section}{\numberline {5.8}In the next lesson}{33}{section.5.8}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {6}Lesson 4 - LED Flowing Lights using OOP}{35}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}Lesson 5 - LED Flowing Lights using OOP}{35}{chapter.6}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {7}Lesson 6 - LED Breathing PWM}{37}{chapter.7}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {8}Lesson 7 - Controlling LED by Button}{39}{chapter.8}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {9}Lesson 8 - I2C Sensors (Temperature, Humidity, Pressure and Acellerometer)}{41}{chapter.9}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {10}Lesson 9 - Ultrasonic Sensor (Distance)}{43}{chapter.10}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {11}Lesson 10 - LCD Display}{45}{chapter.11}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {12}Lesson 11 - Build a Mini Weather Station}{47}{chapter.12}

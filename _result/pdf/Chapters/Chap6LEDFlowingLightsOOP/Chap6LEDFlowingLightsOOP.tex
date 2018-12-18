@@ -92,8 +92,99 @@
 
 \mainmatter
 
-\chapter{Lesson 4 - LED Flowing Lights using OOP}
-Now we can play with the LEDs, turn them on, off, blink it and manipulate many at same time. Let’s use object-oriented programming, OOP to create methods and classes, to build a simple program, to control the LEDs flow like as we want.
+\chapter{Lesson 5 - LED Flowing Lights using OOP}
+Now we can play with the LEDs, turn them on, off, blink it and manipulate many at the same time. Let’s use object-oriented programming, OOP to create methods and classes, to build a simple program, to control the LEDs flow like as we want.
+
+\begin{displaycode}{plain}
+leds := Flowing new.
+leds times: 2 delay: 0.1 direction: 'lrl'.
+leds flowStart.
+leds flowStop.
+leds turnOn.
+leds turnOff.
+\end{displaycode}
+
+\begin{displaycode}{plain}
+Object subclass: #Flowing
+	instanceVariableNames: 'ledArray flowProcess flowDirection toggleDelay timesRepeat'
+	classVariableNames: ''
+	package: 'PharoThings-Lessons'
+\end{displaycode}
+
+\begin{displaycode}{plain}
+initialize
+	ledArray := { 
+	(PotGPIOPin id: 17 number: 0).
+	(PotGPIOPin id: 18 number: 1).
+	(PotGPIOPin id: 27 number: 2).
+	(PotGPIOPin id: 22 number: 3).
+	(PotGPIOPin id: 23 number: 4).
+	(PotGPIOPin id: 24 number: 5).
+	(PotGPIOPin id: 25 number: 6).
+	(PotGPIOPin id: 4 number: 7)
+	}.
+   ledArray do: [ :item | item board: RpiBoardBRev2 current; beDigitalOutput; value:0 ].
+	timesRepeat := 2.
+	toggleDelay := 0.5.
+	flowDirection := 'lr'.
+\end{displaycode}
+
+\begin{displaycode}{plain}
+times: anInteger delay: aNumber direction: aString
+	timesRepeat := anInteger.
+	toggleDelay := aNumber.
+	flowDirection := aString
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowDirection
+	^flowDirection
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowTimesRepeat
+	^timesRepeat
+\end{displaycode}
+
+\begin{displaycode}{plain}
+toggleDelay
+	 ^toggleDelay
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowStart
+	flowProcess := [ (self flowTimesRepeat) timesRepeat: [
+          self action
+      ] ] forkNamed: 'FlowingProcess'.
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowStop
+	flowProcess terminate
+\end{displaycode}
+
+\begin{displaycode}{plain}
+action
+	flowDirection = 'lr' ifTrue: [  ledArray do: self toggleLedArray ].
+	flowDirection = 'rl' ifTrue: [  ledArray reverseDo: self toggleLedArray ].
+	flowDirection = 'lrl' ifTrue: [  ledArray do: self toggleLedArray; reverseDo: self toggleLedArray ].
+	flowDirection = 'rlr' ifTrue: [  ledArray reverseDo: self toggleLedArray; do: self toggleLedArray ]
+\end{displaycode}
+
+\begin{displaycode}{plain}
+toggleLedArray
+	^[ :item | item toggleDigitalValue. (Delay forSeconds: self toggleDelay) wait ]
+\end{displaycode}
+
+\begin{displaycode}{plain}
+turnOn
+	ledArray do: [ :item | item value:1 ].
+\end{displaycode}
+
+\begin{displaycode}{plain}
+turnOff
+	ledArray do: [ :item | item value:0 ].
+\end{displaycode}
 
 
 % lulu requires an empty page at the end. That's why I'm using

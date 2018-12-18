@@ -1,7 +1,7 @@
 \changetocdepth {1}
 \contentsline {chapter}{Illustrations}{ii}{section*.1}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {1}Lesson 3 - LED Flowing Lights}{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Lesson 4 - LED Flowing Lights}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}What do we need?}{1}{section.1.1}
 \contentsline {subsection}{Components}{1}{section*.2}
 \contentsline {section}{\numberline {1.2}Experimental procedure}{1}{section.1.2}

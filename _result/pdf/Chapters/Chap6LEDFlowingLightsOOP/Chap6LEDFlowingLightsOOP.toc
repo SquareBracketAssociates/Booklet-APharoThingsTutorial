@@ -1,4 +1,4 @@
 \changetocdepth {1}
 \contentsline {chapter}{Illustrations}{ii}{section*.1}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {1}Lesson 4 - LED Flowing Lights using OOP}{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}Lesson 5 - LED Flowing Lights using OOP}{1}{chapter.1}

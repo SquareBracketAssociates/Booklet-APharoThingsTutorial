@@ -527,7 +527,7 @@ Run this code, as shown in Figure \ref{RemoteInspector} and... \textcode{cool}! 
 Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
 \section{In the next lesson}
 In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. But with Pharo we can do more! And in the next lesson, let’s start to use OOP (object-oriented programming). Let's create a simple application, write classes and methods, all remotely.
-\chapter{A brief introduction to Pharo object-oriented language}
+\chapter{Lesson 3 – A brief introduction to Pharo object-oriented language}
 Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-Oriented Programming) with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
 \section{Developing a simple LED blinker}
 The following part of this chapter and application was based on the exercise \textcode{Developing a Simple Counter}, of Week 1 of Pharo MOOC (https://mooc.pharo.org/). I strongly recommend that you read and do the \symbol{34}counter exercise\symbol{34} to better understand the concepts explained here. And, of course, do the MOOC to learn how to develop using Pharo and the OOP concept.
@@ -615,7 +615,7 @@ Let's use the instance variable \textcode{led}, which we defined when we created
 \begin{displaycode}{plain}
 initialize 
   led := PotClockGPIOPin id: 4 number: 7. 
-  led board: RpiBoard3B new; beDigitalOutput
+  led board: RpiBoard3B current; beDigitalOutput
 \end{displaycode}
 
 Here is a short explanation of this code:
@@ -711,7 +711,7 @@ In this tutorial, you learned how to define packages, classes, and methods. The 
 With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
 
 In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 8 LEDs.
-\chapter{Lesson 3 - LED Flowing Lights}
+\chapter{Lesson 4 - LED Flowing Lights}
 Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. Let's use some methods to change the flow direction and control the flow time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights. 
 \section{What do we need?}
 We are using the set of the first lesson, but let's use 8 LEDs and 8 resistors and some more jumper wires.
@@ -858,7 +858,17 @@ Now we can start the process just send the method forkNamed: to the object \tex
 flowing forkNamed: 'FlowingProcess'.
 \end{displaycode}
 
-Your final code will seem like the Picture \ref{Process8LEDs}. Run this code once and when you want to flow the LEDs again, just run the last line. But remember, to each change in the code, you need to run the part that you changed.
+Your final code will seem like the Picture \ref{Process8LEDs}. Run this code once and when you want to flow the LEDs again, just run the last line. But remember, to each change in the code, you need to run the part that you changed. 
+
+\begin{displaycode}{plain}
+gpioArray := { gpio0. gpio1. gpio2. gpio3. gpio4. gpio5. gpio6. gpio7 }.
+gpioArray do: [ :item | item beDigitalOutput ].
+action := [ :item | item toggleDigitalValue. (Delay forSeconds: 0.1) wait ].
+flowing := [ 2 timesRepeat: [
+	gpioArray do: action.
+	gpioArray reverseDo: action.
+] ].
+\end{displaycode}
 
 
 \begin{figure}
@@ -895,9 +905,100 @@ In this tutorial, you learned how to use an Array and control 8 objects at the s
 You can create your own program in classes and methods using the codes you learned in this lesson. Go ahead and try to do this yourself to test your knowledge.
 
 And in the next lesson, let’s use object-oriented programming, OOP to create a simple program, using these codes, to control the flow like as we want.
-\chapter{Lesson 4 - LED Flowing Lights using OOP}
-Now we can play with the LEDs, turn them on, off, blink it and manipulate many at same time. Let’s use object-oriented programming, OOP to create methods and classes, to build a simple program, to control the LEDs flow like as we want.
+\chapter{Lesson 5 - LED Flowing Lights using OOP}
+Now we can play with the LEDs, turn them on, off, blink it and manipulate many at the same time. Let’s use object-oriented programming, OOP to create methods and classes, to build a simple program, to control the LEDs flow like as we want.
 
+\begin{displaycode}{plain}
+leds := Flowing new.
+leds times: 2 delay: 0.1 direction: 'lrl'.
+leds flowStart.
+leds flowStop.
+leds turnOn.
+leds turnOff.
+\end{displaycode}
+
+\begin{displaycode}{plain}
+Object subclass: #Flowing
+	instanceVariableNames: 'ledArray flowProcess flowDirection toggleDelay timesRepeat'
+	classVariableNames: ''
+	package: 'PharoThings-Lessons'
+\end{displaycode}
+
+\begin{displaycode}{plain}
+initialize
+	ledArray := { 
+	(PotGPIOPin id: 17 number: 0).
+	(PotGPIOPin id: 18 number: 1).
+	(PotGPIOPin id: 27 number: 2).
+	(PotGPIOPin id: 22 number: 3).
+	(PotGPIOPin id: 23 number: 4).
+	(PotGPIOPin id: 24 number: 5).
+	(PotGPIOPin id: 25 number: 6).
+	(PotGPIOPin id: 4 number: 7)
+	}.
+   ledArray do: [ :item | item board: RpiBoardBRev2 current; beDigitalOutput; value:0 ].
+	timesRepeat := 2.
+	toggleDelay := 0.5.
+	flowDirection := 'lr'.
+\end{displaycode}
+
+\begin{displaycode}{plain}
+times: anInteger delay: aNumber direction: aString
+	timesRepeat := anInteger.
+	toggleDelay := aNumber.
+	flowDirection := aString
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowDirection
+	^flowDirection
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowTimesRepeat
+	^timesRepeat
+\end{displaycode}
+
+\begin{displaycode}{plain}
+toggleDelay
+	 ^toggleDelay
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowStart
+	flowProcess := [ (self flowTimesRepeat) timesRepeat: [
+          self action
+      ] ] forkNamed: 'FlowingProcess'.
+\end{displaycode}
+
+\begin{displaycode}{plain}
+flowStop
+	flowProcess terminate
+\end{displaycode}
+
+\begin{displaycode}{plain}
+action
+	flowDirection = 'lr' ifTrue: [  ledArray do: self toggleLedArray ].
+	flowDirection = 'rl' ifTrue: [  ledArray reverseDo: self toggleLedArray ].
+	flowDirection = 'lrl' ifTrue: [  ledArray do: self toggleLedArray; reverseDo: self toggleLedArray ].
+	flowDirection = 'rlr' ifTrue: [  ledArray reverseDo: self toggleLedArray; do: self toggleLedArray ]
+\end{displaycode}
+
+\begin{displaycode}{plain}
+toggleLedArray
+	^[ :item | item toggleDigitalValue. (Delay forSeconds: self toggleDelay) wait ]
+\end{displaycode}
+
+\begin{displaycode}{plain}
+turnOn
+	ledArray do: [ :item | item value:1 ].
+\end{displaycode}
+
+\begin{displaycode}{plain}
+turnOff
+	ledArray do: [ :item | item value:0 ].
+\end{displaycode}
+\chapter{Lesson 6 - LED Breathing PWM}\chapter{Lesson 7 - Controlling LED by Button}\chapter{Lesson 8 - I2C Sensors (Temperature, Humidity, Pressure and Acellerometer)}\chapter{Lesson 9 - Ultrasonic Sensor (Distance)}\chapter{Lesson 10 - LCD Display}\chapter{Lesson 11 - Build a Mini Weather Station}
 
 % lulu requires an empty page at the end. That's why I'm using
 % \backmatter here.
