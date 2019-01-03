@@ -360,6 +360,16 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.lof
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png
+OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.listing
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.toc
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/Chap9I2CSensors.aux

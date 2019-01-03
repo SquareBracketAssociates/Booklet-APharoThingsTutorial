@@ -1,1 +1,20 @@
 !! Lesson 10 - LCD Display
+
+In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. Now let's start using some sensors to interact automatically with the real world, taking the temperature, air pressure and humidity. This kind of sensor using the I2C protocol to communicate.
+
+
+!!! Connecting remotely
+
+Through your local Pharo image, let’s connect in the Pharo image by running on Raspberry, enable the auto-refresh feature of the inspector, and open the inspector.
+Run this code in your local playground:
+
+[[[
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
+GTInspector enableStepRefresh.
+remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard inspect.
+]]]
+
+!!! Experimental code
+
+In your inspect window (Inspector on a PotRemoteBoard), let’s create the instances of the LED and button.

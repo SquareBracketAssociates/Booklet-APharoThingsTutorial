@@ -164,11 +164,9 @@ flowStop
 \end{displaycode}
 
 \begin{displaycode}{plain}
-action
-	flowDirection = 'lr' ifTrue: [  ledArray do: self toggleLedArray ].
-	flowDirection = 'rl' ifTrue: [  ledArray reverseDo: self toggleLedArray ].
-	flowDirection = 'lrl' ifTrue: [  ledArray do: self toggleLedArray; reverseDo: self toggleLedArray ].
-	flowDirection = 'rlr' ifTrue: [  ledArray reverseDo: self toggleLedArray; do: self toggleLedArray ]
+action  
+flowDirection do: [ :character | character == $l ifTrue: [ ledArray do: self toggleLedArray  ]. 
+                        character == $r ifTrue: [ ledArray reverseDdo: self toggleLedArray  ] ] 
 \end{displaycode}
 
 \begin{displaycode}{plain}

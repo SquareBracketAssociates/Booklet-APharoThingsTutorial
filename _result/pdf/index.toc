@@ -84,9 +84,22 @@
 \contentsline {section}{\numberline {8.7}In the next lesson}{42}{section.8.7}
 \needspace {3\baselineskip }
 \contentsline {chapter}{\chapternumberline {9}Lesson 8 - I2C Sensors (Temperature, Humidity, Pressure and Acellerometer)}{43}{chapter.9}
+\contentsline {section}{\numberline {9.1}What we need?}{43}{section.9.1}
+\contentsline {subsection}{Components}{43}{section*.25}
+\contentsline {section}{\numberline {9.2}Experimental theory}{44}{section.9.2}
+\contentsline {subsection}{The I2C protocol}{44}{section*.26}
+\contentsline {subsection}{How I2C works?}{44}{section*.27}
+\contentsline {subsection}{Protocol}{45}{section*.28}
+\contentsline {section}{\numberline {9.3}Experimental procedure}{45}{section.9.3}
+\contentsline {section}{\numberline {9.4}Connecting remotely}{46}{section.9.4}
+\contentsline {section}{\numberline {9.5}Experimental code}{46}{section.9.5}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {10}Lesson 9 - Ultrasonic Sensor (Distance)}{45}{chapter.10}
+\contentsline {chapter}{\chapternumberline {10}Lesson 9 - Ultrasonic Sensor (Distance)}{47}{chapter.10}
+\contentsline {section}{\numberline {10.1}Connecting remotely}{47}{section.10.1}
+\contentsline {section}{\numberline {10.2}Experimental code}{47}{section.10.2}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {11}Lesson 10 - LCD Display}{47}{chapter.11}
+\contentsline {chapter}{\chapternumberline {11}Lesson 10 - LCD Display}{49}{chapter.11}
+\contentsline {section}{\numberline {11.1}Connecting remotely}{49}{section.11.1}
+\contentsline {section}{\numberline {11.2}Experimental code}{49}{section.11.2}
 \needspace {3\baselineskip }
-\contentsline {chapter}{\chapternumberline {12}Lesson 11 - Build a Mini Weather Station}{49}{chapter.12}
+\contentsline {chapter}{\chapternumberline {12}Lesson 11 - Building a Mini Weather Station}{51}{chapter.12}

@@ -360,6 +360,10 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.lof
+OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.listing
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.toc
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.aux

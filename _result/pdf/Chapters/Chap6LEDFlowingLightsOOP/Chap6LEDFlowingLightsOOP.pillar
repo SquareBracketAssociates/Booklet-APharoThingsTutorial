@@ -34,7 +34,7 @@ initialize
 	timesRepeat := 2.
 	toggleDelay := 0.5.
 	flowDirection := 'lr'.
-]]]
+]]] 
 
 [[[
 times: anInteger delay: aNumber direction: aString
@@ -71,11 +71,9 @@ flowStop
 ]]]
 
 [[[
-action
-	flowDirection = 'lr' ifTrue: [  ledArray do: self toggleLedArray ].
-	flowDirection = 'rl' ifTrue: [  ledArray reverseDo: self toggleLedArray ].
-	flowDirection = 'lrl' ifTrue: [  ledArray do: self toggleLedArray; reverseDo: self toggleLedArray ].
-	flowDirection = 'rlr' ifTrue: [  ledArray reverseDo: self toggleLedArray; do: self toggleLedArray ]
+action  
+flowDirection do: [ :character | character == $l ifTrue: [ ledArray do: self toggleLedArray  ]. 
+                        character == $r ifTrue: [ ledArray reverseDdo: self toggleLedArray  ] ] 
 ]]]
 
 [[[
