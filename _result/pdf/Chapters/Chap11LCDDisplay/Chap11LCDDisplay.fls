@@ -360,6 +360,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/Chap11LCDDisplay.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/Chap11LCDDisplay.lof
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/figures/pharothings-lcd-board.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/figures/pharothings-lcd-board.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/figures/pharothings-lcd-board.png
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/Chap11LCDDisplay.listing
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/Chap11LCDDisplay.listing
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap11LCDDisplay/Chap11LCDDisplay.listing

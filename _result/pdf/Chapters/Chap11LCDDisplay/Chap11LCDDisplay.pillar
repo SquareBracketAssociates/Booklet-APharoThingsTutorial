@@ -1,7 +1,40 @@
 !! Lesson 10 - LCD Display
 
-In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. Now let's start using some sensors to interact automatically with the real world, taking the temperature, air pressure and humidity. This kind of sensor using the I2C protocol to communicate.
+In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure and x, y, z axis. Also we saw how use a non I2C sensor, an ultrasonic sensor. Now we will learn how to use a LCD Display without I2C. 
 
+!!! What we need?
+
+In this lesson we will use a setup with 3 different I2C sensors.
+
+!!!! Components
+
+- 1 Raspberry Pi connected to your network (wired or wireless)
+- 1 Breadboard
+- 1 LCD Display 1602 
+- 1 Potentiometer (10K ohms)
+- Jumper wires
+
+!!! Experimental theory
+
+Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
+
+!!!! The LCD Display 1602
+
+!!!! How the LCD 1602 works?
+
+!!! Experimental procedure
+
+Now we will build the circuit. This circuit consists of three sensors and a power supply (the Rasp).
+
+- Connect the Ground PIN from Raspberry in the breadboard blue rail (-). In this experiment we will use the PIN6 (Ground);
+- Then connect the 5V (PIN2) pin in the red rail (+). 
+- Now push the LCD 1602 in the breadboard;
+- Push the potentiometer in the breadboard;
+- And insert the jumper wires connecting the LCD Display in the Potentiometer and breadboard, like the scheme showed in the Figure *@physicalLCD*.
+
+The Figure *@physicalLCD* shows how the electric connection is made.
+
++Physical sensors connection.>figures/pharothings-lcd-board.png|width=60|label=physicalLCD+
 
 !!! Connecting remotely
 
@@ -11,10 +44,11 @@ Run this code in your local playground:
 [[[
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
 GTInspector enableStepRefresh.
-remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.
 ]]]
 
 !!! Experimental code
 
-In your inspect window (Inspector on a PotRemoteBoard), let’s create the instances of the LED and button.
+In your inspect window (Inspector on a PotRemoteBoard), let’s create the instances of the LCD Display. 
+

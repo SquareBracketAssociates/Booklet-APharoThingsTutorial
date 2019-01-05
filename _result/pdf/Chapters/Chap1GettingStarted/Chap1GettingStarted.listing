@@ -1,2 +1,2 @@
-remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.

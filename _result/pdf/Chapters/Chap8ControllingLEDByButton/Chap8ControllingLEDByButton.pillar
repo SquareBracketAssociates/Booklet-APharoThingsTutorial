@@ -48,7 +48,7 @@ Run this code in your local playground:
 [[[
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
 GTInspector enableStepRefresh.
-remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.
 ]]]
 

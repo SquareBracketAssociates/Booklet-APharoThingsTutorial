@@ -1,4 +1,1 @@
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423)
-GTInspector enableStepRefresh.
-remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
-remoteBoard inspect.
+c readCoordinates at: 1.

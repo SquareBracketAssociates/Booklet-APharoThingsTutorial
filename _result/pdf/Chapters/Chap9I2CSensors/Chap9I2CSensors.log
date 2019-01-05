@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  3 JAN 2019 21:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  5 JAN 2019 16:07
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap9I2CSensors/Chap9I2CSensors.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.175 seconds
+luaotfload | main : initialization completed in 0.178 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -1901,7 +1901,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 64.
-<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=65, 120.45pt x 42.1575pt>
+<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=89, 120.45pt x 42.1575pt>
 File: _support/latex/sbabook/CreativeCommons-BY-SA.pdf Graphic file (type pdf)
 <use _support/latex/sbabook/CreativeCommons-BY-SA.pdf>
 Package luatex.def Info: _support/latex/sbabook/CreativeCommons-BY-SA.pdf  used 
@@ -2098,7 +2098,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 ]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg, id=105, 665.48625pt x 38
+apters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg, id=139, 665.48625pt x 38
 5.44pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg Graphic file (type j
@@ -2114,7 +2114,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus.jpg>]
 </Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
-apters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png, id=111, 847.165pt x
+apters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png, id=145, 847.165pt x
  135.50626pt>
 File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
 df/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png Graphic file (t
@@ -2125,56 +2125,145 @@ Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.
 png  used on input line 140.
 (luatex.def)             Requested size: 260.00099pt x 41.58676pt.
-
-
-LaTeX Warning: Reference `physicalLed' on page 3 undefined on input line 154.
-
-[3</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png>]
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap9I2CSensors/figures/pharothings-sensors-board.png, id=149, 269.808pt 
+x 225.91066pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap9I2CSensors/figures/pharothings-sensors-board.png Graphic file (
+type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap9I2CSensors/figures/pharothings-sensors-board.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-sensors-board
+.png  used on input line 161.
+(luatex.def)             Requested size: 195.00198pt x 163.27946pt.
+LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
+(Font)              scaled to size 8.61679pt on input line 165.
+ [3</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf
+/Chapters/Chap9I2CSensors/figures/pharothings-i2c-bus-data.png>]
 \openout5 = Chap9I2CSensors.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
-hapters/Chap9I2CSensors/Chap9I2CSensors.listing) [4]
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing) [4</Users/allexoliveira/PharoTh
+ingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap9I2CSensors/figure
+s/pharothings-sensors-board.png>]
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap9I2CSensors/figures/pharothings-inspect-sensor.png, id=170, 674.52pt 
+x 276.03125pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap9I2CSensors/figures/pharothings-inspect-sensor.png Graphic file 
+(type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap9I2CSensors/figures/pharothings-inspect-sensor.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap9I2CSensors/figures/pharothings-inspect-senso
+r.png  used on input line 210.
+(luatex.def)             Requested size: 260.00099pt x 106.40082pt.
+
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+Overfull \hbox (3.20313pt too wide) in paragraph at lines 220--221
+\TU/GentiumBasic(0)/m/n/10 You can also ask to only one value, se-lect-ing the 
+ar-ray in-dex us-ing the method 
+ []
+
+[5</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap9I2CSensors/figures/pharothings-inspect-sensor.png>]
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing)
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing) [6
+Missing character: There is no   (U+2028) in font FiraMono:mode=node;script=la
+tn;language=DFLT;!
+]
+\openout5 = Chap9I2CSensors.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap9I2CSensors/Chap9I2CSensors.listing) [7
+Missing character: There is no   (U+2028) in font FiraMono:mode=node;script=la
+tn;language=DFLT;!
+] [8
+
+]
 \tf@toc=\write8
 
 \openout8 = Chap9I2CSensors.toc
 \tf@lof=\write9
 
 \openout9 = Chap9I2CSensors.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap9I2CSensors/Chap9I2CSensors.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `Chap9I2CSensors.out' has not changed.
-(rerunfilecheck)             Checksum: 00B72C5D42FD4B889786FFAE9C1F0A19;1767.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 5B2834D2AC9FB75BF2D28AE7D05B344E;3436.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38793 strings out of 494413
+ 39048 strings out of 494413
  100000,1144653 words of node,token memory allocated
- 1395 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 16 attribute, 209 glue_spec, 16 a
-ttribute_list, 3 write, 4 pdf_literal, 1 pdf_action nodes
-   avail lists: 1:3,2:632,3:98,4:20,5:250,6:22,7:2295,8:138,9:441,10:9,11:152
- 41652 multiletter control sequences out of 65536+600000
- 97 fonts using 14339911 bytes
- 67i,12n,122p,941b,951s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 1388 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
+ttribute_list, 2 write, 4 pdf_literal, 1 pdf_action nodes
+   avail lists: 1:3,2:2189,3:492,4:55,5:446,6:36,7:2892,8:269,9:980,10:10,11:203
+
+ 41709 multiletter control sequences out of 65536+600000
+ 98 fonts using 14577831 bytes
+ 67i,12n,122p,941b,954s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap9I2CSensors.pdf (8 pages, 268449 bytes).
+Output written on Chap9I2CSensors.pdf (12 pages, 444799 bytes).
 
-PDF statistics: 160 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 131072)
- 164 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 252 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 131072)
+ 212 words of extra memory for PDF output out of 10000 (max. 100000000)
 

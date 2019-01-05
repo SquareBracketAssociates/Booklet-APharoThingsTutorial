@@ -172,7 +172,7 @@ So for your board model you need to choose an appropriate board class. For Raspb
 With the chosen class evaluate the following code to open an inspector:
 
 [[[
-remoteBoard := remotePharo evaluate: [ RpiBoardBRev1 current].
+remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.
 ]]]
 
