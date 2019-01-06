@@ -93,9 +93,9 @@
 \mainmatter
 
 \chapter{Lesson 10 - LCD Display}
-In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure and x, y, z axis. Also we saw how use a non I2C sensor, an ultrasonic sensor. Now we will learn how to use a LCD Display without I2C. 
-\section{What we need?}
-In this lesson we will use a setup with 3 different I2C sensors.
+In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Also, we saw how to use a no I2C sensor, an ultrasonic sensor. Now we will learn how to use an LCD Display without I2C. 
+\section{What do we need?}
+In this lesson, we will use a setup with an LCD Display 1602.
 \subsection{Components}
 \begin{itemize}
 \item 1 Raspberry Pi connected to your network (wired or wireless)
@@ -114,7 +114,7 @@ Now we will build the circuit. This circuit consists of three sensors and a powe
 \item Then connect the 5V (PIN2) pin in the red rail (+). 
 \item Now push the LCD 1602 in the breadboard;
 \item Push the potentiometer in the breadboard;
-\item And insert the jumper wires connecting the LCD Display in the Potentiometer and breadboard, like the scheme showed in the Figure \ref{physicalLCD}.
+\item And insert the jumper wires connecting the LCD Display in the Potentiometer and breadboard, as the scheme shown in the Figure \ref{physicalLCD}.
 \end{itemize}
 
 The Figure \ref{physicalLCD} shows how the electric connection is made.
@@ -138,6 +138,17 @@ remoteBoard inspect.
 \end{displaycode}
 \section{Experimental code}
 In your inspect window (Inspector on a PotRemoteBoard), let’s create the instances of the LCD Display. 
+
+\begin{displaycode}{plain}
+lcd := board installDevice: PotLCD1602Device new.
+\end{displaycode}
+
+As we saw before, we can inspect the remote object to see some properties and methods. Let's use the method \textcode{message:} to send some message to LCD Display. To break line you can use \symbol{34}/n\symbol{34}. And to clear the LCD you can use the method \textcode{clear}:
+
+\begin{displaycode}{plain}
+lcd message: 'Hello everybody!\Pharo is cool!'. 
+lcd clear.
+\end{displaycode}
 
 
 % lulu requires an empty page at the end. That's why I'm using

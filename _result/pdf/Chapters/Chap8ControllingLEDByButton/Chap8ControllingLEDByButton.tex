@@ -101,8 +101,8 @@ We are using the set of the first lesson, but let's use 8 LEDs and 8 resistors a
 \item 1 Raspberry Pi connected to your network (wired or wireless)
 \item 1 Breadboard
 \item 1 LED
-\item 1 Resistors 330ohms
-\item 1 Push button
+\item 1 Resistor 330ohms
+\item 1 Pushbutton
 \item Jumper wires
 \end{itemize}
 \section{Experimental theory}
@@ -165,9 +165,9 @@ Now let’s create a process to check when the button is pressed and send this v
 
 \begin{displaycode}{plain}
 [ [100 milliSeconds wait. 
-	led value: (button value=1) asBit
-		] repeat	
-	 ] forkNamed: 'button process'.
+    led value: (button value=1) asBit
+        ] repeat    
+     ] forkNamed: 'button process'.
 \end{displaycode}
 
 Your LED will turn On when the button is pressed!
@@ -188,7 +188,7 @@ Search the FlowingProcess and terminate it:
 \section{In the next lesson}
 In this lesson, you learned how to configure a push button, take the value of the button and send it to LED value, doing the LED turn On or Off using the button.
 
-Next lesson we will start to use the sensors using I2C protocol. We will see the BME280 (temperature, humidity, and air pressure), ADXL (accelerometer X, Y, Z) and MCP9808 (temperature).
+Next lesson we will start to use the sensors using the I2C protocol. We will see the BME280 (temperature, humidity, and air pressure), ADXL (accelerometer X, Y, Z) and MCP9808 (temperature).
 
 
 % lulu requires an empty page at the end. That's why I'm using

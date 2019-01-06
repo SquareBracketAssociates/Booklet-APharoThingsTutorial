@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  5 JAN 2019 16:05
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  7 JAN 2019 02:17
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap2LED/Chap2LED.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.180 seconds
+luaotfload | main : initialization completed in 0.220 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2200,7 +2200,7 @@ hapters/Chap2LED/Chap2LED.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
 Package rerunfilecheck Info: File `Chap2LED.out' has not changed.
-(rerunfilecheck)             Checksum: 5CEA48AEB1CA9D703B1A521591152DF7;1808.
+(rerunfilecheck)             Checksum: 8854E282CB0DCE337101EAC1691B7E0D;1826.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -2219,7 +2219,7 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap2LED.pdf (10 pages, 372553 bytes).
+Output written on Chap2LED.pdf (10 pages, 372639 bytes).
 
 PDF statistics: 198 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 131072)

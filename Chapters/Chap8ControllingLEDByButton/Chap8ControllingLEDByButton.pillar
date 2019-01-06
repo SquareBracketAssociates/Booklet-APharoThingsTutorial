@@ -11,8 +11,8 @@ We are using the set of the first lesson, but let's use 8 LEDs and 8 resistors a
 - 1 Raspberry Pi connected to your network (wired or wireless)
 - 1 Breadboard
 - 1 LED
-- 1 Resistors 330ohms
-- 1 Push button
+- 1 Resistor 330ohms
+- 1 Pushbutton
 - Jumper wires
 
 
@@ -83,9 +83,9 @@ Now let’s create a process to check when the button is pressed and send this v
 
 [[[
 [ [100 milliSeconds wait. 
-	led value: (button value=1) asBit
-		] repeat	
-	 ] forkNamed: 'button process'.
+    led value: (button value=1) asBit
+        ] repeat    
+     ] forkNamed: 'button process'.
 ]]]
 
 Your LED will turn On when the button is pressed!
@@ -108,4 +108,4 @@ Search the FlowingProcess and terminate it:
 
 In this lesson, you learned how to configure a push button, take the value of the button and send it to LED value, doing the LED turn On or Off using the button.
 
-Next lesson we will start to use the sensors using I2C protocol. We will see the BME280 (temperature, humidity, and air pressure), ADXL (accelerometer X, Y, Z) and MCP9808 (temperature).
+Next lesson we will start to use the sensors using the I2C protocol. We will see the BME280 (temperature, humidity, and air pressure), ADXL (accelerometer X, Y, Z) and MCP9808 (temperature).

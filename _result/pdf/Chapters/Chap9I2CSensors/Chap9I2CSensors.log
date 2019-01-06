@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  5 JAN 2019 16:07
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  7 JAN 2019 02:18
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap9I2CSensors/Chap9I2CSensors.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.178 seconds
+luaotfload | main : initialization completed in 0.187 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2241,7 +2241,7 @@ hapters/Chap9I2CSensors/Chap9I2CSensors.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `Chap9I2CSensors.out' has not changed.
-(rerunfilecheck)             Checksum: 5B2834D2AC9FB75BF2D28AE7D05B344E;3436.
+(rerunfilecheck)             Checksum: 26BBA8D2268F36890FDC24A35106387A;3477.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -2250,7 +2250,7 @@ Here is how much of LuaTeX's memory you used:
  1388 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
 ttribute_list, 2 write, 4 pdf_literal, 1 pdf_action nodes
-   avail lists: 1:3,2:2189,3:492,4:55,5:446,6:36,7:2892,8:269,9:980,10:10,11:203
+   avail lists: 1:3,2:2189,3:492,4:55,5:446,6:36,7:2899,8:269,9:980,10:11,11:203
 
  41709 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
@@ -2261,7 +2261,7 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap9I2CSensors.pdf (12 pages, 444799 bytes).
+Output written on Chap9I2CSensors.pdf (12 pages, 444882 bytes).
 
 PDF statistics: 252 PDF objects out of 1000 (max. 8388607)
  67 named destinations out of 1000 (max. 131072)

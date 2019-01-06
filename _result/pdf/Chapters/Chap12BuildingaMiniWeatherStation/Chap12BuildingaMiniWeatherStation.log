@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  5 JAN 2019 16:05
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  7 JAN 2019 02:16
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.te
@@ -36,7 +36,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.179 seconds
+luaotfload | main : initialization completed in 0.196 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -1904,7 +1904,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 64.
-<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=29, 120.45pt x 42.1575pt>
+<_support/latex/sbabook/CreativeCommons-BY-SA.pdf, id=77, 120.45pt x 42.1575pt>
 File: _support/latex/sbabook/CreativeCommons-BY-SA.pdf Graphic file (type pdf)
 <use _support/latex/sbabook/CreativeCommons-BY-SA.pdf>
 Package luatex.def Info: _support/latex/sbabook/CreativeCommons-BY-SA.pdf  used 
@@ -2091,54 +2091,151 @@ g;+pnum;+lnum;"
 .................................................
 LaTeX Font Info:    Font shape `TU/OpenSans(2)/bx/n' will be
 (Font)              scaled to size 20.69638pt on input line 95.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 10.1825pt on input line 99.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
+(Font)              scaled to size 9.98218pt on input line 99.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
 ]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2
+LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
+(Font)              scaled to size 8.61679pt on input line 119.
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station.png
+, id=119, 849.1725pt x 299.1175pt>
+File: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/p
+df/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-statio
+n.png Graphic file (type png)
+<use /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pd
+f/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station
+.png>
+Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
+gTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharoth
+ings-weather-station.png  used on input line 127.
+(luatex.def)             Requested size: 276.25198pt x 97.30788pt.
 
-]
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
+Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station.p
+ng>]
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting) [3]
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting)
+\openout5 = Chap12BuildingaMiniWeatherStation.listing
+
+(/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
+hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lis
+ting) [4]
 \tf@toc=\write8
 
 \openout8 = Chap12BuildingaMiniWeatherStation.toc
 \tf@lof=\write9
 
 \openout9 = Chap12BuildingaMiniWeatherStation.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.aux
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
 Package rerunfilecheck Info: File `Chap12BuildingaMiniWeatherStation.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 3BC1AE4A0DEED80E6D9473529F20A20C;388.
+(rerunfilecheck)             Checksum: 3594E860CED58D04A3D8F464DE502046;2544.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38650 strings out of 494413
- 100000,953878 words of node,token memory allocated
- 1368 words of node memory still in use:
-   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 14 attribute, 207 glue_spec, 14 a
-ttribute_list, 2 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:204,3:99,4:14,5:61,6:17,7:1539,8:59,9:84,10:7,11:67
- 41553 multiletter control sequences out of 65536+600000
- 94 fonts using 13908807 bytes
- 67i,11n,122p,977b,442s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 39071 strings out of 494413
+ 100000,1144653 words of node,token memory allocated
+ 1385 words of node memory still in use:
+   7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 15 attribute, 209 glue_spec, 15 a
+ttribute_list, 3 write, 4 pdf_literal nodes
+   avail lists: 1:3,2:3430,3:527,4:51,5:1427,6:47,7:2623,8:836,9:2584,10:12,11:2
+55
+ 41721 multiletter control sequences out of 65536+600000
+ 98 fonts using 14577831 bytes
+ 67i,12n,122p,977b,963s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap12BuildingaMiniWeatherStation.pdf (6 pages, 65370 bytes).
+Output written on Chap12BuildingaMiniWeatherStation.pdf (8 pages, 138314 bytes).
 
-PDF statistics: 94 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 131072)
- 92 words of extra memory for PDF output out of 10000 (max. 100000000)
+
+PDF statistics: 232 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 131072)
+ 188 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -92,7 +92,139 @@
 
 \mainmatter
 
-\chapter{Lesson 11 - Building a Mini Weather Station}
+\chapter{Lesson 11 - Building a Mini-Weather Station}
+In the previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to create applications to control them. Now we will use everything that we learned to build a Mini-Weather Station. 
+\section{What do we need?}
+In this lesson, we will use a setup with an LCD Display 1602 and BME280 sensor.
+\subsection{Components}
+\begin{itemize}
+\item 1 Raspberry Pi connected to your network (wired or wireless)
+\item 1 Breadboard
+\item 1 BME280 temperature, humidity and pressure sensor
+\item 1 LCD Display 1602 
+\item 1 Potentiometer (10K ohms)
+\item Jumper wires
+\end{itemize}
+\section{Experimental theory}
+Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
+
+In this lesson, we will get the temperature, pressure, and humidity using the BME280 sensor, show this information on the LCD Display each 1 second and send this data to a Cloud Server every 60 seconds. 
+\section{Experimental procedure}
+Connect the sensor and LCD Display on your breadboard as we did in the previous lessons. 
+\section{Creating the Thingspeak account }
+Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.
+
+Follow this tutorial to create your account and your channel:
+
+\textcode{https://roboindia.com/tutorials/thingspeak-setup}
+\section{Creating the application}
+The first step lets create a Superclass to initialize and install all devices that we will use. So let's create 2 subclasses to do the actions. The first will display this information on the LCD and the second will send the data to the cloud. Your final code will seem like the Picture \ref{MiniWeatherStationcode}.
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station.png}\caption{Mini Weather Station code.\label{MiniWeatherStationcode}}\end{center}
+\end{figure}
+
+\section{Creating the Superclass}
+\begin{displaycode}{plain}
+Object subclass: #WeatherStation
+    instanceVariableNames: 'sensor lcd'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'
+\end{displaycode}
+\subsection{Creating the initialize method}
+\begin{displaycode}{plain}
+initialize
+lcd := (RpiBoard3B current) installDevice: PotLCD1602Device  new.
+sensor := (RpiBoard3B current) installDevice: PotBME280Device new. 
+\end{displaycode}
+\section{Creating access methods}
+\begin{displaycode}{plain}
+humidity
+    ^((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString. 
+\end{displaycode}
+
+\begin{displaycode}{plain}
+pressure
+    ^((sensor readParameters at: 2) printShowingDecimalPlaces: 2) asString. 
+\end{displaycode}
+
+\begin{displaycode}{plain}
+temperature 
+    ^((sensor readParameters at: 1) printShowingDecimalPlaces: 2) asString.
+\end{displaycode}
+\section{Creating the subclass DisplayLCD}
+\begin{displaycode}{plain}
+WeatherStation subclass: #DisplayLCD
+    instanceVariableNames: 'lcdprocess'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'
+\end{displaycode}
+
+\begin{displaycode}{plain}
+lcdStart
+    |text|
+    lcdprocess :=  [ [        
+    text := 'Temp: ',self temperature,'\H:',self humidity,' P:',self pressure. 
+    lcd home. 
+    lcd message: text. 
+    (Delay forSeconds: 1) wait. 
+    ] repeat ] forkNamed: 'lcdprocess'. 
+\end{displaycode}
+
+\begin{displaycode}{plain}
+lcdStop
+    lcdprocess terminate. 
+    lcd clear.
+\end{displaycode}
+\section{Creating the subclass PostData}
+\begin{displaycode}{plain}
+WeatherStation subclass: #PostData
+	instanceVariableNames: 'apiKey postProcess'
+	classVariableNames: ''
+	package: 'PharoThings-MiniWeatherStation'
+\end{displaycode}
+
+\begin{displaycode}{plain}
+apiKey
+    ^apiKey
+\end{displaycode}
+
+\begin{displaycode}{plain}
+apiKey: anString    
+    apiKey := anString .
+\end{displaycode}
+
+\begin{displaycode}{plain}
+dataStart
+    |url uri |
+    url := 'https://api.thingspeak.com/update'.
+    postProcess :=  [ [        
+        uri := url,'?api_key=',self apiKey,'&field1=',self temperature,'&field2=',self humidity,'&field3=',self pressure.
+        ZnClient new get: uri.
+    (Delay forSeconds: 60) wait. 
+    ] repeat ] forkNamed: 'postprocess'. 
+\end{displaycode}
+
+\begin{displaycode}{plain}
+dataStop
+    postProcess terminate. 
+\end{displaycode}
+\section{Starting the application}
+To start the application, we need to start the two subclasses. To start the LCD application run this in the remote playground:
+
+\begin{displaycode}{plain}
+(DisplayLCD new) lcdStart.
+\end{displaycode}
+
+and to start to send the data to the Cloud, use this, replacing to your apiKey of Thingspeak:
+
+\begin{displaycode}{plain}
+(PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
+\end{displaycode}
+
 
 % lulu requires an empty page at the end. That's why I'm using
 % \backmatter here.

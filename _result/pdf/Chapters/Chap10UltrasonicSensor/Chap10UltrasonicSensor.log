@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  5 JAN 2019 16:04
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  7 JAN 2019 02:16
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.222 seconds
+luaotfload | main : initialization completed in 0.177 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2092,6 +2092,12 @@ LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/bx/n' will be
 (Font)              scaled to size 9.98218pt on input line 99.
 
+Overfull \hbox (1.96777pt too wide) in paragraph at lines 111--112
+\TU/GentiumBasic(0)/m/n/10 The ul-tra-sonic sen-sor that we will use in this tu
+-to-rial has 4 PINs: GND Ground, 
+ []
+
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
@@ -2107,7 +2113,7 @@ hic file (type png)
 f/Chapters/Chap10UltrasonicSensor/figures/pharothings-ultrasonic-board.png>
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap10UltrasonicSensor/figures/pharothings-ultras
-onic-board.png  used on input line 127.
+onic-board.png  used on input line 133.
 (luatex.def)             Requested size: 195.00198pt x 157.82394pt.
 
 \openout5 = Chap10UltrasonicSensor.listing
@@ -2115,14 +2121,13 @@ onic-board.png  used on input line 127.
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.listing)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
-Chapters/Chap10UltrasonicSensor/figures/pharothings-ultrasonic-board.png>]
+[2]
 \openout5 = Chap10UltrasonicSensor.listing
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.listing)
 LaTeX Font Info:    Font shape `TU/FiraMono(0)/m/n' will be
-(Font)              scaled to size 8.61679pt on input line 147.
+(Font)              scaled to size 8.61679pt on input line 153.
 
 \openout5 = Chap10UltrasonicSensor.listing
 
@@ -2132,7 +2137,8 @@ Missing character: There is no   (U+2028) in font FiraMono:mode=node;script=la
 tn;language=DFLT;!
 Missing character: There is no   (U+2028) in font FiraMono:mode=node;script=la
 tn;language=DFLT;!
-] [4
+</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Ch
+apters/Chap10UltrasonicSensor/figures/pharothings-ultrasonic-board.png>] [4
 
 ]
 \tf@toc=\write8
@@ -2141,15 +2147,15 @@ tn;language=DFLT;!
 \tf@lof=\write9
 
 \openout9 = Chap10UltrasonicSensor.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `Chap10UltrasonicSensor.out' has not changed.
-(rerunfilecheck)             Checksum: A2CBBB3DFF155B8B3844776804CD1A9F;1843.
+(rerunfilecheck)             Checksum: 74D84934C42E1C17762E7493BDD978ED;1856.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -2158,17 +2164,17 @@ Here is how much of LuaTeX's memory you used:
  1378 words of node memory still in use:
    7 hlist, 5 vlist, 1 rule, 10 glue, 1 glyph, 14 attribute, 209 glue_spec, 14 a
 ttribute_list, 2 write, 4 pdf_literal nodes
-   avail lists: 1:3,2:1102,3:211,4:24,5:311,6:27,7:1825,8:176,9:595,10:9,11:129
+   avail lists: 1:3,2:1152,3:220,4:26,5:312,6:30,7:2719,8:178,9:609,10:9,11:166
  41656 multiletter control sequences out of 65536+600000
  98 fonts using 14577831 bytes
- 67i,12n,122p,955b,951s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,12n,122p,955b,966s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opensans/OpenSans-Bold
 .ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fira/FiraMono-Reg
 ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap10UltrasonicSensor.pdf (8 pages, 208661 bytes).
+Output written on Chap10UltrasonicSensor.pdf (8 pages, 209399 bytes).
 
 PDF statistics: 159 PDF objects out of 1000 (max. 8388607)
  28 named destinations out of 1000 (max. 131072)
