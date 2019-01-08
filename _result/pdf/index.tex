@@ -1434,6 +1434,33 @@ Before we start to create an application, let's create our account on the websit
 Follow this tutorial to create your account and your channel:
 
 \textcode{https://roboindia.com/tutorials/thingspeak-setup}
+
+Once you've created your channel, you need to enable three channels on it. Let's use  Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture \ref{ThingspeakChannelConf} how your channel will look like.
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak-conf.png}\caption{ThingSpeak Channel Configuration.\label{ThingspeakChannelConf}}\end{center}
+\end{figure}
+
+
+You can test your channel by simulating sending some data to it. Let's for example send the values:
+
+\begin{itemize}
+\item 25 to Temperature field (field1);
+\item 56 to Humidity field (field2);
+\item and 1012 to Pressure field (field3).
+\end{itemize}
+
+Just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
+
+\textcode{https://api.thingspeak.com/update?api\_key=YOUR-WRITE-API-KEY\&
+field1=25\&field2=56\&field3=1012}
+
+So check you channel to see if it was updated with this values:
+
+\textcode{https://thingspeak.com/channels/YOUR-CHANNEL-ID}
 \section{Creating the application}
 The first step lets create a Superclass to initialize and install all devices that we will use. So let's create 2 subclasses to do the actions. The first will display this information on the LCD and the second will send the data to the cloud. Your final code will seem like the Picture \ref{MiniWeatherStationcode}.
 
@@ -1457,7 +1484,7 @@ initialize
 lcd := (RpiBoard3B current) installDevice: PotLCD1602Device  new.
 sensor := (RpiBoard3B current) installDevice: PotBME280Device new. 
 \end{displaycode}
-\section{Creating access methods}
+\subsection{Creating access methods}
 \begin{displaycode}{plain}
 humidity
     ^((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString. 
@@ -1541,6 +1568,21 @@ and to start to send the data to the Cloud, use this, replacing to your apiKey o
 \begin{displaycode}{plain}
 (PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
 \end{displaycode}
+\section{Visualizating your data}
+To see if your channel is receiving the data of your PharoThings, just access your channel and check if the data is being updated:
+
+\textcode{https://thingspeak.com/channels/YOUR-CHANNEL-ID}
+
+You will see some grafics like the Picture \ref{ThingspeakChannel}. 
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.png}\caption{ThingSpeak Channel.\label{ThingspeakChannel}}\end{center}
+\end{figure}
+
+
 
 
 % lulu requires an empty page at the end. That's why I'm using

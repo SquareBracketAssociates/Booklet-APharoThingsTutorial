@@ -8,9 +8,10 @@
 \contentsline {section}{\numberline {1.3}Experimental procedure}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Creating the Thingspeak account }{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Creating the application}{2}{section.1.5}
-\contentsline {section}{\numberline {1.6}Creating the Superclass}{2}{section.1.6}
-\contentsline {subsection}{Creating the initialize method}{3}{section*.3}
-\contentsline {section}{\numberline {1.7}Creating access methods}{3}{section.1.7}
-\contentsline {section}{\numberline {1.8}Creating the subclass DisplayLCD}{3}{section.1.8}
-\contentsline {section}{\numberline {1.9}Creating the subclass PostData}{4}{section.1.9}
-\contentsline {section}{\numberline {1.10}Starting the application}{4}{section.1.10}
+\contentsline {section}{\numberline {1.6}Creating the Superclass}{4}{section.1.6}
+\contentsline {subsection}{Creating the initialize method}{4}{section*.3}
+\contentsline {subsection}{Creating access methods}{4}{section*.4}
+\contentsline {section}{\numberline {1.7}Creating the subclass DisplayLCD}{4}{section.1.7}
+\contentsline {section}{\numberline {1.8}Creating the subclass PostData}{5}{section.1.8}
+\contentsline {section}{\numberline {1.9}Starting the application}{5}{section.1.9}
+\contentsline {section}{\numberline {1.10}Visualizating your data}{5}{section.1.10}

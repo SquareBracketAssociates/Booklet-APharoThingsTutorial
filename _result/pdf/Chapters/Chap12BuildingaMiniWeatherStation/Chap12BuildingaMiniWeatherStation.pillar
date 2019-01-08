@@ -33,6 +33,25 @@ Follow this tutorial to create your account and your channel:
 
 ==https://roboindia.com/tutorials/thingspeak-setup==
 
+Once you've created your channel, you need to enable three channels on it. Let's use  Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
+
++ThingSpeak Channel Configuration.>figures/pharothings-thingspeak-conf.png|width=85|label=ThingspeakChannelConf+
+
+You can test your channel by simulating sending some data to it. Let's for example send the values:
+- 25 to Temperature field (field1);
+- 56 to Humidity field (field2);
+- and 1012 to Pressure field (field3).
+
+Just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
+
+==https://api.thingspeak.com/update?api_key=YOUR-WRITE-API-KEY&
+field1=25&field2=56&field3=1012==
+
+So check you channel to see if it was updated with this values:
+
+==https://thingspeak.com/channels/YOUR-CHANNEL-ID==
+
+
 !!! Creating the application
 
 The first step lets create a Superclass to initialize and install all devices that we will use. So let's create 2 subclasses to do the actions. The first will display this information on the LCD and the second will send the data to the cloud. Your final code will seem like the Picture *@MiniWeatherStationcode*.
@@ -56,7 +75,7 @@ lcd := (RpiBoard3B current) installDevice: PotLCD1602Device  new.
 sensor := (RpiBoard3B current) installDevice: PotBME280Device new. 
 ]]]
 
-!!! Creating access methods
+!!!! Creating access methods
 
 [[[
 humidity
@@ -147,3 +166,13 @@ and to start to send the data to the Cloud, use this, replacing to your apiKey o
 [[[
 (PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
 ]]]
+
+!!! Visualizating your data
+
+To see if your channel is receiving the data of your PharoThings, just access your channel and check if the data is being updated:
+
+==https://thingspeak.com/channels/YOUR-CHANNEL-ID==
+
+You will see some grafics like the Picture *@ThingspeakChannel*. 
+
++ThingSpeak Channel.>figures/pharothings-thingspeak.png|width=85|label=ThingspeakChannel+

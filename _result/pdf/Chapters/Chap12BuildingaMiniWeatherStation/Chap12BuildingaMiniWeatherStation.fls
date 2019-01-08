@@ -360,6 +360,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lof
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak-conf.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak-conf.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak-conf.png
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station.png
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station.png
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-weather-station.png
@@ -423,6 +426,9 @@ OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.listing
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.listing
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.listing
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.png
+INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.png
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.toc
 OUTPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.lof
 INPUT /Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.aux
