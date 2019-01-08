@@ -97,54 +97,10 @@ In this booklet we will show you how to develop a little application that collec
 We will start to show how we can play with leds and others. 
 \chapter{Installations }
 The first step you need to do to get started with PharoThings is to install an Operating System in your Raspberry Pi. When you buy a Raspberry Pi, the OS is not factory installed.
-\section{Installating OS on RASPBERRY (RASPBIAN)}
-In this chapter, we will download and install NOOBS (New Out Of the Box Software). NOOBS is an easy operating system installer which contains Raspbian (\url{https://www.raspberrypi.org/downloads/raspbian/}) and LibreELEC (\url{https://libreelec.tv}).
 
 Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run in ARM processors.
-\subsection{Download}
-You can download an official image from the Raspberry Pi website Noobs downloads page (\url{https://www.raspberrypi.org/downloads/noobs/}). You will download a zip file and extract the files to your SD card.
-\subsection{Copying}
-You will need a computer with an SD card reader to install the image.
-This process basically extracts the files from the zip file downloaded into an SD card formatted and start the Raspberry Pi with this SD card.
 
-You can go directly to your operating system by clicking on the links below:
-\section{Copying Raspbian files on MAC OSX}
-\begin{itemize}
-\item Open “disk utility”, select the SD Card and Erase (Format MS-DOS FAT) as shown in Figure \ref{macInstall}.
-\end{itemize}
-
-\begin{itemize}
-\item Copy the files from folder NOOBS\_xxx to SD Card as shown in Figure \ref{macCopy}.
-\end{itemize}
-
-
-\begin{figure}
-
-\begin{center}
-\includegraphics[width=0.7\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-osx-arm.png}\caption{Preparing SD Card.\label{macInstall}}\end{center}
-\end{figure}
-
-
-
-\begin{figure}
-
-\begin{center}
-\includegraphics[width=0.7\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-linux-arm-copy.png}\caption{Copying NOOBS.\label{macCopy}}\end{center}
-\end{figure}
-
-\section{Copying Raspbian files on Linux}\section{Copying Raspbian files on Windows}\section{Installing the Raspbian in Raspberry Pi}
-Insert the SD Card on Raspberry and turn it on. Select “Raspbian” and “Yes” as shown by Figure \ref{install}.
-
-
-\begin{figure}
-
-\begin{center}
-\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap1GettingStarted/figures/pharothings-install-raspberry-pi-raspbian-linux-arm-install.png}\caption{Installing Raspbian.\label{install}}\end{center}
-\end{figure}
-
-
-In a few minutes, you will have your Raspberry Pi running Raspbian OS.
-Now you can install PharoThings and control devices remotely. 
+Once you've installed the Raspbian, you can install PharoThings and control devices remotely. 
 \section{Installing PharoThings on Raspberry Pi}
 Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. We will build the image on our local computer with the correct files and after we will copy to a Raspberry Pi and execute it there. In the third step, we will connect the Pharo from the local computer into Pharo of Raspberry Pi.
 \subsection{Download PharoLauncher}
