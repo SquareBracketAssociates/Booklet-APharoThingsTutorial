@@ -64,7 +64,7 @@ Let's create a new protocol to organize the methods. The first protocol we are g
 
 !!!Creating an initialize method
 
-Inside this protocol, we will create a ==initialize== method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to define some variable in the new object.
+Inside this protocol, we will create an ==initialize== method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to define some variable in the new object.
 
 Let's use the instance variable ==led==, which we defined when we created the class. The instance variable is private to the object and accessible by any methods inside this class. These methods can access this variable to get or set any value to it.
 
