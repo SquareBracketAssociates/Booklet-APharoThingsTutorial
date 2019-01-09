@@ -173,6 +173,6 @@ To see if your channel is receiving the data of your PharoThings, just access yo
 
 ==https://thingspeak.com/channels/YOUR-CHANNEL-ID==
 
-You will see some grafics like the Picture *@ThingspeakChannel*. 
+You will see some graphics like the Picture *@ThingspeakChannel*. 
 
 +ThingSpeak Channel.>figures/pharothings-thingspeak.png|width=85|label=ThingspeakChannel+
