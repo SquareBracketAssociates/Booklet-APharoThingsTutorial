@@ -1,6 +1,6 @@
 !! Lesson 1 – Turning LED on/off
 
-One of the classic analogies in electronics to “Hello World” is turn on a led or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this led by turning it on and off.
+One of the classic analogies in electronics to “Hello World” is turn on a LED (Light-emitting diode) or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this LED by turning it on and off.
 
 Coding in Pharo is very simple, but it is very powerful and you can control all the GPIOs of your Raspberry Pi remotely.
 
@@ -24,7 +24,9 @@ Before constructing any circuit, you must know the parameters of the components 
 
 !!!! The LED
 
-To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be too high, otherwise, the led will burn, or in some cases, damage the Raspberry.
+""We need to explain first what is a LED""
+
+To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be too high, otherwise, the LED will burn, or in some cases, damage the Raspberry.
 
 Typically, the forward voltage of an LED is between 1.8 and 3.3 volts. It varies by the color of the LED. A red LED typically drops 1.8 volts, but voltage drop normally rises as the light frequency increases, so a blue LED may drop from 3 to 3.3 volts[1].
 
@@ -47,7 +49,7 @@ It does not matter which way round you connect the resistors (in this experiment
 
 But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
 
-+Led polarity and resistors.>figures/pharothings-led-polarity-resistors.png|width=60|label=Ledpolarity+
++LED polarity and resistors.>figures/pharothings-led-polarity-resistors.png|width=60|label=Ledpolarity+
 
 !!!! The Breadboard
 
@@ -103,7 +105,7 @@ In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of p
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value.
 
-To control the led we first introduce the named variable #led which we assigned to GPIO7 pin instance:
+To control the LED we first introduce the named variable #led which we assigned to GPIO7 pin instance:
 
 [[[
 led := gpio7.
@@ -116,7 +118,7 @@ led beDigitalOutput.
 led value: 1.
 ]]]
 
-It turnes the led on.
+It turns the LED on.
 
 You can notice that gpio variables are not just numbers/ids. PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle a value:
 
