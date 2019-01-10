@@ -25,7 +25,7 @@ In this lesson, we will get the temperature, pressure, and humidity using the BM
 
 Connect the sensor and LCD Display on your breadboard as we did in the previous lessons. 
 
-!!! Creating the Thingspeak account 
+!!! Creating the ThingSpeak account 
 
 In order to store the measure collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
 
