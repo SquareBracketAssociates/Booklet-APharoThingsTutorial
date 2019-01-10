@@ -27,13 +27,15 @@ Connect the sensor and LCD Display on your breadboard as we did in the previous 
 
 !!! Creating the ThingSpeak account 
 
-Before we start to create an application, let's create our account on the website ThingSpeak. We will go to use this website to receive and store the data.
+In order to store the measure collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
+
+Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.
 
 Follow this tutorial to create your account and your channel:
 
 ==https://roboindia.com/tutorials/thingspeak-setup==
 
-Once you've created your channel, you need to enable three channels on it. Let's use  Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
+Once you've created your channel, you need to enable three channels on it. Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
 
 +ThingSpeak Channel Configuration.>figures/pharothings-thingspeak-conf.png|width=85|label=ThingspeakChannelConf+
 
