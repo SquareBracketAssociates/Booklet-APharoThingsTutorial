@@ -25,7 +25,9 @@ In this lesson, we will get the temperature, pressure, and humidity using the BM
 
 Connect the sensor and LCD Display on your breadboard as we did in the previous lessons. 
 
-!!! Creating the Thingspeak account 
+!!! Creating the ThingSpeak account 
+
+In order to store the measure collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
 
 Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.
 
@@ -33,7 +35,7 @@ Follow this tutorial to create your account and your channel:
 
 ==https://roboindia.com/tutorials/thingspeak-setup==
 
-Once you've created your channel, you need to enable three channels on it. Let's use  Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
+Once you've created your channel, you need to enable three channels on it. Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
 
 +ThingSpeak Channel Configuration.>figures/pharothings-thingspeak-conf.png|width=85|label=ThingspeakChannelConf+
 
@@ -173,6 +175,6 @@ To see if your channel is receiving the data of your PharoThings, just access yo
 
 ==https://thingspeak.com/channels/YOUR-CHANNEL-ID==
 
-You will see some grafics like the Picture *@ThingspeakChannel*. 
+You will see some graphics like the Picture *@ThingspeakChannel*. 
 
 +ThingSpeak Channel.>figures/pharothings-thingspeak.png|width=85|label=ThingspeakChannel+

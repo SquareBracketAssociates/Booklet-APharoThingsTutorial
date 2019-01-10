@@ -125,7 +125,7 @@
 \contentsline {subsection}{Components}{61}{section*.34}
 \contentsline {section}{\numberline {12.2}Experimental theory}{61}{section.12.2}
 \contentsline {section}{\numberline {12.3}Experimental procedure}{62}{section.12.3}
-\contentsline {section}{\numberline {12.4}Creating the Thingspeak account }{62}{section.12.4}
+\contentsline {section}{\numberline {12.4}Creating the ThingSpeak account }{62}{section.12.4}
 \contentsline {section}{\numberline {12.5}Creating the application}{62}{section.12.5}
 \contentsline {section}{\numberline {12.6}Creating the Superclass}{64}{section.12.6}
 \contentsline {subsection}{Creating the initialize method}{64}{section*.35}

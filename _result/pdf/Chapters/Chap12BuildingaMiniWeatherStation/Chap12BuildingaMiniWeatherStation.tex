@@ -111,14 +111,16 @@ Before constructing any circuit, you must know the parameters of the components 
 In this lesson, we will get the temperature, pressure, and humidity using the BME280 sensor, show this information on the LCD Display each 1 second and send this data to a Cloud Server every 60 seconds. 
 \section{Experimental procedure}
 Connect the sensor and LCD Display on your breadboard as we did in the previous lessons. 
-\section{Creating the Thingspeak account }
+\section{Creating the ThingSpeak account }
+In order to store the measure collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
+
 Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.
 
 Follow this tutorial to create your account and your channel:
 
 \textcode{https://roboindia.com/tutorials/thingspeak-setup}
 
-Once you've created your channel, you need to enable three channels on it. Let's use  Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture \ref{ThingspeakChannelConf} how your channel will look like.
+Once you've created your channel, you need to enable three channels on it. Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture \ref{ThingspeakChannelConf} how your channel will look like.
 
 
 \begin{figure}
@@ -256,7 +258,7 @@ To see if your channel is receiving the data of your PharoThings, just access yo
 
 \textcode{https://thingspeak.com/channels/YOUR-CHANNEL-ID}
 
-You will see some grafics like the Picture \ref{ThingspeakChannel}. 
+You will see some graphics like the Picture \ref{ThingspeakChannel}. 
 
 
 \begin{figure}

@@ -6,7 +6,7 @@
 \contentsline {subsection}{Components}{1}{section*.2}
 \contentsline {section}{\numberline {1.2}Experimental theory}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Experimental procedure}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Creating the Thingspeak account }{2}{section.1.4}
+\contentsline {section}{\numberline {1.4}Creating the ThingSpeak account }{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Creating the application}{2}{section.1.5}
 \contentsline {section}{\numberline {1.6}Creating the Superclass}{4}{section.1.6}
 \contentsline {subsection}{Creating the initialize method}{4}{section*.3}

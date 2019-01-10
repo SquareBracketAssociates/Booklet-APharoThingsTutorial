@@ -280,7 +280,7 @@ Now that we have installed the Operation System and PharoThings in the Raspberry
 
 In the next chapter we will see how turing on/off a LED using PharoThings. 
 \chapter{Lesson 1 – Turning LED on/off}
-One of the classic analogies in electronics to “Hello World” is turn on a led or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this led by turning it on and off.
+One of the classic analogies in electronics to “Hello World” is turn on a LED (Light-emitting diode) or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this LED by turning it on and off.
 
 Coding in Pharo is very simple, but it is very powerful and you can control all the GPIOs of your Raspberry Pi remotely.
 
@@ -298,7 +298,9 @@ In this lesson we will use a very simple setup.
 \section{Experimental theory}
 Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
 \subsection{The LED}
-To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be too high, otherwise, the led will burn, or in some cases, damage the Raspberry.
+\textbf{We need to explain first what is a LED}
+
+To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be too high, otherwise, the LED will burn, or in some cases, damage the Raspberry.
 
 Typically, the forward voltage of an LED is between 1.8 and 3.3 volts. It varies by the color of the LED. A red LED typically drops 1.8 volts, but voltage drop normally rises as the light frequency increases, so a blue LED may drop from 3 to 3.3 volts{[}1{]}.
 
@@ -325,7 +327,7 @@ But the LEDs will only work if the power is supplied correctly (if the polarity 
 \begin{figure}
 
 \begin{center}
-\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-led-polarity-resistors.png}\caption{Led polarity and resistors.\label{Ledpolarity}}\end{center}
+\includegraphics[width=0.6\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap2LED/figures/pharothings-led-polarity-resistors.png}\caption{LED polarity and resistors.\label{Ledpolarity}}\end{center}
 \end{figure}
 
 \subsection{The Breadboard}
@@ -399,7 +401,7 @@ In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of p
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value.
 
-To control the led we first introduce the named variable \#led which we assigned to GPIO7 pin instance:
+To control the LED we first introduce the named variable \#led which we assigned to GPIO7 pin instance:
 
 \begin{displaycode}{plain}
 led := gpio7.
@@ -412,7 +414,7 @@ led beDigitalOutput.
 led value: 1.
 \end{displaycode}
 
-It turnes the led on.
+It turns the LED on.
 
 You can notice that gpio variables are not just numbers/ids. PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle a value:
 
@@ -564,7 +566,7 @@ Let's create a new protocol to organize the methods. The first protocol we are g
 \end{figure}
 
 \section{Creating an initialize method}
-Inside this protocol, we will create a \textcode{initialize} method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to define some variable in the new object.
+Inside this protocol, we will create an \textcode{initialize} method. This means that every time we create a new object using this class, in this case, the Blinker class, this method will be executed to define some variable in the new object.
 
 Let's use the instance variable \textcode{led}, which we defined when we created the class. The instance variable is private to the object and accessible by any methods inside this class. These methods can access this variable to get or set any value to it.
 
@@ -667,6 +669,7 @@ In this tutorial, you learned how to define packages, classes, and methods. The 
 With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
 
 In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 8 LEDs.
+
 \chapter{Lesson 4 - LED Flowing Lights}
 Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. Let's use some methods to change the flow direction and control the flow time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights. 
 \section{What do we need?}
@@ -1246,7 +1249,7 @@ In this tutorial, you learned how to inspect remote objects to understand what t
 
 In the next lesson, let’s see a different kind of sensor, the ultrasonic sensor. It uses only 2 wires to work, but don't use the I2C protocol. See you there.
 \chapter{Lesson 9 - Ultrasonic Sensor (Distance)}
-In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Now let's use a different kind of sensor, that doesn't use I2C protocol. 
+In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Now let's use a different kind of sensor, that doesn't use I2C protocol. 
 \section{What do we need?}
 In this lesson, we will use a setup with an ultrasonic sensor.
 \subsection{Components}
@@ -1384,14 +1387,16 @@ Before constructing any circuit, you must know the parameters of the components 
 In this lesson, we will get the temperature, pressure, and humidity using the BME280 sensor, show this information on the LCD Display each 1 second and send this data to a Cloud Server every 60 seconds. 
 \section{Experimental procedure}
 Connect the sensor and LCD Display on your breadboard as we did in the previous lessons. 
-\section{Creating the Thingspeak account }
+\section{Creating the ThingSpeak account }
+In order to store the measure collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
+
 Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.
 
 Follow this tutorial to create your account and your channel:
 
 \textcode{https://roboindia.com/tutorials/thingspeak-setup}
 
-Once you've created your channel, you need to enable three channels on it. Let's use  Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture \ref{ThingspeakChannelConf} how your channel will look like.
+Once you've created your channel, you need to enable three channels on it. Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture \ref{ThingspeakChannelConf} how your channel will look like.
 
 
 \begin{figure}
@@ -1529,7 +1534,7 @@ To see if your channel is receiving the data of your PharoThings, just access yo
 
 \textcode{https://thingspeak.com/channels/YOUR-CHANNEL-ID}
 
-You will see some grafics like the Picture \ref{ThingspeakChannel}. 
+You will see some graphics like the Picture \ref{ThingspeakChannel}. 
 
 
 \begin{figure}
