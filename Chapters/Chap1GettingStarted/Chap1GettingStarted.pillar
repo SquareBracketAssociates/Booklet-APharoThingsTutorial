@@ -4,7 +4,7 @@ The first step you need to do to get started with PharoThings is to install an O
 
 Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run in ARM processors.
 
-Once you've installed the Raspbian, you can install PharoThings and control devices remotely. 
+Once you've installed the Raspbian Linux distribution, you can install PharoThings and control devices remotely.
 
 !!! Installing PharoThings on Raspberry Pi
 Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. We will build the image on our local computer with the correct files and after we will copy to a Raspberry Pi and execute it there. In the third step, we will connect the Pharo from the local computer into Pharo of Raspberry Pi.
@@ -41,7 +41,6 @@ Metacello new
 	load: #(RemoteDevServer Raspberry).
 ]]]
 
-
 +Loading PharoThings.>figures/LoadingPharoThings.png|width=60|label=LoadingPharoThings+
 
 Then configure image to disable slow browser plugins (instead remote browser will be much slower):
@@ -53,8 +52,7 @@ ClySystemEnvironmentPlugin disableSlowPlugins.
 !!!! Snapshot your Image
 
  In Pharo, click and “Save and Quit”. This way all your code and configurations are saved and ready to be reused.
- 
- 
+  
 !!!! Download the VM
 
 - Download ArmVM from *http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip*.
@@ -62,7 +60,6 @@ ClySystemEnvironmentPlugin disableSlowPlugins.
 - Copy the files shown in FIgure *@CopyARM*  to Pharo folder ==/Users/your_user_name/Documents/Pharo/pharo_image_folder== 
 
 +Copying PharoARM.>figures/CopyARM.png|width=60|label=CopyARM+
-
 
 !!!! Copying Sources
 Copy the file PharoV60.sources from the folder ==/Applications/Pharo.app/Contents/MacOS== to folder ==/Users/your_user_name/Documents/Pharo/images/pharo_image_folder/lib/pharo/5.0-201804182009/==
