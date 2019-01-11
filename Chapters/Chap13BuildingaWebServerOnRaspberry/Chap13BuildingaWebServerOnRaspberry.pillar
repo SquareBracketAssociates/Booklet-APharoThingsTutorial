@@ -16,10 +16,40 @@ Before constructing any circuit, you must know the parameters of the components 
 
 !!! Experimental procedure
 
+First of all, you have to create a class to implement the web app for the weather station :
+
+[[[
+Object subclass: #WeatherStationWebApp
+	instanceVariableNames: ''
+	classVariableNames: ''
+	package: 'PharoThings-Lessons'
+]]]
+
+and implement the following methods:
+
+[[[
+handleRequest: request
+	request uri path = #sensors
+		ifFalse: [ ^ ZnResponse notFound: request uri ].
+	^ ZnResponse ok: (ZnEntity html: self html)
+]]]
+
+[[[
+temperature
+	^ 0
+]]]
+
+
+[[[
+value: request
+	^ self handleRequest: request
+]]]
+
 !!! HTML page
 
 [[[
-<html>
+html
+	^ '<html>
    <head>
       <title>Remote control</title>
       <!-- Bootstrap core CSS -->
@@ -30,10 +60,10 @@ Before constructing any circuit, you must know the parameters of the components 
          <section class="jumbotron text-center">
             <div class="container">
                <h1 class="jumbotron-heading">Remote control</h1>
-               <p class="lead text-muted">Temperature: 28&deg;C</p>
-               <p class="lead text-muted">Humidity: 42&#37;</p>
+               <p class="lead text-muted">Temperature: 28°C</p>
+               <p class="lead text-muted">Humidity: 42%C</p>
                <p class="lead text-muted">Pressure: 1017 hPa</p>
-               <p class="lead text-muted">Fan state: 
+               <p class="lead text-muted">Fan state:
                   <button type="button" class="btn btn-success" disabled="disabled">ON</button>
                </p>
                <p>
@@ -46,7 +76,14 @@ Before constructing any circuit, you must know the parameters of the components 
       <!-- Bootstrap core JavaScript -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
    </body>
-</html>
+</html>'
+]]]
+
+Then you can start the Zn webserver like that:
+
+[[[
+ZnServer startDefaultOn: 8080.
+ZnServer default delegate map: #image to: MyFirstWebApp new.
 ]]]
 
 This page looks like the Picture *@WebPage*. 
