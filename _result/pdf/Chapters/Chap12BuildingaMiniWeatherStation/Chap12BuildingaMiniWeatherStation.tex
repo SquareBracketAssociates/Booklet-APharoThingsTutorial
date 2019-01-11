@@ -138,7 +138,7 @@ You can test your channel by simulating sending some data to it. Let's for examp
 \item and 1012 to Pressure field (field3).
 \end{itemize}
 
-Just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
+To test your channel, just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
 
 \textcode{https://api.thingspeak.com/update?api\_key=YOUR-WRITE-API-KEY\&
 field1=25\&field2=56\&field3=1012}
@@ -253,6 +253,8 @@ and to start to send the data to the Cloud, use this, replacing to your apiKey o
 \begin{displaycode}{plain}
 (PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
 \end{displaycode}
+
+Remember, when you run these commands, you are creating a process running in the background in the Raspberry. So if you run this commands many times, will be created many processes. Take care to don't do this. 
 \section{Visualizating your data}
 To see if your channel is receiving the data of your PharoThings, just access your channel and check if the data is being updated:
 

@@ -134,3 +134,10 @@
 \contentsline {section}{\numberline {12.8}Creating the subclass PostData}{65}{section.12.8}
 \contentsline {section}{\numberline {12.9}Starting the application}{65}{section.12.9}
 \contentsline {section}{\numberline {12.10}Visualizating your data}{65}{section.12.10}
+\needspace {3\baselineskip }
+\contentsline {chapter}{\chapternumberline {13}Lesson 12 - Building a Webserver on Raspberry}{67}{chapter.13}
+\contentsline {section}{\numberline {13.1}What do we need?}{67}{section.13.1}
+\contentsline {subsection}{Components}{67}{section*.37}
+\contentsline {section}{\numberline {13.2}Experimental theory}{67}{section.13.2}
+\contentsline {section}{\numberline {13.3}Experimental procedure}{68}{section.13.3}
+\contentsline {section}{\numberline {13.4}HTML page}{68}{section.13.4}

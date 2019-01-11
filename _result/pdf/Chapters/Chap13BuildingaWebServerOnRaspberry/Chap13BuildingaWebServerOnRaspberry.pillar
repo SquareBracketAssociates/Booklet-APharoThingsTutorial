@@ -1,0 +1,55 @@
+!! Lesson 12 - Building a Webserver on Raspberry
+
+In the previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to create applications to control them and how to build a Mini-Weather Station. Now we going to build a Webserver to interact with GPIOs.
+
+!!! What do we need?
+
+
+!!!! Components
+
+- 1 Raspberry Pi connected to your network (wired or wireless)
+- Jumper wires
+
+!!! Experimental theory
+
+Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
+
+!!! Experimental procedure
+
+!!! HTML page
+
+[[[
+<html>
+   <head>
+      <title>Remote control</title>
+      <!-- Bootstrap core CSS -->
+      <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body >
+      <main role="main">
+         <section class="jumbotron text-center">
+            <div class="container">
+               <h1 class="jumbotron-heading">Remote control</h1>
+               <p class="lead text-muted">Temperature: 28&deg;C</p>
+               <p class="lead text-muted">Humidity: 42&#37;</p>
+               <p class="lead text-muted">Pressure: 1017 hPa</p>
+               <p class="lead text-muted">Fan state: 
+                  <button type="button" class="btn btn-success" disabled="disabled">ON</button>
+               </p>
+               <p>
+                  <a href="#" class="btn btn-primary my-2">Turn ON</a>
+                  <a href="#" class="btn btn-secondary my-2">Turn OFF</a>
+               </p>
+            </div>
+         </section>
+      </main>
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   </body>
+</html>
+]]]
+
+This page looks like the Picture *@WebPage*. 
+
++Web Page.>figures/pharothings-webpage.png|width=85|label=WebPage+
+

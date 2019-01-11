@@ -44,7 +44,7 @@ You can test your channel by simulating sending some data to it. Let's for examp
 - 56 to Humidity field (field2);
 - and 1012 to Pressure field (field3).
 
-Just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
+To test your channel, just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
 
 ==https://api.thingspeak.com/update?api_key=YOUR-WRITE-API-KEY&
 field1=25&field2=56&field3=1012==
@@ -168,6 +168,8 @@ and to start to send the data to the Cloud, use this, replacing to your apiKey o
 [[[
 (PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
 ]]]
+
+Remember, when you run these commands, you are creating a process running in the background in the Raspberry. So if you run this commands many times, will be created many processes. Take care to don't do this. 
 
 !!! Visualizating your data
 

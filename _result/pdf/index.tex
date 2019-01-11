@@ -1414,7 +1414,7 @@ You can test your channel by simulating sending some data to it. Let's for examp
 \item and 1012 to Pressure field (field3).
 \end{itemize}
 
-Just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
+To test your channel, just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it in the API Keys tab. 
 
 \textcode{https://api.thingspeak.com/update?api\_key=YOUR-WRITE-API-KEY\&
 field1=25\&field2=56\&field3=1012}
@@ -1529,6 +1529,8 @@ and to start to send the data to the Cloud, use this, replacing to your apiKey o
 \begin{displaycode}{plain}
 (PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
 \end{displaycode}
+
+Remember, when you run these commands, you are creating a process running in the background in the Raspberry. So if you run this commands many times, will be created many processes. Take care to don't do this. 
 \section{Visualizating your data}
 To see if your channel is receiving the data of your PharoThings, just access your channel and check if the data is being updated:
 
@@ -1543,6 +1545,56 @@ You will see some graphics like the Picture \ref{ThingspeakChannel}.
 \includegraphics[width=0.85\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.png}\caption{ThingSpeak Channel.\label{ThingspeakChannel}}\end{center}
 \end{figure}
 
+
+\chapter{Lesson 12 - Building a Webserver on Raspberry}
+In the previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to create applications to control them and how to build a Mini-Weather Station. Now we going to build a Webserver to interact with GPIOs.
+\section{What do we need?}\subsection{Components}
+\begin{itemize}
+\item 1 Raspberry Pi connected to your network (wired or wireless)
+\item Jumper wires
+\end{itemize}
+\section{Experimental theory}
+Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
+\section{Experimental procedure}\section{HTML page}
+\begin{displaycode}{plain}
+<html>
+   <head>
+      <title>Remote control</title>
+      <!-- Bootstrap core CSS -->
+      <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body >
+      <main role="main">
+         <section class="jumbotron text-center">
+            <div class="container">
+               <h1 class="jumbotron-heading">Remote control</h1>
+               <p class="lead text-muted">Temperature: 28&deg;C</p>
+               <p class="lead text-muted">Humidity: 42&#37;</p>
+               <p class="lead text-muted">Pressure: 1017 hPa</p>
+               <p class="lead text-muted">Fan state: 
+                  <button type="button" class="btn btn-success" disabled="disabled">ON</button>
+               </p>
+               <p>
+                  <a href="#" class="btn btn-primary my-2">Turn ON</a>
+                  <a href="#" class="btn btn-secondary my-2">Turn OFF</a>
+               </p>
+            </div>
+         </section>
+      </main>
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   </body>
+</html>
+\end{displaycode}
+
+This page looks like the Picture \ref{WebPage}. 
+
+
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/Chapters/Chap13BuildingaWebServerOnRaspberry/figures/pharothings-webpage.png}\caption{Web Page.\label{WebPage}}\end{center}
+\end{figure}
 
 
 

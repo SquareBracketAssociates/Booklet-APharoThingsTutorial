@@ -25,3 +25,5 @@ ${inputFile:path=Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.pillar}$
 ${inputFile:path=Chapters/Chap11LCDDisplay/Chap11LCDDisplay.pillar}$
 
 ${inputFile:path=Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.pillar}$
+
+${inputFile:path=Chapters/Chap13BuildingaWebServerOnRaspberry/Chap13BuildingaWebServerOnRaspberry.pillar}$

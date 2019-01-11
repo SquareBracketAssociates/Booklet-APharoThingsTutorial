@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  10 JAN 2019 15:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.21)  11 JAN 2019 10:30
  restricted system commands enabled.
 **/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/
 Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.te
@@ -36,7 +36,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.230 seconds
+luaotfload | main : initialization completed in 0.206 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./_support/latex/sbabook/sbabook.cls
 
@@ -2222,7 +2222,7 @@ f/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.png>
 
 Package luatex.def Info: /Users/allexoliveira/PharoThingsBook/Booklet-APharoThin
 gTutorial/_result/pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharoth
-ings-thingspeak.png  used on input line 267.
+ings-thingspeak.png  used on input line 269.
 (luatex.def)             Requested size: 276.25198pt x 143.65137pt.
  [5] [6</Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result
 /pdf/Chapters/Chap12BuildingaMiniWeatherStation/figures/pharothings-thingspeak.p
@@ -2233,14 +2233,14 @@ ng>]
 \tf@lof=\write9
 
 \openout9 = Chap12BuildingaMiniWeatherStation.lof
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
 
 (/Users/allexoliveira/PharoThingsBook/Booklet-APharoThingTutorial/_result/pdf/C
 hapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.aux
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
 Package rerunfilecheck Info: File `Chap12BuildingaMiniWeatherStation.out' has no
 t changed.
 (rerunfilecheck)             Checksum: B4C171D65AD7C3B6FCF3DBB6E396A36F;2721.
@@ -2263,7 +2263,7 @@ ular.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-tug/G
 enBkBasB.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/gentium-t
 ug/GenBkBasR.ttf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/opens
 ans/OpenSans-Regular.ttf>
-Output written on Chap12BuildingaMiniWeatherStation.pdf (10 pages, 252667 bytes)
+Output written on Chap12BuildingaMiniWeatherStation.pdf (10 pages, 252842 bytes)
 .
 
 PDF statistics: 254 PDF objects out of 1000 (max. 8388607)
