@@ -1,6 +1,6 @@
 !! Lesson 1 – Turning LED on/off
 
-One of the classic analogies in electronics to “Hello World” is turn on a LED (Light-emitting diode) or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this LED by turning it on and off.
+One of the classic analogies in electronics to “Hello World” is turn on a LED (Light-Emitting Diode) or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this LED by turning it on and off.
 
 Coding in Pharo is very simple, but it is very powerful and you can control all the GPIOs of your Raspberry Pi remotely.
 
@@ -15,7 +15,7 @@ In this lesson we will use a very simple setup.
 - 1 Raspberry Pi connected to your network (wired or wireless)
 - 1 Breadboard
 - 1 LED
-- 1 Resistor (330ohms)
+- 1 Resistor (330 ohms)
 - Jumper wires
 
 !!! Experimental theory
@@ -30,7 +30,7 @@ To turn on the LED, we need to send the correct voltage and current to it. The v
 
 Typically, the forward voltage of an LED is between 1.8 and 3.3 volts. It varies by the color of the LED. A red LED typically drops 1.8 volts, but voltage drop normally rises as the light frequency increases, so a blue LED may drop from 3 to 3.3 volts[1].
 
-Most 3mm and 5mm LEDs will operate close to their peak brightness at a drive current of 20 mA. This is a conservative current: it doesn’t exceed most ratings (your specs may vary, or you may not have any specs–in this case, 20 mA is a good default guess [2])
+Most 3mm and 5mm LEDs will operate close to their peak brightness at a drive current of 20 mA. This is a conservative current: it doesn’t exceed most ratings (your specs may vary, or you may not have any specs–in this case, 20 mA is a good default guess [2]).
 
 In this experiment, the operating voltage of the LED is between 1.5V and 2.0V and the operating current is between 10mA and 20mA.
 
@@ -140,24 +140,9 @@ You can:
 
 - Interact remotely with pins and boards;
 - See the current pins state in real time;
-- Run the code dynamically.
+- Run the code dynamically;
 - Easy, powerful.
 
 !!! In the next lesson
 
 Let’s use what we learned in this lesson and write a simple code to blink the LED.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
