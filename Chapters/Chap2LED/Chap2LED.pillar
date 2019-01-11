@@ -24,7 +24,7 @@ Before constructing any circuit, you must know the parameters of the components 
 
 !!!! The LED
 
-""We need to explain first what is a LED""
+LEDs (abreviation of Light-Emitting Diode) is a semiconductor that produce light when current flows throught it. Light is produced by an effect called electroluminescence.
 
 To turn on the LED, we need to send the correct voltage and current to it. The voltage and current can’t be too high, otherwise, the LED will burn, or in some cases, damage the Raspberry.
 
