@@ -1,0 +1,27 @@
+{
+    "package": {
+        "name": "booklet-pharothings",
+        "repo": "wip",
+        "subject": "squarebracketassociates",
+        "desc": "Pharo Thing Tutorial",
+        "licenses": ["MIT"],
+        "website_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingTutorial",
+        "issue_tracker_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingTutorial/issues",
+        "vcs_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingTutorial.git",
+        "labels": ["work-in-progress"]
+    },
+
+    "version": {
+        "name": "latest",
+        "desc": "Latest successful build"
+    },
+
+    "files": [
+        {
+            "includePattern": "_result/pdf/book.pdf",
+            "uploadPattern": "PharoThingTutorial-wip.pdf",
+            "matrixParams": { "override": 1 }
+        }
+    ],
+    "publish": true
+}
