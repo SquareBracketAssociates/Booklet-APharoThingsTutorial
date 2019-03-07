@@ -28,7 +28,7 @@ deploy:
 - provider: bintray
   file: .bintray.json
   on:
-    repo: SquareBracketAssociates/Booklet-APharoThingsTutorial
+    repo: SquareBracketAssociates/Booklet-APharoThingTutorial
   skip_cleanup: true
   user: ducasse
   key:
