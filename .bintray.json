@@ -18,7 +18,7 @@
 
     "files": [
         {
-            "includePattern": "_result/pdf/book.pdf",
+            "includePattern": "_result/pdf/index.pdf",
             "uploadPattern": "PharoThingTutorial-wip.pdf",
             "matrixParams": { "override": 1 }
         }
