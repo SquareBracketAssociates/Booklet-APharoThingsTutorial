@@ -3,11 +3,11 @@
         "name": "booklet-pharothings",
         "repo": "wip",
         "subject": "squarebracketassociates",
-        "desc": "Pharo Thing Tutorial",
+        "desc": "Pharo Things Tutorial",
         "licenses": ["MIT"],
-        "website_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingTutorial",
-        "issue_tracker_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingTutorial/issues",
-        "vcs_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingTutorial.git",
+        "website_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingsTutorial",
+        "issue_tracker_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingsTutorial/issues",
+        "vcs_url": "https://github.com/SquareBracketAssociates/Booklet-APharoThingsTutorial.git",
         "labels": ["work-in-progress"]
     },
 
@@ -19,7 +19,7 @@
     "files": [
         {
             "includePattern": "_result/pdf/index.pdf",
-            "uploadPattern": "PharoThingTutorial-wip.pdf",
+            "uploadPattern": "PharoThingsTutorial-wip.pdf",
             "matrixParams": { "override": 1 }
         }
     ],
