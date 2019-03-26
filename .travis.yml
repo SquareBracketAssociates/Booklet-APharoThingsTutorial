@@ -24,12 +24,11 @@ install:
 script:
   - ./pillar/build/pillar build pdf
 
-deploy:
-- provider: bintray
-  file: .bintray.json
-  on:
-    repo: SquareBracketAssociates/Booklet-APharoThingsTutorial
-  skip_cleanup: true
-  user: ducasse
-  key:
-    secure: W9A5K3/Vc4nWrJy9zCTLyisWyHuexvESNXop4rCIMHVb0GNNQI7vKMK8V75J/so9XbXrRTp4TfMjTrOvnF+Uxtok6cFox6QU+Qw596jibVadEe5lW7JHKrlfZ+ce/pMkSZFJmhV+ahrHaG05FjYL+K/EwOiTkCdko10E2D3uK+AyRzutuCpbrhIX9EkyBk1IUomDsEhKcziTzopVT8s4p+iMe5HbRgbEubEh0DGQxzGlxJEowRCpPmd6efs1zcKCg5JPtsxJ84c7sXlxgzScVQRQ1UQf7ovcnY1wHaTz2zDX9g51MN99Pc76Y7Pvv/vzc4mbvrF0c2LFC8HdN3RAuWMCzi8Wq4HtBQm3GWoCMcWD02dusW5WowgCqqw5TBZXSTAspJoQiOuD6d32MJyawn6wzdRfTSyYqGIBHwg/rLEHOZo1+T/zJ0HD3B3+uzvPNffVPxYXt+f7YWn40oOwZRxhuH1151uZjF9H5NVwisBQwhhAhWXW/pDhpOynk3IapZXk0pgVwYwGLQ87KajjIUjR6uhuvNhzmkoYgmIRhV/yJizgtVqquL5bWbHkU/fFx1ML4RKVLYMyeIHHeMqSJ402UjKReXOj0my3ehVTp+Wk/YkmnTGNKHerbgd2vO5cx//6Uc8PTO7dQAVJ647Wb65naWmHSV5jJTfPotmYVlk=
+after_success:
+  - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
+  - mv _result/pdf/index.pdf APharoThingTutorial-wip.pdf
+  - bash upload.sh APharoThingTutorial-wip.pdf
+
+branches:
+  except:
+    - /^(?i:continuous)$/
