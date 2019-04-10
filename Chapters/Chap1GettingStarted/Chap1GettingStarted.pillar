@@ -1,130 +1,119 @@
 !! Installations 
 
-The first step you need to do to get started with PharoThings is to install an Operating System in your Raspberry Pi. When you buy a Raspberry Pi, the OS is not factory installed.
+In this chapter you will learn how to:
 
-Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run in ARM processors.
+- Install Pharo IoT in a Raspberry with Raspbian already running;
+- Install Pharo IoT and Raspbian from scratch in headless mode (without keyboard/mouse/screen);
+- Install and use Pharo IoT IDE on your Linux, Windows or Mac OSX computer.
 
-Once you've installed the Raspbian Linux distribution, you can install PharoThings and control devices remotely.
+When you buy a new Raspberry Pi, the Operating System is not factory installed. The first step you need to do to start with PharoIoT is to install an Operating System on your Raspberry Pi.
 
-!!! Installing PharoThings on Raspberry Pi
-Install PharoThings requires to get Pharo, PharoThings and an ARM virtual machine. We will build the image on our local computer with the correct files and after we will copy to a Raspberry Pi and execute it there. In the third step, we will connect the Pharo from the local computer into Pharo of Raspberry Pi.
+To maintain compatibility between this tutorial and your Raspberry, we recommend installing the Raspbian operating system. Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run on ARM processors.
 
-!!!! Download PharoLauncher
+!!! Installing Pharo IoT in a Raspberry running Raspbian
 
-Use the PharoLauncher (an application to help you running multiple versions and images of Pharo) and install Pharo 6.1. You can get the launcher from *http://pharo.org/download*.
-You can also directly install a version of Pharo from the same place.
-
-+Installing PharoLauncher.>figures/InstallLauncher.png|width=60|label=installLauncher+
-
-!!!! Download Pharo 61
-
-Run the Pharo Launcher. Double click the distribution you want to create a image and give a name to image (see Figure *@InstallPharo61*). A short name and without spaces is recommended, because we will type this name and path in command line on Linux. 
-
-+Download Pharo 61.>figures/Select61.png|width=60|label=InstallPharo61+
-
-!!!! Execute your Pharo image
-
-Launch the image as shown in Figure *@Execute61*. A folder with the image name will be created inside the folder Pharo:  ==/Users/your_user_name/Documents/Pharo/==
-
-In this example the folder is  ==/Users/my_user_name/Documents/Pharo/Pharo6.1==
-
-+Open your Pharo image.>figures/Execute61.png|width=60|label=Execute61+
-
-!!!! Load PharoThings
-
-Open Playground and execute this command to install the server part of PharoThings (as shown in Figure *@LoadingPharoThings*):
+If you already have Raspbian running on your Raspberry Pi, you can simply use the Pharo IoT zero-conf. Open a terminal window in your Raspberry Pi (local or remote SSH) and enter the following commands:
 
 [[[
-Metacello new
-	baseline: 'PharoThings';
-	repository: 'github://pharo-iot/PharoThings/src';
-	load: #(RemoteDevServer Raspberry).
+wget -O - get.pharoiot.com/server | bash
 ]]]
 
-+Loading PharoThings.>figures/LoadingPharoThings.png|width=60|label=LoadingPharoThings+
-
-Then configure image to disable slow browser plugins (instead remote browser will be much slower):
+That way you will download the server side and extract the files to the pharoiot-server folder. Go to the folder ==cd pharoiot-server== and run the ==./pharo-server==.
 
 [[[
-ClySystemEnvironmentPlugin disableSlowPlugins.
+cd pharoiot-server
+./pharo-server
 ]]]
 
-!!!! Snapshot your Image
+If everything is alright, you will see this message: ==‘a TlpRemoteUIManager is registered on port 40423’==. This means you have TelePharo running on your Raspberry on TCP port 40423.
 
- In Pharo, click and “Save and Quit”. This way all your code and configurations are saved and ready to be reused.
-  
-!!!! Download the VM
+Now you can use Pharo IoT on your computer to connect to your Raspberry and create IoT applications remotely.
 
-- Download ArmVM from *http://files.pharo.org/vm/pharo-spur32/linux/armv6/latest.zip*.
-- Unzip it
-- Copy the files shown in FIgure *@CopyARM*  to Pharo folder ==/Users/your_user_name/Documents/Pharo/pharo_image_folder== 
+If you don’t have the Raspbian installed yet in your Raspberry Pi or want to know how to install everything in headless mode, the next procedure will explain how to do this.
 
-+Copying PharoARM.>figures/CopyARM.png|width=60|label=CopyARM+
+!!! Installing Raspbian and Pharo IoT from scratch (Raspberry Headless Setup)
 
-!!!! Copying Sources
-Copy the file PharoV60.sources from the folder ==/Applications/Pharo.app/Contents/MacOS== to folder ==/Users/your_user_name/Documents/Pharo/images/pharo_image_folder/lib/pharo/5.0-201804182009/==
+There are many options to install Raspbian on your Raspberry. The most common way is to download the ISO image from the Raspberry Official website and follow the steps to install it. Basically, they are: copy an ISO image to an SD card, insert it in Raspberry Pi, turn On the Rasp and use a keyboard/mouse/screen to use it as a normal computer.
 
-!!!! Copy to the Raspberry
+But we will not use keyboard/mouse/screen to install Raspbian and run Pharo IoT! We don’t need them.
 
-Copy this folder to your Raspberry Pi (via flashdrive, network etc). The folder must have the structure shown in Figure *@OnRasp*.
+We will use a third-party program to perform these tasks automatically:
 
-+Copying the folder on your Raspberry.>figures/OnRasp.png|width=60|label=OnRasp+
+- Install Raspbian Full OS
+- Setting the Raspberry Pi hostname
+- Set boot to console
+- Enable the I2C and SPI modules
+- Connect it in your WiFi network
+- Download Pharo IoT (requires Rasberry Pi connected on the internet)
+- and start the Pharo IoT server at every boot
 
-!!! Execute PharoThings on Raspberry
+!!!! PiBakery
 
-!!!! Turn on your Raspberry and connect it to the network.
++User interface of PiBackery.>figures/pharothings-pharoiot-pibackery-raspberry-headless.png|width=60|label=piBackery+
 
-In this example, the folder Pharo6.1 was copied to folder ==/home/pi/==.
+- Download the PiBakery: PiBakery Download and install it on your computer. It’s a large file, around 1,5 and 2GB, because it has the Raspbian OS ready to install on your SD Card;
+- Download the conf file: PiBakery Pharo IoT Configuration and use the button Import in PiBakery to import these configurations;
+- Change your hostname and WiFi configuration in PiBakery;
+- Insert the SD card into your machine, click Write and select the Operation System Raspbian Full;
+- After the process, insert the SD in the Raspberry and wait about 3 minutes to complete the automatic configuration. Time depends on the speed of your internet;
+- You can now find your Raspberry by the Hostname you defined above.
 
-Is necessary apply execute permissions on the Pharo files, using the command chmod +x
+You don’t need to do anything else on your Raspberry Pi. It is already loaded with Pharo IoT starting at every boot on the TCP port 40423. Now you can use the Pharo IoT client in your computer to connect in your Raspberry and create IoT applications remotely. 
+
+!!! Install Pharo IoT IDE on your Linux, Windows or Mac OSX computer.
+
+In this point, you should have the Pharo IoT running in your Raspberry Pi, as we saw in the previous tutorial. Now we will see how to install Pharo IoT IDE on Windows, Linux, and Mac. In this way, you can connect in you Raspberry using Pharo IoT IDE to write your applications on a remote environment.
+
+!!!! Download
+
+We think of everything to make your IoT journey so much easier. To use the Pharo IoT IDE, you just need to download one zip file, extract and run the application pharo-ui.
 
 [[[
-chmod +x /home/pi/Pharo6.1/pharo
-
-chmod +x /home/pi/Pharo6.1/lib/pharo/5.0-201804182009/pharo
+get.pharoiot.com/multi.zip
 ]]]
 
-!!!! Start Server
-Start the Pharo typing the following command in the Terminal on your Raspberry :
+You can download this same file in your Windows, Linux or Mac OSX. After download, double click on pharo-ui (Linux, Mac) or pharo.bat (Windows).
+
+!!!! Pharo User Interface
+
+When you run pharo-ui or pharo.bat, maybe some security warning will be shown. Just allow to run the program and Pharo will open as shown in the Picture *@pharoUi*;
+
++User interface of PiBackery.>figures/pharothings-pharoiot-pibackery-raspberry-headless.png|width=60|label=pharoUi+
+
+You can see a quickstart guide window with some code to copy and past in the Playground. You can also click in Open in Playground below the code to open a new playground with that code.
+
+!!!! Connecting from your computer to Raspberry Pi
+
+If you followed the tutorial to install Pharo IoT in you Raspberry using PiBakery, you should have now your Raspberry connected in your WiFi network running TelePharo in the TCP 40423 port.
+
+Now with the server running in your Raspberry, you can connect your local Pharo in it. In your local machine, open the Playground and connect using the Raspberry IP address or the Hostname that you set before. 
+
+!!!! Connecting in Pharo IoT server by Hostname
 
 [[[
-pharo --headless Server.image remotePharo --startServerOnPort=40423
+ip := NetNameResolver addressForName: 'pharoiot-01'.
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: ip port: 40423).
 ]]]
 
-If all is right, you will see the answer:
+!!!! Connecting in Pharo IoT server by IP
 
 [[[
-'a TlpRemoteUIManager is registered on port 40423'
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[192 168 1 200] port: 40423).
 ]]]
 
-So now we have the Raspberry running the TelePharo on TCP port 40423 (as shown in Figure *@Commandline*) and we can connect into it from another computer.
+!!!! Working remotely
 
-+Server up and running.>figures/Commandline.png|width=60|label=Commandline+
-
-!!! Connecting Pharo client on remote Pharo
-
-Open again the Pharo on your local computer and execute this command to install the PharoThings client:
+You can also call the Remote Playground, Remote System Browser, and Remote Process Browser:)
 
 [[[
-Metacello new
-baseline: 'PharoThings';
-repository: 'github://pharo-iot/PharoThings/src';
-load: 'RemoteDev'.
+remotePharo openPlayground.
+remotePharo openBrowser.
+remotePharo openProcessBrowser.
 ]]]
 
-Type this command to connect to the remote TelePharo on Raspberry (change the IP to your Raspberry IP):
+!!!! Inspect the remote Raspberry Pi GPIO board
 
-[[[
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
-]]]
-
-Here we are using specialized Raspberry tools. They require the auto-refresh feature of inspector which is not enabled by default in Pharo 6. To activate it evaluate:
-
-[[[
-GTInspector enableStepRefresh
-]]]
-
-So for your board model you need to choose an appropriate board class. For Raspberry, it will be one of the RpiBoard subclasses. Currently, you can use the following classes according to the models:
+If you don’t receive any error, this means that you are connected. Now you can inspect the physical board of your Raspberry Pi. So for your board model you need to choose an appropriate board class. For Raspberry, it will be one of the RpiBoard subclasses. Currently, you can use the following classes according to the models:
 
 - RpiBoardBRev1: Raspberry Pi Model B Revision 1
 - RpiBoardBRev2: Raspberry Pi Model B Revision 2
@@ -143,16 +132,28 @@ And will be open the inspector showing the PIN scheme (as shown in Figure *@Phar
 
 !!!! GPIOs
 
-The board inspector shows a layout of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state.
-
-In the picture the board is shown with two configured pins: gpio3 and gpio4, which are connected to physical button and led accordingly.
+The board inspector shows a layout of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state. In the picture the board is shown with two configured pins: gpio3 and gpio4, which are connected to physical button and led accordingly.
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value. Icons are updated according to pin value changes. If you click on physical button on your board the inspector will show the updated pin state by changing its icon color.
 
 The evaluation pane in the bottom of the inspector provides bindings to gpio pins which you can script by #doIt/printIt commands. The example shows expressions which were used to configure a button and led.
 
+!!!! Saving the remote image
+
+[[[
+remotePharo saveImage.
+]]]
+
+!!!! Disconnect all remote sessions
+
+[[[
+TlpRemoteIDE disconnectAll.
+]]]
+
+Now that you are connected remotely in your Raspberry Pi, you can use sensors, buttons, LEDs, send data to the Cloud and create applications very powerful.
+
 !!! In the next chapter
 
 Now that we have installed the Operation System and PharoThings in the Raspberry Pi, we can play with LEDs, sensors, LCD displays and more. 
 
-In the next chapter we will see how turing on/off a LED using PharoThings. 
+In the next chapter we will see how turing on/off a LED using PharoThings.
