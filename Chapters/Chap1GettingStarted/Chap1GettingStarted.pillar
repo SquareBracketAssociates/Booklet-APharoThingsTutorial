@@ -49,10 +49,10 @@ We will use a third-party program to perform these tasks automatically:
 
 !!!! PiBakery
 
-+User interface of PiBackery.>figures/pharothings-pharoiot-pibackery-raspberry-headless.png|width=60|label=piBackery+
++User interface of PiBackery.>figures/pharothings-pharoiot-pibackery-raspberry-headless.png|width=90|label=piBackery+
 
-- Download the PiBakery: PiBakery Download and install it on your computer. It’s a large file, around 1,5 and 2GB, because it has the Raspbian OS ready to install on your SD Card;
-- Download the conf file: PiBakery Pharo IoT Configuration and use the button Import in PiBakery to import these configurations;
+- Download the PiBakery: ==https://www.pibakery.org/download.html== and install it on your computer. It’s a large file, around 2GB, because it has the Raspbian OS ready to install on your SD Card;
+- Download the configuration file: ==http://get.pharoiot.com/pibakeryPharoIoT.xml== and use the button Import in PiBakery to import these configurations;
 - Change your hostname and WiFi configuration in PiBakery;
 - Insert the SD card into your machine, click Write and select the Operation System Raspbian Full;
 - After the process, insert the SD in the Raspberry and wait about 3 minutes to complete the automatic configuration. Time depends on the speed of your internet;
@@ -78,7 +78,7 @@ You can download this same file in your Windows, Linux or Mac OSX. After downloa
 
 When you run pharo-ui or pharo.bat, maybe some security warning will be shown. Just allow to run the program and Pharo will open as shown in the Picture *@pharoUi*;
 
-+User interface of PiBackery.>figures/pharothings-pharoiot-pibackery-raspberry-headless.png|width=60|label=pharoUi+
++User interface of PiBackery.>figures/pharothings-pharoiot-pharoide.png|width=60|label=pharoUi+
 
 You can see a quickstart guide window with some code to copy and past in the Playground. You can also click in Open in Playground below the code to open a new playground with that code.
 
@@ -126,17 +126,15 @@ remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.
 ]]]
 
-And will be open the inspector showing the PIN scheme (as shown in Figure *@PharoThingsinspector*)
+And will be open the inspector showing the PIN scheme, as shown in Figure *@PharoThingsinspector*
 
-+Remote GPIO inspector>figures/PharoThingsInspector.png|width=60|label=PharoThingsinspector+
++Remote GPIO inspector>figures/PharoThingsInspector.png|width=70|label=PharoThingsinspector+
 
 !!!! GPIOs
 
-The board inspector shows a layout of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state. In the picture the board is shown with two configured pins: gpio3 and gpio4, which are connected to physical button and led accordingly.
+The board inspector shows a layout of pins similar to Raspberry Pi docs. But here it is a live tool which represents the current pins state. The evaluation pane in the bottom of the inspector provides bindings to gpio pins which you can script by #doIt/printIt commands, as shown in Figure *@PharoThingsinspector*.
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value. Icons are updated according to pin value changes. If you click on physical button on your board the inspector will show the updated pin state by changing its icon color.
-
-The evaluation pane in the bottom of the inspector provides bindings to gpio pins which you can script by #doIt/printIt commands. The example shows expressions which were used to configure a button and led.
 
 !!!! Saving the remote image
 
@@ -156,4 +154,4 @@ Now that you are connected remotely in your Raspberry Pi, you can use sensors, b
 
 Now that we have installed the Operation System and PharoThings in the Raspberry Pi, we can play with LEDs, sensors, LCD displays and more. 
 
-In the next chapter we will see how turing on/off a LED using PharoThings.
+In the next chapter we will see how turning on/off a LED using PharoThings.
