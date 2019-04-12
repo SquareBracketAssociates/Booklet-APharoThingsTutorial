@@ -6,11 +6,11 @@ In this chapter you will learn how to:
 - Install Pharo IoT and Raspbian from scratch in headless mode (without keyboard/mouse/screen);
 - Run and use Pharo IoT IDE on your Linux, Windows or Mac OSX computer.
 
-When you buy a new Raspberry Pi, the Operating System is not factory installed. The first step you need to do to start with PharoIoT is to install an Operating System on your Raspberry Pi.
+When you buy a new Raspberry Pi, the Operating System is not factory installed. The first step you need to do to start with Pharo IoT is to install an Operating System on your Raspberry Pi.
 
 To maintain compatibility between this tutorial and your Raspberry, we recommend installing the Raspbian operating system. Raspbian is the Foundation’s official supported operating system, a Linux OS based on Debian Stretch to run on ARM processors.
 
-!!! Running Pharo IoT in a Raspberry running Raspbian
+!!! Running Pharo IoT in a Raspberry that has Raspbian
 
 If you already have Raspbian running on your Raspberry Pi, you can simply use the Pharo IoT zero-conf. Open a terminal window in your Raspberry Pi (local or remote SSH) and enter the following commands:
 
@@ -18,7 +18,7 @@ If you already have Raspbian running on your Raspberry Pi, you can simply use th
 wget -O - get.pharoiot.com/server | bash
 ]]]
 
-That way you will download the server side and extract the files to the pharoiot-server folder. Go to the folder ==cd pharoiot-server== and run the ==./pharo-server==.
+That way you will download the server side and extract the files to the ==pharoiot-server== folder. Go to the folder ==cd pharoiot-server== and run the ==./pharo-server==.
 
 [[[
 cd pharoiot-server
@@ -148,7 +148,7 @@ remotePharo saveImage.
 TlpRemoteIDE disconnectAll.
 ]]]
 
-Now that you are connected remotely in your Raspberry Pi, you can use sensors, buttons, LEDs, send data to the Cloud and create applications very powerful.
+Now that you are connected remotely in your Raspberry Pi, you can use sensors, buttons, LEDs, send data to the Cloud and create powerful applications.
 
 !!! In the next chapter
 

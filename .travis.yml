@@ -26,8 +26,8 @@ script:
 
 after_success:
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-  - mv _result/pdf/index.pdf APharoThingTutorial-wip.pdf
-  - bash upload.sh APharoThingTutorial-wip.pdf
+  - mv _result/pdf/index.pdf APharoThingsTutorial-wip.pdf
+  - bash upload.sh APharoThingsTutorial-wip.pdf
 
 branches:
   except:
