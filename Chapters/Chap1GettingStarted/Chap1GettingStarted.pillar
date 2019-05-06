@@ -15,7 +15,7 @@ To maintain compatibility between this tutorial and your Raspberry, we recommend
 If you already have Raspbian running on your Raspberry Pi, you can simply use the Pharo IoT zero-conf. Open a terminal window in your Raspberry Pi (local or remote SSH) and enter the following commands:
 
 [[[
-wget -O - get.pharoiot.com/server | bash
+wget -O - get.pharoiot.org/server | bash
 ]]]
 
 That way you will download the server side and extract the files to the ==pharoiot-server== folder. Go to the folder ==cd pharoiot-server== and run the ==./pharo-server==.
