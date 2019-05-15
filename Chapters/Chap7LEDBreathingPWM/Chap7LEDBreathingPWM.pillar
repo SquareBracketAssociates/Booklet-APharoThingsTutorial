@@ -1,6 +1,46 @@
 !! Lesson 6 - LED Breathing PWM
 
+In a previous lesson, wee learn how to switch on and switch off a LED. How can we fade a LED now ? In order to do that,
+we can do a simulation of an analog pin with a digital pin. This technics is know as PWM (Pulse-Width modulation). See more details
+on Wikipedia page here: https://en.wikipedia.org/wiki/Pulse-width_modulation
+
+!!! What do we need ?
+Wee are using the same set as the first lesson:
+
+!!!! Components
+
+- 1 Raspberry Pi connected to your network (wired or wireless)
+- 1 Breadboard
+- 1 LED
+- 1 Resistor 330ohms
+- Jumper wires
+
+!!!! Experimental theory
+
+The Raspberry Pi GPIO pin can be set in PWM mode. The GPIO26 pin is already setup as a PWM output. We will connect the LED this this pin instead of GPIO7.
+
+!!! Experimental procedure
+
+!!! Connecting remotely
+
+!!! Experimental code
+
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+
+[[[
+led := gpio26.
+led bePWMOutput.
+]]]
 
 
+Try to change the fading of the LED like that:
 
+[[[
+led writePWMValue: aValue
+]]]
+
+aValue could be between 0 and 255.
+Try to wrote a program that will fade the LED progressively from on to off.
+
+!!! In the next lesson
 
