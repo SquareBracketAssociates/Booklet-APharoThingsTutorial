@@ -1,10 +1,10 @@
 !! Lesson 7 - Controlling LED by Button
 
-In the previous lessons, we learned how to control the GPIOs putting them in mode OUT. This means send power to wire connected in on specific GPIO. Now we will put the GPIO in mode IN, to read the pin state. This means that our application can know when a button is pressed. Let’s create a shortcode on the remote inspector to turn On one LED each time we press the button.
+In the previous lessons, we learned how to control the GPIOs putting them in mode OUT. This means send power to wire connected in on specific GPIO. Now we will put the GPIO in mode IN, to read the pin state. This means that our application can know when a button is pressed. Let’s create code on the remote inspector to turn on one LED each time we press the button.
 
 !!! What do we need?
 
-We are using the set of the first lesson, but let's use 8 LEDs and 8 resistors and some more jumper wires.
+We are using the set of the first lesson, and we add one pushbutton.
 
 !!!!Components
 
@@ -15,15 +15,13 @@ We are using the set of the first lesson, but let's use 8 LEDs and 8 resistors a
 - 1 Pushbutton
 - Jumper wires
 
-
 !!! Experimental theory
 
-The Raspberry Pi GPIOs can be set OUT or IN mode. When we set them to IN, the selected pin can have change the state from 0 to 1 or vice-versa when we connect it in the 3.3V or ground PIN.
+The Raspberry Pi GPIOs can be set in OUT or IN mode. When we set them to IN, the selected pin can have change the state from 0 to 1 or vice-versa when we connect it in the 3.3V or ground PIN.
 
 In this lesson, we will use the pull-up mode with an internal resistor. This means that we will use the 3.3V pin to change the GPIO value. If we used the pull-down mode, we would use the Ground Pin to change the GPIO value. To know more, you can access the Wiring Pi website, http://wiringpi.com/reference/core-functions.
 
 In this scenario, we will put a push button between the 3.3V pin and GPIO pin, to control when to send energy to GPIO.
-
 
 !!! Experimental procedure
 
@@ -89,7 +87,7 @@ Now let’s create a process to check when the button is pressed and send this v
      ] forkNamed: 'button process'.
 ]]]
 
-Your LED will turn On when the button is pressed!
+Your LED will turn on when the button is pressed!
 
 !!! Terminating the process
 
