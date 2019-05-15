@@ -1,11 +1,12 @@
 !! Lesson 6 - LED Breathing PWM
 
 In a previous lesson, wee learn how to switch on and switch off a LED. How can we fade a LED now ? In order to do that,
-we can do a simulation of an analog pin with a digital pin. This technics is know as PWM (Pulse-Width modulation). See more details
+we can do a simulation of an analog pin with a digital pin. This technics is known as PWM (Pulse-Width modulation). See more details
 on Wikipedia page here: https://en.wikipedia.org/wiki/Pulse-width_modulation
 
 !!! What do we need ?
 Wee are using the same set as the first lesson:
+
 
 !!!! Components
 
@@ -18,6 +19,8 @@ Wee are using the same set as the first lesson:
 !!!! Experimental theory
 
 The Raspberry Pi GPIO pin can be set in PWM mode. The GPIO26 pin is already setup as a PWM output. We will connect the LED this this pin instead of GPIO7.
+
++Fading a led with PWM>figures/pharothings-raspberry-pwm-led.jpeg|width=70|label=PWMLed+
 
 !!! Experimental procedure
 
