@@ -1,12 +1,15 @@
 !! Lesson 6 - LED Breathing PWM
 
+
+""PWM support is currently broken in PharoThings.""
+
 In a previous lesson, wee learn how to switch on and switch off a LED. How can we fade a LED now ? In order to do that,
 we can do a simulation of an analog pin with a digital pin. This technics is known as PWM (Pulse-Width modulation). See more details
 on Wikipedia page here: https://en.wikipedia.org/wiki/Pulse-width_modulation
 
-!!! What do we need ?
-Wee are using the same set as the first lesson:
 
+!!! What do we need ?
+We are using the same set as the first lesson:
 
 !!!! Components
 
@@ -18,7 +21,9 @@ Wee are using the same set as the first lesson:
 
 !!!! Experimental theory
 
-The Raspberry Pi GPIO pin can be set in PWM mode. The GPIO26 pin is already setup as a PWM output. We will connect the LED this this pin instead of GPIO7.
+The Raspberry Pi GPIO pin can be set in PWM mode. The GPIO1 pin is already setup as a PWM output. We will connect the LED this this pin instead of GPIO7.
+
+""Figure need to be change, to use GPIO1 instead of GPIO26.""
 
 +Fading a led with PWM>figures/pharothings-raspberry-pwm-led.jpeg|width=70|label=PWMLed+
 
@@ -28,7 +33,7 @@ The Raspberry Pi GPIO pin can be set in PWM mode. The GPIO26 pin is already setu
 
 !!! Experimental code
 
-In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin GPI026 to be in PWM output mode as we did in the last lesson:
 
 [[[
 led := gpio26.
@@ -42,7 +47,7 @@ Try to change the fading of the LED like that:
 led writePWMValue: aValue
 ]]]
 
-aValue could be between 0 and 255.
+aValue could be between 0 and 1023.
 Try to wrote a program that will fade the LED progressively from on to off.
 
 !!! In the next lesson
