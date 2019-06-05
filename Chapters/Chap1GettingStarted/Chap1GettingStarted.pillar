@@ -52,7 +52,7 @@ We will use a third-party program to perform these tasks automatically:
 +User interface of PiBackery.>figures/pharothings-pharoiot-pibackery-raspberry-headless.png|width=90|label=piBackery+
 
 - Download the PiBakery: ==https://www.pibakery.org/download.html== and install it on your computer. It’s a large file, around 2GB, because it has the Raspbian OS ready to install on your SD Card;
-- Download the configuration file: ==http://get.pharoiot.com/pibakeryPharoIoT.xml== and use the button Import in PiBakery to import these configurations;
+- Download the configuration file: ==http://get.pharoiot.org/pibakeryPharoIoT.xml== and use the button Import in PiBakery to import these configurations;
 - Change your hostname and WiFi configuration in PiBakery;
 - Insert the SD card into your machine, click Write and select the Operation System Raspbian Full;
 - After the process, insert the SD in the Raspberry and wait about 3 minutes to complete the automatic configuration. Time depends on the speed of your internet;
@@ -69,7 +69,7 @@ In this point, you should have the Pharo IoT running in your Raspberry Pi, as we
 We think of everything to make your IoT journey so much easier. To use the Pharo IoT IDE, you just need to download one zip file, extract and run the application pharo-ui.
 
 [[[
-get.pharoiot.com/multi.zip
+get.pharoiot.org/multi.zip
 ]]]
 
 You can download this same file in your Windows, Linux or Mac OSX. After download, double click on pharo-ui (Linux, Mac) or pharo.bat (Windows).
