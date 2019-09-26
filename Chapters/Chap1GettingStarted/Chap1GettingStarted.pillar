@@ -55,14 +55,14 @@ We will use a third-party program to perform these tasks automatically:
 - Download the configuration file: ==http://get.pharoiot.org/pibakeryPharoIoT.xml== and use the button Import in PiBakery to import these configurations;
 - Change your hostname and WiFi configuration in PiBakery;
 - Insert the SD card into your machine, click Write and select the Operation System Raspbian Full;
-- After the process, insert the SD in the Raspberry and wait about 3 minutes to complete the automatic configuration. Time depends on the speed of your internet;
+- After the process, insert the SD into Raspberry and wait about 3 minutes to complete the automatic configuration. Time depends on the speed of your internet;
 - You can now find your Raspberry by the Hostname you defined above.
 
 You do not need to do anything else on your Raspberry Pi. It is already loaded with Pharo IoT starting at every boot on the TCP port 40423. Now you can use the Pharo IoT client in your computer to connect in your Raspberry and create IoT applications remotely. 
 
 !!! Run Pharo IoT IDE on your Linux, Windows or Mac OSX computer.
 
-In this point, you should have the Pharo IoT running in your Raspberry Pi, as we saw in the previous tutorial. Now we will see how to run Pharo IoT IDE on Windows, Linux, and Mac. In this way, you can connect in you Raspberry using Pharo IoT IDE to write your applications on a remote environment.
+At this point, you should have the Pharo IoT running on your Raspberry Pi, as we saw in the previous tutorial. Now we will see how to run Pharo IoT IDE on Windows, Linux, and Mac. In this way, you can connect in you Raspberry using Pharo IoT IDE to write your applications on a remote environment.
 
 !!!! Download
 
@@ -76,15 +76,15 @@ You can download this same file in your Windows, Linux or Mac OSX. After downloa
 
 !!!! Pharo User Interface
 
-When you run pharo-ui or pharo.bat, maybe some security warning will be shown. Just allow to run the program and Pharo will open as shown in the Picture *@pharoUi*;
+When you run pharo-ui or pharo.bat, maybe some security warning will be shown. Just allow to run the program and Pharo will open as shown in Picture *@pharoUi*;
 
 +User interface of Pharo.>figures/pharothings-pharoiot-pharoide.png|width=90|label=pharoUi+
 
-You can see a quickstart guide window with some code to copy and past in the Playground. You can also click in Open in Playground below the code to open a new playground with that code.
+You can see a quickstart guide window with some code to copy and past in Playground. You can also click in Open in Playground below the code to open a new playground with that code.
 
 !!!! Connecting from your computer to Raspberry Pi
 
-If you followed the tutorial to run Pharo IoT in you Raspberry, you should have now your Raspberry connected in your WiFi network running TelePharo in the TCP 40423 port.
+If you followed the tutorial to run Pharo IoT in you Raspberry, you should have now your Raspberry connected in your WiFi network running TelePharo in TCP 40423 port.
 
 Now with the server running in your Raspberry, you can connect your local Pharo in it. In your local machine, open the Playground and connect using the Raspberry IP address or the Hostname that you set before. 
 
@@ -152,6 +152,6 @@ Now that you are connected remotely in your Raspberry Pi, you can use sensors, b
 
 !!! In the next chapter
 
-Now that we have installed the Operation System and Pharo IoT in the Raspberry Pi, we can play with LEDs, sensors, LCD displays and more. 
+Now that we have installed the Operation System and Pharo IoT on Raspberry Pi, we can play with LEDs, sensors, LCD displays and more. 
 
 In the next chapter we will see how turning on/off a LED using PharoThings.

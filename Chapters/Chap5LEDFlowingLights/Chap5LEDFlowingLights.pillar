@@ -19,10 +19,10 @@ We are using the set of the first lesson, but let's use 8 LEDs and 8 resistors a
 We saw in lesson 1 how to connect the LED and resistors on the breadboard. Now let's do the same, but putting more 7 LEDs and resistors on the breadboard. 
 
 
-- Connect the Ground PIN from Raspberry in the breadboard blue rail (-). 
+- Connect the Ground PIN from Raspberry on breadboard blue rail (-). 
 - Then connect the 8 resistors from the blue rail (-) to a column on the breadboard, as shown below;
 - Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
-- And insert the jumper wires connecting the right column of each LED to GPIO from 0 to 7, as shown in the Picture *@Schema8Leds*.
+- And insert the jumper wires connecting the right column of each LED to GPIO from 0 to 7, as shown in Picture *@Schema8Leds*.
 
 The Figure *@Physical8Leds* shows how the electric connection is made.
 
@@ -120,13 +120,13 @@ flowing := [ 2 timesRepeat: [
 ] ].
 ]]]
 
-Now we can start the process just send the method forkNamed: to the object ==flowing==, like in the following line:
+Now we can start the process just send the method forkNamed: to the object ==flowing==, as in the following line:
 
 [[[
 flowing forkNamed: 'FlowingProcess'.
 ]]]
 
-Your final code will seem like the Picture *@Process8LEDs*. Run this code once and when you want to flow the LEDs again, just run the last line. But remember, to each change in the code, you need to run the part that you changed. 
+Your final code will seem like the Picture *@Process8LEDs*. Run this code once and when you want to flow the LEDs again, just run the last line. But remember, to each code change, you need to run the part that you changed. 
 
 [[[
 gpioArray := { gpio0. gpio1. gpio2. gpio3. gpio4. gpio5. gpio6. gpio7 }.

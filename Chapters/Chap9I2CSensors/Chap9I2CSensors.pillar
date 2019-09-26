@@ -1,6 +1,6 @@
 !! Lesson 8 - I2C Sensors (Temperature, Humidity, Pressure and Acellerometer)
 
-In the previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. Now let's start using some sensors to interact automatically with the real world, taking the temperature, air pressure and humidity This kind of sensor use the I2C protocol to communicate.
+In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. Now let's start using some sensors to interact automatically with the real world, taking the temperature, air pressure and humidity This kind of sensor use the I2C protocol to communicate.
 
 !!! What do we need?
 
@@ -51,11 +51,11 @@ After the addressing sequences, the data streams are as many as they are sent un
 
 Now we will build the circuit. This circuit consists of three sensors (BME280, MCP9808, ADXL345) and a power supply (the Rasp).
 
-- Connect the Ground PIN from Raspberry in the breadboard blue rail (-). In this experiment we will use the PIN6 (Ground);
+- Connect the Ground PIN from Raspberry on breadboard blue rail (-). In this experiment we will use the PIN6 (Ground);
 - Then connect the 3.3V (PIN1) pin in the red rail (+). 
-- Now let's connect the SCL (PIN5) and SDA (PIN3) wires. Connect them like as shown in the Figure *@physicalSensors* ;
+- Now let's connect the SCL (PIN5) and SDA (PIN3) wires. Connect them like as shown in Figure *@physicalSensors* ;
 - Now push the sensors in the breadboard;
-- And insert the jumper wires connecting the sensor in the bus, like as shown in the Figure *@physicalSensors*;
+- And insert the jumper wires connecting the sensor in the bus, like as shown in Figure *@physicalSensors*;
 - The last step is to connect the power 3.3V (+) and ground (-) wires in each sensor.
 
 The Figure *@physicalSensors* shows how the electric connection is made.

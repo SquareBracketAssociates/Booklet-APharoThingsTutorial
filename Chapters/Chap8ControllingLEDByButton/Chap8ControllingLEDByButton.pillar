@@ -1,6 +1,6 @@
 !! Lesson 7 - Controlling LED by Button
 
-In the previous lessons, we learned how to control the GPIOs putting them in mode OUT. This means send power to wire connected in on specific GPIO. Now we will put the GPIO in mode IN, to read the pin state. This means that our application can know when a button is pressed. Let’s create code on the remote inspector to turn on one LED each time we press the button.
+In previous lessons, we learned how to control the GPIOs putting them in mode OUT. This means send power to wire connected in on specific GPIO. Now we will put the GPIO in mode IN, to read the pin state. This means that our application can know when a button is pressed. Let’s create code on the remote inspector to turn on one LED each time we press the button.
 
 !!! What do we need?
 
@@ -27,7 +27,7 @@ In this scenario, we will put a push button between the 3.3V pin and GPIO pin, t
 
 Now we will build the circuit. This circuit consists of an LED, a resistor to limit current and a push button, to control when to send power to GPIO IN.  
 
-- Connect the Ground PIN from Raspberry in the breadboard blue rail (-). In this experiment we will use the PIN6 (Ground);
+- Connect the Ground PIN from Raspberry on breadboard blue rail (-). In this experiment we will use the PIN6 (Ground);
 - Then connect the resistor from the same row on the breadboard to a column on the breadboard, as shown below;
 - Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
 - And insert a jumper wire connecting the right column and the PIN7 (GPIO7);
