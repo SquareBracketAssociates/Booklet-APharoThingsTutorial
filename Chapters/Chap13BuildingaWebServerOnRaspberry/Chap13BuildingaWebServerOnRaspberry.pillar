@@ -1,18 +1,18 @@
 !! Lesson 12 - Building a Webserver on Raspberry
 
-In previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to create applications to control them and how to build a Mini-Weather Station. Now we going to build a Webserver to interact with GPIOs.
+In previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to build a Mini-Weather Station. 
+Now we are going to build a Webserver to interact with GPIOs.
+We will used the HTTP server named Zinc available by default in Pharo. 
+For more complex servers, Pharoers uses either Teapot a layer on top of Zinc or Seaside a full web application server.
 
 !!! What do we need?
 
+Empty please fill me :)
 
 !!!! Components
 
 - 1 Raspberry Pi connected to your network (wired or wireless)
 - Jumper wires
-
-!!! Experimental theory
-
-Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
 
 !!! Experimental procedure
 
@@ -27,25 +27,27 @@ Object subclass: #WeatherStationWebApp
 
 and implement the following methods:
 
+The method ==handleRequest:== will generate an answer that consists in an HTML page
+that we define just after. 
 [[[
-handleRequest: request
+WeatherStationWebApp >> handleRequest: request
 	request uri path = #sensors
 		ifFalse: [ ^ ZnResponse notFound: request uri ].
 	^ ZnResponse ok: (ZnEntity html: self html)
 ]]]
 
 [[[
-temperature
+WeatherStationWebApp >> temperature
 	^ 0
 ]]]
 
-
 [[[
-value: request
+WeatherStationWebApp >> value: request
 	^ self handleRequest: request
 ]]]
 
 !!! HTML page
+We define now the HTML that will be returned by the server. 
 
 [[[
 html
@@ -78,6 +80,8 @@ html
    </body>
 </html>'
 ]]]
+
+!!! Starting the server
 
 Then you can start the Zn webserver like that:
 
