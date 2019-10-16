@@ -1,6 +1,7 @@
 !! Lesson 11 - Building a Mini-Weather Station
 
-In previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to create applications to control them. Now we will use everything that we learned to build a Mini-Weather Station. 
+In previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use Object-Oriented Programming to create applications to control them. 
+Now we will use everything that we learned to build a Mini-Weather Station. 
 
 !!! What do we need?
 
@@ -27,19 +28,24 @@ Connect the sensor and LCD Display on your breadboard as we did in previous less
 
 !!! Creating the ThingSpeak account 
 
-In order to store the measure collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
+To store the measures collected by the weather station, we will use a web service called ThingSpeak. 
+ThingSpeak is a cloud application that is dedicated to IoT (Internet of Things).
 
-Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.
+Before we start to create an application, let's create our account on the website Thingspeak. 
+We will go to use this website to receive and store the data.
 
 Follow this tutorial to create your account and your channel:
 
 ==https://roboindia.com/tutorials/thingspeak-setup==
 
-Once you've created your channel, you need to enable three channels on it. Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
+Once you've created your channel, you need to enable three channels on it. 
+Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. 
+You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
 
 +ThingSpeak Channel Configuration.>figures/pharothings-thingspeak-conf.png|width=85|label=ThingspeakChannelConf+
 
-You can test your channel by simulating sending some data to it. Let's for example send the values:
+You can test your channel by simulating sending some data to it. 
+Let's for example send the values:
 - 25 to Temperature field (field1);
 - 56 to Humidity field (field2);
 - and 1012 to Pressure field (field3).
@@ -56,12 +62,16 @@ So check you channel to see if it was updated with this values:
 
 !!! Creating the application
 
-The first step lets create a Superclass to initialize and install all devices that we will use. So let's create 2 subclasses to do the actions. The first will display this information on the LCD and the second will send the data to the cloud. Your final code will seem like the Picture *@MiniWeatherStationcode*.
+The first step is to create a superclass to initialize and install all devices that we will use. 
+Then we will create 2 subclasses to do the actions. 
+The first will display this information on the LCD and the second will send the data to the cloud. 
+Your final code will look like Picture *@MiniWeatherStationcode*.
 
 +Mini Weather Station code.>figures/pharothings-weather-station.png|width=85|label=MiniWeatherStationcode+
 
-!!! Creating the Superclass
+!!! Creating the superclass
 
+We create a superclass named ==WeatherStation== with two instance variables ==sensor== and ==lcd==.
 [[[
 Object subclass: #WeatherStation
     instanceVariableNames: 'sensor lcd'
@@ -72,29 +82,30 @@ Object subclass: #WeatherStation
 !!!! Creating the initialize method
 
 [[[
-initialize
-lcd := (RpiBoard3B current) installDevice: PotLCD1602Device  new.
-sensor := (RpiBoard3B current) installDevice: PotBME280Device new. 
+WeatherStation >> initialize
+	lcd := RpiBoard3B current installDevice: PotLCD1602Device  new.
+	sensor := RpiBoard3B current installDevice: PotBME280Device new
 ]]]
 
-!!!! Creating access methods
+!!!! Creating accessor methods
 
 [[[
-humidity
-    ^((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString. 
-]]]
-
-[[[
-pressure
-    ^((sensor readParameters at: 2) printShowingDecimalPlaces: 2) asString. 
+WeatherStation >> humidity
+    ^ ((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString
 ]]]
 
 [[[
-temperature 
-    ^((sensor readParameters at: 1) printShowingDecimalPlaces: 2) asString.
+WeatherStation >> pressure
+    ^ ((sensor readParameters at: 2) printShowingDecimalPlaces: 2) asString
+]]]
+
+[[[
+WeatherStation >> temperature 
+    ^ ((sensor readParameters at: 1) printShowingDecimalPlaces: 2) asString
 ]]]
 
 !!! Creating the subclass DisplayLCD
+We create now a subclass of ==WeatherStation== name ==DisplayLCD==. 
 
 [[[
 WeatherStation subclass: #DisplayLCD
@@ -103,24 +114,33 @@ WeatherStation subclass: #DisplayLCD
     package: 'PharoThings-MiniWeatherStation'
 ]]]
 
-[[[
-lcdStart
-    |text|
-    lcdprocess :=  [ [        
-    text := 'Temp: ',self temperature,'\H:',self humidity,' P:',self pressure. 
-    lcd home. 
-    lcd message: text. 
-    (Delay forSeconds: 1) wait. 
-    ] repeat ] forkNamed: 'lcdprocess'. 
-]]]
+We define the method ==lcdStart== as follows: 
 
 [[[
-lcdStop
+DisplayLCD >> lcdStart
+    
+    lcdprocess :=  [ [
+    	| text |
+    	text := 'Temp: ', self temperature,'\H:', self humidity,' P:', self pressure.
+	lcd home. 
+   	lcd message: text. 
+	(Delay forSeconds: 1) wait. 
+    ] repeat ] forkNamed: 'lcdprocess'
+]]]
+
+This method is doing an active loop regularly sending information to the LCD. 
+Note that the two first line of the treatment could be extracted in a separate method.
+
+We then define the method ==lcdStop== to stop and terminate the update process. 
+[[[
+DisplayLCD >> lcdStop
     lcdprocess terminate. 
-    lcd clear.
+    lcd clear
 ]]]
 
 !!! Creating the subclass PostData
+
+Now we creare a second subclass named ==PostData==. It has two instance variables ==apiKey== and ==postProcess==. 
 
 [[[
 WeatherStation subclass: #PostData
@@ -129,30 +149,34 @@ WeatherStation subclass: #PostData
 	package: 'PharoThings-MiniWeatherStation'
 ]]]
 
+We define some simple accessors methods.
 [[[
-apiKey
-    ^apiKey
+PostData >> apiKey
+    ^ apiKey
 ]]]
 
 [[[
-apiKey: anString    
-    apiKey := anString .
+PostData >> apiKey: anString    
+    apiKey := anString
 ]]]
 
+We define the method to start the process of sending data. 
+Note that the body of this method could be extracted in a separate method to be able to test it. 
 [[[
-dataStart
-    |url uri |
+PostData >> dataStart
+    |url |
     url := 'https://api.thingspeak.com/update'.
-    postProcess :=  [ [        
+    postProcess :=  [ [  
+    	| uri |
         uri := url,'?api_key=',self apiKey,'&field1=',self temperature,'&field2=',self humidity,'&field3=',self pressure.
         ZnClient new get: uri.
-    (Delay forSeconds: 60) wait. 
-    ] repeat ] forkNamed: 'postprocess'. 
+    	(Delay forSeconds: 60) wait. 
+    ] repeat ] forkNamed: 'postprocess'
 ]]]
 
 [[[
-dataStop
-    postProcess terminate. 
+PostData >> dataStop
+    postProcess terminate
 ]]]
 
 !!! Starting the application
@@ -160,13 +184,13 @@ dataStop
 To start the application, we need to start the two subclasses. To start the LCD application run this in the remote playground:
 
 [[[
-(DisplayLCD new) lcdStart.
+DisplayLCD new lcdStart.
 ]]]
 
 and to start to send the data to the Cloud, use this, replacing to your apiKey of Thingspeak:
 
 [[[
-(PostData new) apiKey:'F1MKEG7PJ44930L8'; dataStart.
+PostData new apiKey:'F1MKEG7PJ44930L8'; dataStart.
 ]]]
 
 Remember, when you run these commands, you are creating a process running in the background in Raspberry. So if you run this commands many times, will be created many processes. Take care to don't do this. 
