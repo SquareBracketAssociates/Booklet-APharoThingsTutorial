@@ -1,6 +1,6 @@
 !! Lesson 9 - Ultrasonic Sensor (Distance)
 
-In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Now let's use a different kind of sensor, that doesn't use I2C protocol. 
+In this chapter we will use an ultrasonic sensor to measure distances.
 
 !!! What do we need?
 
@@ -21,22 +21,29 @@ Before constructing any circuit, you must know the parameters of the components 
 
 !!!! The ultrasonic measure
 
-The ultrasonic sensor that we will use in this tutorial has 4 PINs: GND Ground, VCC 5V, TRIG to send a pulse and ECHO to show how long time the pulse spend to go and back.  
+The ultrasonic sensor that we will use in this tutorial has 4 PINs: GND Ground, VCC 5V, TRIG to send a pulse and ECHO to show how long time the pulse spend to go and back.
 
-!!!! How the HC-SR04 works?
+!!!! How does HC-SR04 work?
 
-It uses our Raspberry Pi to send a signal using the TRIG, which triggers the sensor to send an ultrasonic pulse. Pulse waves reflect any nearby objects and some are reflected back to the sensor. The sensor detects these return waves and measures the time between the trigger and the returned pulse and sends a 5V signal on the ECHO pin. So is just to see how long time the ECHO pin will stay ON and calculate the distance because we already know the sound speed. 
+The sensor sends an ultrasonic pulse, triggered by a 10 μs 5V signal on the triggers pin (TRIG).
+
+It uses our Raspberry Pi to send a signal using the TRIG pin, which triggers the sensor to send an ultrasonic pulse.
+Pulse waves reflect against any nearby objects and some are reflected back to the sensor.
+The duration of the echo signal is proportional to the distance: we can approximate the distance using the speed of sound (≈340m.s−1).
+
++HSRO4 ultrasonic sensor working principle.>figures/HSR04.pdf|width=100|label=physicalSonicSensors+
 
 !!!! Limiting the return voltage with resistors
 
-The ECHO signal in sensor HC-SR04 uses 5V. But the Raspberry Pi PINS uses 3.3V. If we send 5V to Raspberry GPIO, it can damage the Rasp. To avoid this let's put 2 resistors to limit the voltage.  
+The ECHO signal in sensor HC-SR04 uses 5V. But the Raspberry Pi PINS uses 3.3V. If we send 5V to the Raspberry Pi GPIO, it can damage the device.
+To avoid this, we will use 2 resistors to limit the voltage.
 
 !!! Experimental procedure
 
 Now we will build the circuit. This circuit consists of 1 ultrasonic sensor HC-SR04, 1 resistor 1K ohms, 1 resistor 2K ohms and a power supply (the Rasp).
 
 - Connect the Ground PIN from Raspberry on breadboard blue rail (-). In this experiment we will use the PIN9 (Ground);
-- Then connect the 5V (PIN2) pin in the red rail (+). 
+- Then connect the 5V (PIN2) pin in the red rail (+).
 - Now push the HC-SR04 sensor on breadboard;
 - And insert the jumper wires connecting the sensor leg TRIG in GPIO0 (PIN11) and the sensor leg ECHO in the breadboard, like the scheme shown in Figure *@physicalSonicSensors*;
 - The last step is to connect the power 5V and ground (-) wires from the breadboard rails in sensor VCC + and GND (-) legs.
@@ -59,27 +66,16 @@ remoteBoard inspect.
 
 !!! Experimental code
 
-In your inspect window (Inspector on a PotRemoteBoard), let’s create an instance of the ultrasonic sensor. 
+In your inspect window (Inspector on a PotRemoteBoard), let’s create an instance of the ultrasonic sensor.
 
 [[[
 d := board installDevice: PotHCSR04Device new. ​ 
 ]]]
 
-As we saw before, we can inspect the remote object to see some properties and methods. Let's use the method ==readDistance== to read the distance: 
+As we saw before, we can inspect the remote object to see some properties and methods.
+Let's use the method ==readDistance== to read the distance.
+This method returns a float representing the measured distance in centimetres.
 
 [[[
 d readDistance.  
 ]]]
-
-
-
-
-
-
-
-
-
-
-
-
-
