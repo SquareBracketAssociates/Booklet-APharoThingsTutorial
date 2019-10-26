@@ -112,10 +112,10 @@ So let's use the method ==readParameters== to ask to the object what are the val
 +Inspecting remote object.>figures/pharothings-inspect-sensor.png|width=80|label=inspectorSensor+
 
 [[[
-a readParameters.
+a readParameters
 ]]]
 
-To see the details of this object, you can press Cmd + I to inspect it and you will see the 3 indexes separately. 
+To see the details of this object, you can press Cmd + I to inspect it and you will see the 3 indexes separately.
 
 !!! Getting the temperature with BME280
 
@@ -157,8 +157,8 @@ temperature.
 How we see before, is very easy to read the values of the sensors. To read the values of the MCP9808 sensor, just create an object using the MCP9808 sensor with the follow code and read the temperature with the method ==readTemperature==:
 
 [[[
-b := board installDevice: PotMCP9808Device new. ​ 
-b readTemperature.  
+b := board installDevice: PotMCP9808Device new.
+b readTemperature.
 ]]]
 
 You can format the answer as you want also:
@@ -172,14 +172,14 @@ You can format the answer as you want also:
 The process is the same before. Let's create an object with the sensor and ask to it what is the value of the X, Y, Z axis:
 
 [[[
-c := board installDevice: PotADXL345Device new. ​ 
-c readCoordinates. 
+c := board installDevice: PotADXL345Device new.
+c readCoordinates.
 ]]]
 
 As like the BME280 sensor, the ADXL345 is returning an array with 3 indexes, the 3 axes. To ask to a specific axis, you can select the position that you want. In the following case we are getting the X-axis:
 
 [[[
-c readCoordinates at: 1.
+c readCoordinates at: 1
 ]]]
 
 !!! Conclusion

@@ -32,7 +32,7 @@ Now we will build the circuit. This circuit consists of three sensors and a powe
 - Push the potentiometer on breadboard;
 - And insert the jumper wires connecting the LCD Display in the Potentiometer and breadboard, as the scheme shown in Figure *@physicalLCD*.
 
-The Figure *@physicalLCD* shows how the electric connection is made.
+Figure *@physicalLCD* shows how the electric connection is made.
 
 +Physical sensors connection.>figures/pharothings-lcd-board.png|width=60|label=physicalLCD+
 

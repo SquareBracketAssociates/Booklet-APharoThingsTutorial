@@ -48,7 +48,7 @@ Now we will build the circuit. This circuit consists of 1 ultrasonic sensor HC-S
 - And insert the jumper wires connecting the sensor leg TRIG in GPIO0 (PIN11) and the sensor leg ECHO in the breadboard, like the scheme shown in Figure *@physicalSonicSensors*;
 - The last step is to connect the power 5V and ground (-) wires from the breadboard rails in sensor VCC + and GND (-) legs.
 
-The Figure *@physicalSonicSensors* shows how the electric connection is made.
+Figure *@physicalSonicSensors* shows how the electric connection is made.
 
 +Physical sensors connection.>figures/pharothings-ultrasonic-board.png|width=60|label=physicalSonicSensors+
 
@@ -69,7 +69,7 @@ remoteBoard inspect.
 In your inspect window (Inspector on a PotRemoteBoard), let’s create an instance of the ultrasonic sensor.
 
 [[[
-d := board installDevice: PotHCSR04Device new. ​ 
+d := board installDevice: PotHCSR04Device new.
 ]]]
 
 As we saw before, we can inspect the remote object to see some properties and methods.
@@ -77,5 +77,5 @@ Let's use the method ==readDistance== to read the distance.
 This method returns a float representing the measured distance in centimetres.
 
 [[[
-d readDistance.  
+d readDistance
 ]]]

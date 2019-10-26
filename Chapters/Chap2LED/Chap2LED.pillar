@@ -93,8 +93,8 @@ If you didn’t see how to install the PharoThings on your Raspberry Pi and how 
 Through your local Pharo image, let's connect in the Pharo image running on Raspberry, enable the auto-refresh feature of the inspector and open the inspector. Run this code in your local playground:
 
 [[[
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423)
-GTInspector enableStepRefresh
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423).
+GTInspector enableStepRefresh.
 remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.
 ]]]
@@ -105,12 +105,13 @@ In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of p
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value.
 
-To control the LED we first introduce the named variable #led which we assigned to GPIO7 pin instance:
+To control the LED we first introduce the named variable ==led== which we assigned to GPIO7 pin instance:
 
 [[[
 led := gpio7.
 ]]]
 
+Note that you can also directly use the variable ==gpio7==.
 Then we configure the pin to be in digital output mode and set the value:
 
 [[[

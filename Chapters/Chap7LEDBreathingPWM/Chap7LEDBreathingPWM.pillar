@@ -68,12 +68,32 @@ Using the following code, you will make your led breathe:
     100 milliSeconds wait].
 ]]]
 
+!!! Creating a class 
 
 Now, write your own breathing led class, that you can instantiate and parameterise like the following:
 [[[
 | breathingLed |
 breathingLed := BreathingLed new.
-breathingLed breathingDelay : 10 milliSeconds.
-breathingLed breatheFrom : 10 to : 30.
+breathingLed breathingDelay: 10 milliSeconds.
+breathingLed breatheFrom: 10 to: 30.
 breathingLed startBreathing.
 ]]]
+
+!!! Encapsulating behavior
+
+[[[
+BreathingLed >> breathingDelay: aDelay
+
+]]]
+
+[[[
+BreathingLed >> breatheFrom: start to: end
+
+]]]
+
+[[[
+BreathingLed >> startBreathing
+
+]]]
+
+

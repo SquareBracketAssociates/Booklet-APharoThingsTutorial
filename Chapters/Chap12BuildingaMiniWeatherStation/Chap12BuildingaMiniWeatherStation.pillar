@@ -40,7 +40,7 @@ Follow this tutorial to create your account and your channel:
 
 Once you've created your channel, you need to enable three channels on it. 
 Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. 
-You can see in Picture *@ThingspeakChannelConf* how your channel will look like.
+You can see in Figure *@ThingspeakChannelConf* how your channel will look like.
 
 +ThingSpeak Channel Configuration.>figures/pharothings-thingspeak-conf.png|width=85|label=ThingspeakChannelConf+
 
@@ -65,7 +65,7 @@ So check you channel to see if it was updated with this values:
 The first step is to create a superclass to initialize and install all devices that we will use. 
 Then we will create 2 subclasses to do the actions. 
 The first will display this information on the LCD and the second will send the data to the cloud. 
-Your final code will look like Picture *@MiniWeatherStationcode*.
+Your final code will look like Figure *@MiniWeatherStationcode*.
 
 +Mini Weather Station code.>figures/pharothings-weather-station.png|width=85|label=MiniWeatherStationcode+
 
@@ -105,7 +105,7 @@ WeatherStation >> temperature
 ]]]
 
 !!! Creating the subclass DisplayLCD
-We create now a subclass of ==WeatherStation== name ==DisplayLCD==. 
+We create now a subclass of ==WeatherStation== named ==DisplayLCD==. 
 
 [[[
 WeatherStation subclass: #DisplayLCD

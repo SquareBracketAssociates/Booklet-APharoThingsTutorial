@@ -33,7 +33,7 @@ Object subclass: #Flowing
 !!! Creating the initialize method
 
 [[[
-initialize
+Flowing >> initialize
     ledArray := { 
     (PotGPIOPin id: 17 number: 0).
     (PotGPIOPin id: 18 number: 1).
@@ -53,60 +53,60 @@ initialize
 !!! Creating access methods
 
 [[[
-times: anInteger delay: aNumber direction: aString
+Flowing >> times: anInteger delay: aNumber direction: aString
     timesRepeat := anInteger.
     toggleDelay := aNumber.
     flowDirection := aString
 ]]]
 
 [[[
-flowDirection
+Flowing >> flowDirection
     ^flowDirection
 ]]]
 
 [[[
-flowTimesRepeat
+Flowing >> flowTimesRepeat
     ^timesRepeat
 ]]]
 
 [[[
-toggleDelay
+Flowing >> toggleDelay
      ^toggleDelay
 ]]]
 
 !!! Creating process control methods
 
 [[[
-flowStart
+Flowing >> flowStart
     flowProcess := [ (self flowTimesRepeat) timesRepeat: [
           self action
       ] ] forkNamed: 'FlowingProcess'.
 ]]]
 
 [[[
-flowStop
+Flowing >> flowStop
     flowProcess terminate
 ]]]
 
 !!! Creating action methods
 
 [[[
-action  
+Flowing >> action  
 flowDirection do: [ :character | character == $l ifTrue: [ ledArray do: self toggleLedArray  ]. 
                         character == $r ifTrue: [ ledArray reverseDdo: self toggleLedArray  ] ] 
 ]]]
 
 [[[
-toggleLedArray
+Flowing >> toggleLedArray
     ^[ :item | item toggleDigitalValue. (Delay forSeconds: self toggleDelay) wait ]
 ]]]
 
 [[[
-turnOn
+Flowing >> turnOn
     ledArray do: [ :item | item value:1 ].
 ]]]
 
 [[[
-turnOff
+Flowing >> turnOff
     ledArray do: [ :item | item value:0 ].
 ]]]

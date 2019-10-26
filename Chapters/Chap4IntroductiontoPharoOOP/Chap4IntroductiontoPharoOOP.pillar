@@ -1,6 +1,13 @@
 !! Lesson 3 – A brief introduction to Pharo object-oriented language
 
-Pharo is a new generation reflective language and programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-Oriented Programming) with classes, methods, and instances, I invite you to implement a simple application to blink the LEDs.
+Pharo is a new generation reflective language and object-oriented programming environment. The last code was executed inside the remote inspector. To get started using OOP (Object-Oriented Programming) with classes, methods, and instances, we invite you to implement a simple application to blink the LEDs.
+
+
+During this lesson, you will code directly on the raspberry. 
+What is really interesting is that you can interact live with the device. This is really powerful to debug your application and sensors. 
+Later we will show you how to get the code you develop remotely on the raspberry to your machine and the inverse. 
+This way you will be able to version your code on git and test it on your Raspberry without the fear of losing everything if your board crashes.
+
 
 !!!Developing a simple LED blinker
 
@@ -10,7 +17,7 @@ The following part of this chapter and application was based on the exercise ==
 We want to create a blinker LED using a few parameters such as time to repeat the blinking LED and how many seconds to wait between blinks. The following code should run in the playground when we finish this lesson:
 
 [[[
-|blinker|
+| blinker |
 blinker := Blinker new.
 blinker timesRepeat: 10 waitForSeconds: 1.
 ]]]
@@ -23,18 +30,28 @@ Here is a short explanation of this code:
 
 Now we will develop all the mandatory class and methods to support this scenario.
 
-!!!Create your own class remotely
 
-Let's create our first class. To create a class in Pharo, we need first to create a package. Inside the package, you can create many classes and inside the classes, you can create many methods. The methods are organized in protocols, to become more easily navigate between them. Take a look in Figure *@RemoteBrowser* to better understanding. *edit image, put name in windows
+!!!Opening a remote class browser
+
+First you should open a remote class browser using 
+
+[[[
+remotePharo openBrowser.
+]]]
+
+You can see that the class browser is running on the raspberry because the window of the class browser displays the IP address from where it is running.
+
+
+!!!Create your own class remotely
+Let's create our first class. 
+To create a class in Pharo, we need first to create a package. 
+Inside the package, you can create many classes and inside the classes, you can create many methods. The methods are organized in protocols, to become more easily navigate between them. Take a look in Figure *@RemoteBrowser* to better understanding. *edit image, put name in windows
 
 In your local playground, call the Remote System Browser of your Raspberry Pi. If you are already connected to your Raspberry Pharo, you do not need to run the first line below again. This will open a window as shown in Figure *@RemoteBrowser*
 
 +Remote System Browser.>figures/pharothings-remote-system-browser.png|width=100|label=RemoteBrowser+
 
-[[[
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 212] port: 40423).
-remotePharo openBrowser.
-]]]
+
 
 !!!Create a package
 Let's create a package using the Remote Browser. Right-click the package area and enter the package name, as shown in Figure *@CreatingPackage*. In this example, we will create a package named ==PharoThings-Lessons==.
@@ -69,8 +86,8 @@ Inside this protocol, we will create an ==initialize== method. This means that e
 Let's use the instance variable ==led==, which we defined when we created the class. The instance variable is private to the object and accessible by any methods inside this class. These methods can access this variable to get or set any value to it.
 
 [[[
-initialize
-  led := PotGPIO id: 4 . 
+Blinker >> initialize
+  led := PotGPIO id: 4. 
   led board: RpiBoard3B current; beDigitalOutput
 ]]]
 
@@ -92,7 +109,7 @@ Compile your code (cmd + S) and the method will be shown in the remote browser, 
 Now let's create a method to control the object led inside the class Blinker. Let's take the code that we used in PotRemoteBoard inspector to do the LED to blink and replace the numbers on code for two arguments. Create the protocol ==operations== and inside this protocol, create the following method:
 
 [[[
-timesRepeat: anInteger waitForSeconds: aNumber
+Blinker >> timesRepeat: anInteger waitForSeconds: aNumber
     [ anInteger timesRepeat: [
         led toggleDigitalValue.
         (Delay forSeconds: aNumber) wait
@@ -120,7 +137,7 @@ remotePharo openPlayground.
 and run the code that we saw in the begin of this lesson:
 
 [[[
-|blinker|
+| blinker |
 blinker := Blinker new.
 blinker timesRepeat: 10 waitForSeconds: 1.
 ]]]
@@ -140,6 +157,9 @@ Don't forget to save your work remotely. To do this, run this command on your lo
 [[[
 remotePharo saveImage.
 ]]]
+
+This expression will save the complete Pharo environment running on your remote system.
+If your raspberry crashes you will get exactly the same environment that from the moment you saved it. 
 
 !!!Conclusion
 

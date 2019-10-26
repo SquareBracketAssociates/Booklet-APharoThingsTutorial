@@ -58,7 +58,7 @@ Let's put a Delay after changing the led value, to wait a bit time before to c
 
 [[[
 [
-    gpioArray do: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.3) wait ].
+gpioArray do: [ :item | item toggleDigitalValue. (Delay forSeconds: 0.3) wait ]
 ] forkNamed: 'FlowingProcess'.
 ]]]
 Execute this code and… cool! Now your LEDs are on by flowing an ordering!
