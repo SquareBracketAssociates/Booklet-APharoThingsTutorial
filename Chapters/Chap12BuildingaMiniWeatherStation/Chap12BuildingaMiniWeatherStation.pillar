@@ -12,7 +12,7 @@ In this lesson, we will use a setup with an LCD Display 1602 and BME280 sensor.
 - 1 Raspberry Pi connected to your network (wired or wireless)
 - 1 Breadboard
 - 1 BME280 temperature, humidity and pressure sensor
-- 1 LCD Display 1602 
+- 1 LCD Display 1602 + I2C interface
 - 1 Potentiometer (10K ohms)
 - Jumper wires
 
@@ -81,9 +81,12 @@ Object subclass: #WeatherStation
 
 !!!! Creating the initialize method
 
+We will use the I2C interface of the LCD display, using only 4 wires to conect it in the Raspberry (5v power, ground and SDA/SCL). 
+But you can use it directly with GPIOs without an I2C interface, just pay attention to select the PotLCD1602Device driver instead of the PotLCD1602DeviceI2C.
+
 [[[
 WeatherStation >> initialize
-	lcd := RpiBoard3B current installDevice: PotLCD1602Device  new.
+	lcd := RpiBoard3B current installDevice: PotLCD1602DeviceI2C  new.
 	sensor := RpiBoard3B current installDevice: PotBME280Device new
 ]]]
 
@@ -122,8 +125,8 @@ DisplayLCD >> lcdStart
     lcdprocess :=  [ [
     	| text |
     	text := 'Temp: ', self temperature,'\H:', self humidity,' P:', self pressure.
-	lcd home. 
-   	lcd message: text. 
+	lcd returnHome. 
+   	lcd showMessage: text. 
 	(Delay forSeconds: 1) wait. 
     ] repeat ] forkNamed: 'lcdprocess'
 ]]]

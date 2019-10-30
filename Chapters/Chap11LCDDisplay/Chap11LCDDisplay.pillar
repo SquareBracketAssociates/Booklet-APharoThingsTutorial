@@ -50,6 +50,9 @@ remoteBoard inspect.
 
 !!! Experimental code
 
+We will use it directly with GPIOs without an I2C interface. 
+But you can use the I2C interface of the LCD display, using only 4 wires to conect it in the Raspberry (5v power, ground and SDA/SCL). Just pay attention to select the PotLCD1602DeviceI2C driver instead of the PotLCD1602Device.
+
 In your inspect window (Inspector on a PotRemoteBoard), let’s create the instances of the LCD Display. 
 
 [[[
@@ -59,6 +62,6 @@ lcd := board installDevice: PotLCD1602Device new.
 As we saw before, we can inspect the remote object to see some properties and methods. Let's use the method ==message:== to send some message to LCD Display. To break line you can use "/n". And to clear the LCD you can use the method ==clear==:
 
 [[[
-lcd message: 'Hello everybody!\Pharo is cool!'. 
-lcd clear.
+lcd showMessage: 'Hello everybody!\Pharo is cool!'. 
+lcd clearDisplay.
 ]]]
