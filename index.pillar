@@ -9,6 +9,9 @@ ${inputFile:path=Chapters/Chap3BlinkingLED/Chap3BlinkingLED.pillar}$
 
 ${inputFile:path=Chapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.pillar}$
 
+${inputFile:path=Chapters/Chap4bIntermezzo/Chap4bIntermezzo.pillar}$
+
+
 ${inputFile:path=Chapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.pillar}$
 
 ${inputFile:path=Chapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.pillar}$

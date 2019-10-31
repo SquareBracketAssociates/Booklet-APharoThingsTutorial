@@ -1,7 +1,6 @@
 !! Lesson 3b – A design intermezzo
 
-In this chapter we revisit previous code to make it nicer and more object-oriented. For this we will create a class named ==Blinker==, define some state and methods to represent.
-
+In this chapter we revisit previous code to make it nicer and more object-oriented. We will revisit the ==Blinker== class you previously defined.
 
 !!!Developing a nicer LED blinker
 
@@ -10,8 +9,8 @@ Here is a little code snippet showing the API that we want to have.
 [[[
 | blinker |
 blinker := Blinker new.
-blinker delay : 1 second.
-blinker start . 
+blinker delay: 1 second.
+blinker start. 
 blinker stop. 
 ]]]
 
@@ -139,24 +138,12 @@ remotePharo applyChangesToClient
 This way you can package your code and publish it on github or other versionning system.
 
 !!! Another use case
-We propose one way to model the blinker. There are several possible alternatives. We could just use a loop that is stopped only using the message ==stop==.
-
-As an exercise, we let you define an alternate implementation as shown by the following code snippet. 
-Here you should define the method ==timesRepeat:waitForSeconds:== which expects a number of repetition and an argument to set the delay. 
-
-[[[
-| blinker |
-blinker := Blinker new.
-blinker timesRepeat: 10 waitForSeconds: 1.
-]]]
-
-
-
+We proposed one way to model the blinker.
+There are several possible alternatives.
+We could just use a loop that is stopped only using the message ==stop==. 
+Change the proposed code to introduce this.
 
 !!!Conclusion
 
-In this tutorial, you learned how to define packages, classes, and methods. The flow of programming that we chose for this first tutorial is similar to most of the programming languages.
-
-With PharoThings you can remotely develop and manage your Raspberry GPIOs. Very easy and powerful.
-
-In the next lesson, let’s use what we learned in this lesson and write a simple code to flow lights using 8 LEDs.
+In subsequent chapter you will learn how to write a breathing led. 
+We suggest that once you have it running, you revisit it using the same approach that the one proposed in this chapter.
