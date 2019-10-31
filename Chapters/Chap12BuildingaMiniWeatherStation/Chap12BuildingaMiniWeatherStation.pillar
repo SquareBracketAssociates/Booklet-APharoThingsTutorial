@@ -2,9 +2,9 @@
 
 In previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use Object-Oriented Programming to create applications to control them. 
 Now we will use everything that we learned to build a Mini-Weather Station. 
+We will send data to an online service. 
 
 !!! What do we need?
-
 In this lesson, we will use a setup with an LCD Display 1602 and BME280 sensor.
 
 !!!! Components
@@ -38,8 +38,8 @@ Follow this tutorial to create your account and your channel:
 
 ==https://roboindia.com/tutorials/thingspeak-setup==
 
-Once you've created your channel, you need to enable three channels on it. 
-Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure. 
+Once you've created your channel, you need to enable three channels on it.
+Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure.
 You can see in Figure *@ThingspeakChannelConf* how your channel will look like.
 
 +ThingSpeak Channel Configuration.>figures/pharothings-thingspeak-conf.png|width=85|label=ThingspeakChannelConf+
@@ -50,7 +50,7 @@ Let's for example send the values:
 - 56 to Humidity field (field2);
 - and 1012 to Pressure field (field3).
 
-To test your channel, just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it on the API Keys tab. 
+To test your channel, just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it on the API Keys tab.
 
 ==https://api.thingspeak.com/update?api_key=YOUR-WRITE-API-KEY&
 field1=25&field2=56&field3=1012==
@@ -58,7 +58,6 @@ field1=25&field2=56&field3=1012==
 So check you channel to see if it was updated with this values:
 
 ==https://thingspeak.com/channels/YOUR-CHANNEL-ID==
-
 
 !!! Creating the application
 
@@ -81,31 +80,46 @@ Object subclass: #WeatherStation
 
 !!!! Creating the initialize method
 
-We will use the I2C interface of the LCD display, using only 4 wires to conect it in the Raspberry (5v power, ground and SDA/SCL). 
-But you can use it directly with GPIOs without an I2C interface, just pay attention to select the PotLCD1602Device driver instead of the PotLCD1602DeviceI2C.
+We will use the I2C interface of the LCD display, using only 4 wires to connect it in the Raspberry (5v power, ground and SDA/SCL). 
+You can also use directly with GPIOs without an I2C interface, just pay attention to use the ==PotLCD1602Device== driver instead of the ==PotLCD1602DeviceI2C== one.
+
+We define a new method ==currentBoard== to return the current board.
+It will help us to change it if necessary.
+
+[[[
+WeatherStation >> currentBoard
+	^ RpiBoard3B current
+]]]
+
+We define the following ==initialize== method. We creates the two elements
 
 [[[
 WeatherStation >> initialize
-	lcd := RpiBoard3B current installDevice: PotLCD1602DeviceI2C  new.
-	sensor := RpiBoard3B current installDevice: PotBME280Device new
+	lcd := self currentBoard installDevice: PotLCD1602DeviceI2C new.
+	sensor := self currentBoard installDevice: PotBME280Device new
 ]]]
 
 !!!! Creating accessor methods
 
+We write now, in a dirty way, three accessors.
+Note that this is not really good because we duplicate the logic of the transformation in each method instead of defining it once and reusing it.
+See the Exercises at the end of this chapter to fix this problem.
+
 [[[
 WeatherStation >> humidity
-    ^ ((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString
+   ^ ((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString
 ]]]
 
 [[[
 WeatherStation >> pressure
-    ^ ((sensor readParameters at: 2) printShowingDecimalPlaces: 2) asString
+   ^ ((sensor readParameters at: 2) printShowingDecimalPlaces: 2) asString
 ]]]
 
 [[[
 WeatherStation >> temperature 
-    ^ ((sensor readParameters at: 1) printShowingDecimalPlaces: 2) asString
+   ^ ((sensor readParameters at: 1) printShowingDecimalPlaces: 2) asString
 ]]]
+
 
 !!! Creating the subclass DisplayLCD
 We create now a subclass of ==WeatherStation== named ==DisplayLCD==. 
@@ -122,28 +136,28 @@ We define the method ==lcdStart== as follows:
 [[[
 DisplayLCD >> lcdStart
     
-    lcdprocess :=  [ [
-    	| text |
-    	text := 'Temp: ', self temperature,'\H:', self humidity,' P:', self pressure.
-	lcd returnHome. 
-   	lcd showMessage: text. 
-	(Delay forSeconds: 1) wait. 
-    ] repeat ] forkNamed: 'lcdprocess'
+    lcdprocess := [
+       [| text |
+       text := 'Temp: ', self temperature,'\H:', self humidity,' P:', self pressure.
+       lcd returnHome.
+       lcd showMessage: text.
+       (Delay forSeconds: 1) wait.] repeat ] forkNamed: 'lcdprocess'
 ]]]
 
-This method is doing an active loop regularly sending information to the LCD. 
+This method is doing an active loop regularly sending information to the LCD.
 Note that the two first line of the treatment could be extracted in a separate method.
 
 We then define the method ==lcdStop== to stop and terminate the update process. 
 [[[
 DisplayLCD >> lcdStop
-    lcdprocess terminate. 
+    lcdprocess terminate.
     lcd clear
 ]]]
 
 !!! Creating the subclass PostData
 
-Now we creare a second subclass named ==PostData==. It has two instance variables ==apiKey== and ==postProcess==. 
+Now we create a second subclass named ==PostData== that will send the data to the server.
+It has two instance variables ==apiKey== and ==postProcess==. 
 
 [[[
 WeatherStation subclass: #PostData
@@ -159,20 +173,31 @@ PostData >> apiKey
 ]]]
 
 [[[
-PostData >> apiKey: anString    
+PostData >> apiKey: anString
     apiKey := anString
 ]]]
 
-We define the method to start the process of sending data. 
+We define the method that will send regularly data to the server.
 Note that the body of this method could be extracted in a separate method to be able to test it. 
+We are passing the data as argument of the url.
+
 [[[
 PostData >> dataStart
     |url |
     url := 'https://api.thingspeak.com/update'.
     postProcess :=  [ [  
-    	| uri |
-        uri := url,'?api_key=',self apiKey,'&field1=',self temperature,'&field2=',self humidity,'&field3=',self pressure.
-        ZnClient new get: uri.
+        | uri |
+        uri := String streamContents: [: s |
+        			s << url;
+						<< '?api_key=';
+						<< self apiKey;
+						<< '&field1=';
+						<< self temperature;
+						<< '&field2=';
+						<< self humidity;
+						<< '&field3=';
+						<< self pressure.
+        ZnClient new get: uri.]
     	(Delay forSeconds: 60) wait. 
     ] repeat ] forkNamed: 'postprocess'
 ]]]
@@ -183,8 +208,8 @@ PostData >> dataStop
 ]]]
 
 !!! Starting the application
-
-To start the application, we need to start the two subclasses. To start the LCD application run this in the remote playground:
+To start the application, we need to start the two subclasses.
+To start the LCD application run this in the remote playground:
 
 [[[
 DisplayLCD new lcdStart.
@@ -207,3 +232,77 @@ To see if your channel is receiving the data of your PharoThings, just access yo
 You will see some graphics like the Picture *@ThingspeakChannel*. 
 
 +ThingSpeak Channel.>figures/pharothings-thingspeak.png|width=85|label=ThingspeakChannel+
+
+!!! Exercises
+
+Introduce the method ==stringForParameter:== to remove the duplication logic in ==humidity==, ==pressure== and ==temperature==.
+With the method ==stringForParameter:==, the method ==humidity== should look like 
+
+[[[
+WeatherStation >> humidity
+   ^ self stringForParameter: 3
+]]]
+
+
+- In fact a similar method already exist in the sensor class, find it and use it instead of ==stringForParameter:==.
+
+
+!!! TODO: make sure that the weatherStation 
+
+We propose a design to support the execution of multiple services concurrently.
+It is defined on two classes: a ==Service== and a ==ServiceRunner== class.
+The ==Service== class that encapsulates some behavior that can be executed on demand.
+The class ==ServiceRunner== that runs concurrently a list of services.
+
+
+!!! Creating the ServiceRunner class
+
+We create a superclass named ==WeatherStation== with two instance variables ==sensor== and ==lcd==.
+
+[[[
+Object subclass: #ServiceRunner
+    instanceVariableNames: 'services process body'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'
+]]]
+
+[[[
+ServiceRunner >> initialize
+	services := OrderedCollection new.
+	body := [ self run ]
+]]]
+
+[[[
+ServiceRunner >> addService: aService
+	services add: aService
+]]]
+
+[[[
+ServiceRunner >> run
+	services do: [:each | each execute]
+]]]
+
+[[[
+ServiceRunner >> start
+	process := body forkNamed: 'ServiceRunner'
+]]]
+
+!!! Creating the Service class
+
+[[[
+Object subclass: #Service
+    instanceVariableNames: 'name'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'
+]]]
+
+[[[
+ServiceRunner >> execute
+	self subclassResponsibility
+]]]
+
+!!! LCD service
+
+!!! PostData Service
+
+

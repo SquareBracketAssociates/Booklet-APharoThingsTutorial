@@ -65,11 +65,13 @@ lcd := board installDevice: PotLCD1602Device new.
 As we saw before, we can inspect the remote object to see some properties and methods. Let's use the method ==message:== to send some message to LCD Display. To break line you can use "/n". And to clear the LCD you can use the method ==clear==:
 
 [[[
-lcd showMessage: 'Hello everybody!\Pharo is cool!'.
+lcd showMessage: 'Hello everybody!
+Pharo is cool!'.
 lcd clearDisplay.
 ]]]
 
-!!! Using LCD via I2C (UPDATE)
+
+!!! Using LCD via I2C (UPDATE me)
 
 +TODO: CHANGE Physical sensors connection using GPIO.>figures/pharothings-lcd-board.png|width=60|label=physicalLCD+
 
@@ -85,6 +87,9 @@ Now we will build the circuit. This circuit consists of three sensors and a powe
 Figure *@physicalLCDI2C* shows how the electric connection is made. Using GPIOs requires a more complex connection than using the I2C as we will show later. 
 
 +UPDATE. >figures/pharothings-lcd-board.png|width=60|label=physicalLCDI2C+
+
+!!!! If it does not work.
+The LCD contrast may be a problem since if the contrast is to low you will be able to see the text.  Change the potentionmeter on the I2C board to change the contrast of the LCD screen. 
 
 !!! Conclusion
 
