@@ -1,6 +1,7 @@
 !! Lesson 10 - LCD Display
 
-In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Also, we saw how to use a no I2C sensor, an ultrasonic sensor. Now we will learn how to use an LCD Display without I2C. 
+In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Also, we saw how to use a no I2C sensor, an ultrasonic sensor. Now we will learn how to use an LCD Display without and with I2C.
+You will see that using I2C simplifies the board connection
 
 !!! What do we need?
 
@@ -19,22 +20,24 @@ In this lesson, we will use a setup with an LCD Display 1602.
 Before constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.
 
 !!!! The LCD Display 1602
+Missing text
 
 !!!! How the LCD 1602 works?
+Missing text
 
 !!! Experimental procedure
 
 Now we will build the circuit. This circuit consists of three sensors and a power supply (the Rasp).
 
-- Connect the Ground PIN from Raspberry on breadboard blue rail (-). In this experiment we will use the PIN6 (Ground);
-- Then connect the 5V (PIN2) pin in the red rail (+). 
-- Now push the LCD 1602 on breadboard;
-- Push the potentiometer on breadboard;
+- Connect the Ground PIN from Raspberry on breadboard blue rail (-). In this experiment we will use the PIN6 (Ground).
+- Then connect the 5V (PIN2) pin in the red rail (+).
+- Now push the LCD 1602 on breadboard.
+- Push the potentiometer on breadboard.
 - And insert the jumper wires connecting the LCD Display in the Potentiometer and breadboard, as the scheme shown in Figure *@physicalLCD*.
 
-Figure *@physicalLCD* shows how the electric connection is made.
+Figure *@physicalLCDGPIO* shows how the electric connection is made. Using GPIOs requires a more complex connection than using the I2C as we will show later. 
 
-+Physical sensors connection.>figures/pharothings-lcd-board.png|width=60|label=physicalLCD+
++Physical sensors connection using GPIO.>figures/pharothings-lcd-board.png|width=60|label=physicalLCDGPIO+
 
 !!! Connecting remotely
 
@@ -51,17 +54,41 @@ remoteBoard inspect.
 !!! Experimental code
 
 We will use it directly with GPIOs without an I2C interface. 
-But you can use the I2C interface of the LCD display, using only 4 wires to conect it in the Raspberry (5v power, ground and SDA/SCL). Just pay attention to select the PotLCD1602DeviceI2C driver instead of the PotLCD1602Device.
+But you can use the I2C interface of the LCD display, using only 4 wires to connect it in the Raspberry (5v power, ground and SDA/SCL). Just pay attention to select the ==PotLCD1602DeviceI2C== driver instead of the ==PotLCD1602Device==.
 
-In your inspect window (Inspector on a PotRemoteBoard), let’s create the instances of the LCD Display. 
+In your inspect window (Inspector on a ==PotRemoteBoard==), let’s create the instances of the LCD Display. 
 
 [[[
-lcd := board installDevice: PotLCD1602Device new.
+lcd := board installDevice: PotLCD1602Device new.
 ]]]
 
 As we saw before, we can inspect the remote object to see some properties and methods. Let's use the method ==message:== to send some message to LCD Display. To break line you can use "/n". And to clear the LCD you can use the method ==clear==:
 
 [[[
-lcd showMessage: 'Hello everybody!\Pharo is cool!'. 
-lcd clearDisplay.
+lcd showMessage: 'Hello everybody!\Pharo is cool!'.
+lcd clearDisplay.
 ]]]
+
+!!! Using LCD via I2C (UPDATE)
+
++TODO: CHANGE Physical sensors connection using GPIO.>figures/pharothings-lcd-board.png|width=60|label=physicalLCD+
+
+!!!! Experimental procedure
+
+UPDATE
+Now we will build the circuit. This circuit consists of three sensors and a power supply (the Rasp).
+
+- Connect the Ground PIN from Raspberry on breadboard blue rail (-). In this experiment we will use the PIN6 (Ground).
+- Then connect the 5V (PIN2) pin in the red rail (+).
+- Now push the LCD 1602 on breadboard.
+
+Figure *@physicalLCDI2C* shows how the electric connection is made. Using GPIOs requires a more complex connection than using the I2C as we will show later. 
+
++UPDATE. >figures/pharothings-lcd-board.png|width=60|label=physicalLCDI2C+
+
+!!! Conclusion
+
+In this chapter we show the difference between using GPIOs and I2C to connect a LCD screen.
+
+
+
