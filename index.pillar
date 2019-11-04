@@ -25,3 +25,5 @@ ${inputFile:path=Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniW
 ${inputFile:path=Chapters/Chap13BuildingaWebServerOnRaspberry/Chap13BuildingaWebServerOnRaspberry.pillar}$
 
 ${inputFile:path=Chapters/Chap143DVisualizationGyroscopeSensor/Chap143DVisualizationGyroscopeSensor.pillar}$
+
+${inputFile:path=Chapters/Chapter15Firmata/Chap15FirmataArduinoWithPharo.pillar}$
