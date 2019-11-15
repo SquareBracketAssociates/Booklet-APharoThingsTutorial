@@ -1,4 +1,4 @@
-!! Lesson 12 - Building a Webserver on Raspberry
+!! Building a Webserver on Raspberry
 
 In previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use OOP to build a Mini-Weather Station. 
 Now we are going to build a Webserver to interact with GPIOs.

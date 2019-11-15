@@ -1,4 +1,4 @@
-!! Lesson 4 - LED Flowing Lights
+!!Flowing Lights
 
 Now we can play with the LEDs, turn them on, off, and blink. Let's put 8 LEDs on the breadboard and create a code to turn on/off one at a time. Let's use some methods to change the flow direction and control the flow time. As we did in the last lesson, let's write the first code in playground and then create a class with methods to better control the flow of LED lights. 
 

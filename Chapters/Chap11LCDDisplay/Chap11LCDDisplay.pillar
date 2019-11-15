@@ -1,4 +1,4 @@
-!! Lesson 10 - LCD Display
+!! LCD Display
 
 In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. We learned also how to use the I2C sensors to read the temperature, humidity, pressure, and x, y, z-axis. Also, we saw how to use a no I2C sensor, an ultrasonic sensor. Now we will learn how to use an LCD Display without and with I2C.
 You will see that using I2C simplifies the board connection

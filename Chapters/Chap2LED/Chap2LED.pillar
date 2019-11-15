@@ -1,4 +1,4 @@
-!! Lesson 1 – Turning LED on/off
+!! Turning LED on/off
 
 One of the classic analogies in electronics to “Hello World” is turn on a LED (Light-Emitting Diode) or lamp. In this first lesson, we will learn how to connect correctly an LED to your Raspberry Pi and how to use PharoThings to control this LED by turning it on and off.
 

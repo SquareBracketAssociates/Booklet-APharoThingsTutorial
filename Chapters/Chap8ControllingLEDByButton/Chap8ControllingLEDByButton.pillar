@@ -1,4 +1,4 @@
-!! Lesson 7 - Controlling LED by Button
+!! Controlling LED by Button
 
 In previous lessons, we learned how to control the GPIOs putting them in mode OUT. This means send power to wire connected in on specific GPIO. Now we will put the GPIO in mode IN, to read the pin state. This means that our application can know when a button is pressed. Let’s create code on the remote inspector to turn on one LED each time we press the button.
 

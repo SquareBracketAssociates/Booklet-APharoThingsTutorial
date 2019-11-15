@@ -1,4 +1,4 @@
-!! Lesson 2 – Blinking LED 
+!! Blinking LEDs
 
 Now we can play with the LEDs, turn them on and off. Let's use this basic setup to write some code on the inspector playground to blink the LED. Next, we will learn how to remotely create a very simple application using classes, methods, and instances to control the LED.
 

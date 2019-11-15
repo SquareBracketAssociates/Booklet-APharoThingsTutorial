@@ -1,6 +1,6 @@
-!! Lesson 8 - I2C Sensors (Temperature, Humidity, Pressure and Acellerometer)
+!!I2C Sensors
 
-In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. Now let's start using some sensors to interact automatically with the real world, taking the temperature, air pressure and humidity This kind of sensor use the I2C protocol to communicate.
+In previous lessons, we learned how to control LEDs and to use a button to interact with LEDs. Now let's start using some sensors to interact automatically with the real world, taking the temperature, acceleration, air pressure and humidity. This kind of sensor use the I2C protocol to communicate.
 
 !!! What do we need?
 

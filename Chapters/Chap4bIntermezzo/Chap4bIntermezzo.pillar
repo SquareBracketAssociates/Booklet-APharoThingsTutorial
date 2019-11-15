@@ -1,4 +1,4 @@
-!! Lesson 3b – A design intermezzo
+!!A design intermezzo
 
 In this chapter we revisit previous code to make it nicer and more object-oriented. We will revisit the ==Blinker== class you previously defined.
 
