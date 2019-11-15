@@ -1,10 +1,26 @@
 In this booklet we will show you how to develop a little application that collect weather information. 
 We will start to show how we can play with leds and others. 
 
+!! Pharo IoT
+
+!!! Phylosophy
+!!! Tools
+!!! Architecture
+
+!! Getting Started with Pharo Syntax
+!! Syntax Executive Summary
+
+%Installation
 ${inputFile:path=Chapters/Chap1GettingStarted/Chap1GettingStarted.pillar}$
+
+%First touch
 ${inputFile:path=Chapters/Chap2LED/Chap2LED.pillar}$
 ${inputFile:path=Chapters/Chap3BlinkingLED/Chap3BlinkingLED.pillar}$
+%Merge with the two chapters
+
 ${inputFile:path=Chapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.pillar}$
+%%Using the tools
+
 ${inputFile:path=Chapters/Chap4bIntermezzo/Chap4bIntermezzo.pillar}$
 
 
@@ -17,7 +33,6 @@ ${inputFile:path=Chapters/Chap9I2CSensors/Chap9I2CSensors.pillar}$
 
 ${inputFile:path=Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.pillar}$
 
-${inputFile:path=Chapters/Chap9I2CSensors/Chap9I2CSensors.pillar}$
 ${inputFile:path=Chapters/Chap11LCDDisplay/Chap11LCDDisplay.pillar}$
 
 ${inputFile:path=Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.pillar}$
