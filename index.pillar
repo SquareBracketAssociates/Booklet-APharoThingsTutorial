@@ -1,14 +1,14 @@
 In this booklet we will show you how to develop a little application that collect weather information. 
 We will start to show how we can play with leds and others. 
 
-!! Pharo IoT
+%!! Pharo IoT
 
-!!! Phylosophy
-!!! Tools
-!!! Architecture
+%!!! Phylosophy
+%!!! Tools
+%!!! Architecture
 
-!! Getting Started with Pharo Syntax
-!! Syntax Executive Summary
+%!! Getting Started with Pharo Syntax
+%!! Syntax Executive Summary
 
 %Installation
 ${inputFile:path=Chapters/Chap1GettingStarted/Chap1GettingStarted.pillar}$
