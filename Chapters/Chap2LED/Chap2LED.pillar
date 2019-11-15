@@ -77,7 +77,7 @@ The Figure *@physicalLed* shows how the electric connection is made:
 
 !!! Experimental code
 
-*explain a bit about the code in playground and say in chapter 4 there is a better explanation*
+SD:explain a bit about the code in playground and say in chapter 4 there is a better explanation
 
 Now, we can write some code in Pharo to control the GPIOs using PharoThings and turn the LED on. We have 2 options to do this:
 
@@ -138,12 +138,55 @@ led value.
 With PharoThings you can remotely control all the GPIOs in your running board!
 
 You can:
-
 - Interact remotely with pins and boards;
 - See the current pins state in real time;
 - Run the code dynamically;
 - Easy, powerful.
 
-!!! In the next lesson
+!!! Blinking LEDs
 
-Let’s use what we learned in this lesson and write a simple code to blink the LED.
+Now we can play with the LEDs, turn them on and off. Let's use this basic setup to write some code on the inspector playground to blink the LED. Next, we will learn how to remotely create a very simple application using classes, methods, and instances to control the LED.
+
+!!!! What do we need?
+
+We are using the same setup as the last section: 1 Raspberry Pi, 1 Breadboard, 1 LED, 1 Resistor 330 ohms. If you didn't do the last lesson to understand how to do the connections, go back to Chapter 2 and do it.
+
+
+!!! Experimental code
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+
+[[[
+led := gpio7.
+led beDigitalOutput.
+]]]
+
+To blink the LED let's create a simple loop using the message ==timesRepeat:== to change the value of the LED every 1 second. 
+For this we create a delay using the message ==Delay forSeconds: 1==.
+To change the value of the pin from on to off and the inverse, we call the method ==toggleDigitalValue==, as we saw previously:
+
+[[[
+6 timesRepeat: [
+	led toggleDigitalValue.
+ 	(Delay forSeconds: 1) wait
+	] 
+]]]
+
+Run this code, as shown in Figure *@RemoteInspector* and... ==cool==! Now your LED is blinking!
+
++Remote playground.>figures/pharothings-board-inspector-blink-led.png|width=70|label=RemoteInspector+
+
+Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
+
+[[[
+10 timesRepeat: [
+	led toggleDigitalValue.
+ 	(Delay forSeconds: 1) wait
+	] 
+]]]
+
+!!!In the next lesson
+In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. 
+But with Pharo we can do more! 
+In the next lesson, let’s start to use PharoThings tools and use the power of OOP to reuse abstractions.
+Let's create a simple application, write classes and methods, all remotely.
+

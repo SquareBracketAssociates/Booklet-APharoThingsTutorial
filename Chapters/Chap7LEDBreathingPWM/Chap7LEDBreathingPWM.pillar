@@ -1,4 +1,4 @@
-!!LED Breathing with PWM
+!! Breathing LED with PWM
 
 
 ""PWM support is currently broken in PharoThings.""
