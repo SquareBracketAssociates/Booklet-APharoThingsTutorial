@@ -1,8 +1,15 @@
-!!A design intermezzo
+!!Using Devices
 
-In this chapter we revisit previous code to make it nicer and more object-oriented. We will revisit the ==Blinker== class you previously defined.
+In this chapter we revisit previous code to take advantage of the architecture offered by PharoThings.
 
-!!!Developing a nicer LED blinker
+!!! (We should discuss) 
+What do we do:
+- we can show how to do it because this is super simple (And may be this can be done in the previous chapter)
+- in this chapter we use a device subclass (like the WaterAlarm)
+
+We will revisit the ==Blinker== class you previously defined.
+
+!!!REDO THE FOLLOWING WITH POTDEVICE Developing a nicer LED blinker
 
 Here is a little code snippet showing the API that we want to have. 
 
@@ -33,12 +40,22 @@ We start by defining a class named ==Blinker==. This class has four instance var
 - ==behavior== will be a block representing the body of the blinker. 
 - ==process== will be a process based on the behavior. This process will be started and stopped by the user.
  
+ 
+@@todo We should have a board instance variable and avoid the global variable. 
+
+
+
 [[[
 Object subclass: #Blinker
-	instanceVariableNames: 'process delay pin body'
+	instanceVariableNames: 'board process delay pin loopBody'
 	classVariableNames: ''
 	package: 'Blinker'
 ]]]
+
+- The instance variable ==board== will refer to the current board. 
+- The instance variable ==pin== will be the pin to which the led is connected.
+- The instance variable process will refer to the process executed to animate the led.
+- The instance variable ==loopBody== will refer to the code that will be executed in the loop.
 
 We define the method ==delay:== as follows: 
 
@@ -54,17 +71,19 @@ By default we decide to have a delay of 1 second.
 By initializing correctly the instance we will have a more robust code and avoid to force the developer to send the message ==delay:==.
 
 [[[
-Blinker >> initialize 
+Blinker >> initialize
+	super initialize.
 	delay := 1 second.
 ]]]
 
 Then we initialize a pin to be a digital pin. 
 
 [[[
-Blinker >> initialize 
+Blinker >> initialize
+	super initialize.
 	delay := 1 second.
-	pin := PotGPIO id: 4.
-	pin board: RpiBoard3B current; beDigitalOutput.
+	board := RpiBoard3B current.
+	pin := pinWithId: 4; beDigitalOutput.
 ]]]
 
 Here we refer directly to the board and for a pro version of the code we would make sure that the board is just an extra instance variables so that we avoid to have a reference to a kind of global variable. 
@@ -91,11 +110,12 @@ So we revisit the initialization to store a block closure that will invoke the b
 We will store the block closure in the instance variable body so that we can kill the process and start a new one.
 [[[
 Blinker >> initialize 
-	
+initialize
+	super initialize.
 	delay := 1 second.
-	pin := PotGPIO id: 4.
-	pin board: RpiBoard3B current; beDigitalOutput.
-	body := [ self blinkerBody ].
+	board := RpiBoard3B current.
+	pin := pinWithId: 4; beDigitalOutput.
+	loopBody := [ self blinkerBody ].
 ]]]
 
 

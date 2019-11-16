@@ -8,7 +8,6 @@ ${inputFile:path=Chapters/ChapSyntaxSummary/ChapSyntaxSummary.pillar}$
 
 %Installation
 ${inputFile:path=Chapters/Chap1GettingStarted/Chap1GettingStarted.pillar}$
-
 %First touch
 ${inputFile:path=Chapters/Chap2LED/Chap2LED.pillar}$
 %Merge with the two chapters

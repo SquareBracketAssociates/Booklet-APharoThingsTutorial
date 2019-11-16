@@ -2,7 +2,7 @@
 @cha:syntax
 
 In this chapter, we start on a simple path to get you to understand the most important parts of the Pharo syntax: ''messages'', ''blocks'' and ''methods''.
-This chapter is freely inspired from Sven van Caeckenberghe's gentle syntax introduction, and I thank him for giving me the permission to reuse his ideas.
+This chapter is freely inspired from Sven van Caeckenberghe's gentle syntax introduction, and we thank him for giving me the permission to reuse his ideas.
 
 In Pharo, everything is an ''object'' and computation happens by sending ''messages'' to objects.
 Objects are created by sending messages to particular objects named ''classes'', which define the structure and behavior of the objects they create, also known as their instances.
