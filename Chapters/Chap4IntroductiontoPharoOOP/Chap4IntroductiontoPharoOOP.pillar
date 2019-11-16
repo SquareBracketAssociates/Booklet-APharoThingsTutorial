@@ -72,7 +72,7 @@ By initializing correctly the instance we will have a more robust code and avoid
 
 [[[
 Blinker >> initialize
-	super initialize.
+
 	self delay: 1 second.
 ]]]
 
@@ -80,13 +80,14 @@ Then we initialize a pin to be a digital pin.
 
 [[[
 Blinker >> initialize
-	super initialize.
+
 	self delay: 1 second.
 	board := RpiBoard3B current.
-	pin := pinWithId: 4; beDigitalOutput.
+	pin := board pinWithId: 4; beDigitalOutput.
 ]]]
 
 Here we refer directly to the board and we will revisit this decision in the following chapter using ==PotDevice== and PharoThings board.
+Notice how the board can be queried to return one of its pin.
 
 !!! Defining the Blinker body
 
@@ -110,10 +111,10 @@ So we revisit the initialization to store a block closure that will invoke the =
 We will store the block closure in the instance variable body so that we can kill the process and start a new one.
 [[[
 Blinker >> initialize 
-	super initialize.
+
 	self delay: 1 second.
 	board := RpiBoard3B current.
-	board pinWithId: 4; beDigitalOutput.
+	pin := board pinWithId: 4; beDigitalOutput.
 	loopBody := [ self blinkerBody ].
 ]]]
 
@@ -169,9 +170,9 @@ You must then fill in the names of the instance variables for this class. We nee
 
 [[[
 Object subclass: #Blinker
-		instanceVariableNames: 'board process delay pin loopBody'
-		classVariableNames: ''
-		package: 'Blinker'
+	instanceVariableNames: 'board process delay pin loopBody'
+	classVariableNames: ''
+	package: 'Blinker'
 ]]]
 
 Now we need to compile it. Right click on the code area and select Accept option. The ==Blinker== class is now compiled and added to the system, as shown in Figure *@CreatingClass*.
@@ -183,6 +184,14 @@ Let's create a new protocol to organize the methods. The first protocol we are g
 
 +REDOCreating a package remotely.>figures/pharothings-creating-protocol|width=100|label=CreatingProtocol+
 
+!!!Creating the delay: method
+
+[[[
+Blinker >> delay: aDelay
+	delay := aDelay
+]]]
+
+
 !!!Creating an initialize method
 
 Inside this protocol, we will create an ==initialize== method. This means that every time we create a new object using this class, in this case, the ==Blinker== class, this method will be executed to define some variable in the new object.
@@ -192,7 +201,7 @@ The instance variable is private to the object and accessible by any methods ins
 
 [[[
 Blinker >> initialize 
-	super initialize.
+
 	self delay: 1 second.
 	board := RpiBoard3B current.
 	pin := board pinWithId: 4; beDigitalOutput.
