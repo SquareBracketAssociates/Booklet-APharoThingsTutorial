@@ -40,14 +40,14 @@ Our implementation is a bit biased because we will not define a potentially infi
 We will start with a version that only blink a limited amount of time to get started.
 
 !!! Blinker class definition
-We start by defining a class named ==Blinker==. This class has four instance variables ==process==, ==behavior==, ==delay== and ==pin==.
+We start by defining a class named ==Blinker==. This class has five instance variables  ==board==, ==delay==, ==pin==, ==process==, ==loopBody==.
 
 - The instance variable ==board== will refer to the current board. 
 - ==delay== will refer to the delay between two blinks.
 - ==pin== will be the pin controlling the led.
-- ==behavior== will be a block representing the body of the blinker. 
+- ==loopBody== will be a block representing the body of the blinker. 
 - ==process== will be a process based on the behavior. This process will be started and stopped by the user.
-- The instance variable ==loopBody== will refer to the code that will be executed in the loop.
+
 
 [[[
 Object subclass: #Blinker
