@@ -93,8 +93,7 @@ If you didn’t see how to install the PharoThings on your Raspberry Pi and how 
 Through your local Pharo image, let's connect in the Pharo image running on Raspberry, enable the auto-refresh feature of the inspector and open the inspector. Run this code in your local playground:
 
 [[[
-remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[193 51 236 167] port: 40423).
-GTInspector enableStepRefresh.
+remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[192 168 1 106] port: 40423).
 remoteBoard := remotePharo evaluate: [ RpiBoard3B current].
 remoteBoard inspect.
 ]]]
@@ -105,10 +104,10 @@ In your inspect window (Inspector on a PotRemoteBoard) you can see a scheme of p
 
 Digital pins are shown with green/red icons which represent high/low (1/0) values. In case of output pins you are able to click on the icon to toggle the value.
 
-To control the LED we first introduce the named variable ==led== which we assigned to GPIO7 pin instance:
+To control the LED we first introduce the named variable ==led== which we assigned to GPIO4 pin instance:
 
 [[[
-led := gpio7.
+led := gpio4.
 ]]]
 
 Note that you can also directly use the variable ==gpio7==.
@@ -132,16 +131,6 @@ Or ask a pin for current value if you want to check it:
 [[[
 led value.
 ]]]
-
-!!! What did we learn?
-
-With PharoThings you can remotely control all the GPIOs in your running board!
-
-You can:
-- Interact remotely with pins and boards;
-- See the current pins state in real time;
-- Run the code dynamically;
-- Easy, powerful.
 
 !!! Blinking LEDs
 
@@ -173,7 +162,7 @@ To change the value of the pin from on to off and the inverse, we call the metho
 
 Run this code, as shown in Figure *@RemoteInspector* and... ==cool==! Now your LED is blinking!
 
-+Remote playground.>figures/pharothings-board-inspector-blink-led.png|width=70|label=RemoteInspector+
++Remote board inspector.>figures/pharothings-board-inspector-blink-led.png|width=70|label=RemoteInspector+
 
 Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
 
@@ -183,6 +172,16 @@ Change the values to repeat more times and to wait less time between toggling. 
  	(Delay forSeconds: 1) wait
 	] 
 ]]]
+
+!!! What did we learn?
+
+With PharoThings you can remotely control all the GPIOs in your running board!
+
+You can:
+- Interact remotely with pins and boards;
+- See the current pins state in real time;
+- Run the code dynamically;
+- Easy, powerful.
 
 !!!In the next lesson
 In this tutorial, you learned how to blink a LED by typing some code in the remote inspector. 
