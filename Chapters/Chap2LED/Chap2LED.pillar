@@ -4,7 +4,7 @@ One of the classic analogies in electronics to “Hello World” is turn on a LE
 
 Coding in Pharo is very simple, but it is very powerful and you can control all the GPIOs of your Raspberry Pi remotely.
 
-If you did not yet see how to install the PharoThings on your Raspberry Pi and how to control it remotely, you can find the instructions in Chapter 1.
+If you did not yet see how to install the PharoThings on your Raspberry Pi and how to control it remotely, you can find the instructions in Instalation chapter.
 
 !!! What do we need?
 
@@ -69,7 +69,7 @@ Now we will build the circuit. This circuit consists of an LED that lights up wh
 - Connect the Ground PIN from Raspberry into breadboard blue rail (-). Raspeberry Pi models with 40 pins has 8 GPIO ground pins. You can connect with anyone. In this experiment we will use the PIN6 (Ground);
 - Then connect the resistor from the blue rail on the breadboard (-) to a column on the breadboard, as shown in Picture *@physicalLed*;
 - Now push the LED legs into the breadboard, with the long leg (with the kink) on the right;
-- And insert a jumper wire connecting the rigth column and the PIN7 (GPIO7).
+- And insert a jumper wire connecting the rigth column and the PIN#7 (GPIO4).
 
 The Figure *@physicalLed* shows how the electric connection is made:
 
@@ -77,20 +77,15 @@ The Figure *@physicalLed* shows how the electric connection is made:
 
 !!! Experimental code
 
-SD:explain a bit about the code in playground and say in chapter 4 there is a better explanation
+With PharoThings, we have some tools for remote development. We'll explain about them in the next chapters, so for now, you just need to know that Pharo has four main tools: ==Remote Playground==, ==Remote Board Inspector==, Remote Process Browser== and ==Remote Code Browser==.
 
-Now, we can write some code in Pharo to control the GPIOs using PharoThings and turn the LED on. We have 2 options to do this:
+Now let's remotely connect from your computer to Raspberry and write some code in ==Remote Board Inspector== to control GPIOs using PharoThings and then turn on/off the LED.
 
-- Write the code locally on the Raspberry;
-- Use TelePharo to connect from your computer into the Raspberry and do all the work remotely.
-
-In this experiment, we will use the second option: connect and do all the work remotely. 
-
-If you didn’t see how to install the PharoThings on your Raspberry Pi and how to control it remotely, take a look in Chapter 1: Installations.
+If you have not seen how to install PharoThings on your Raspberry Pi and how to control it remotely, see the Installation chapter.
 
 !!!!Connecting remotely
 
-Through your local Pharo image, let's connect in the Pharo image running on Raspberry, enable the auto-refresh feature of the inspector and open the inspector. Run this code in your local playground:
+Through your local Pharo image, let's connect in the Pharo image running on Raspberry and open the inspector. Run this code in your local playground:
 
 [[[
 remotePharo := TlpRemoteIDE connectTo: (TCPAddress ip: #[192 168 1 106] port: 40423).
@@ -110,7 +105,7 @@ To control the LED we first introduce the named variable ==led== which we assign
 led := gpio4.
 ]]]
 
-Note that you can also directly use the variable ==gpio7==.
+Note that you can also directly use the variable ==gpio4==.
 Then we configure the pin to be in digital output mode and set the value:
 
 [[[
@@ -120,7 +115,7 @@ led value: 1.
 
 It turns the LED on.
 
-You can notice that gpio variables are not just numbers/ids. PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle a value:
+You can notice that gpio variables are not just numbers/ids. They are PharoThings models boards with first class pins. They are real objects with behaviour. For example you can ask pin to toggle a value:
 
 [[[
 led toggleDigitalValue.
@@ -136,16 +131,12 @@ led value.
 
 Now we can play with the LEDs, turn them on and off. Let's use this basic setup to write some code on the inspector playground to blink the LED. Next, we will learn how to remotely create a very simple application using classes, methods, and instances to control the LED.
 
-!!!! What do we need?
-
-We are using the same setup as the last section: 1 Raspberry Pi, 1 Breadboard, 1 LED, 1 Resistor 330 ohms. If you didn't do the last lesson to understand how to do the connections, go back to Chapter 2 and do it.
-
 
 !!! Experimental code
-In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the pin 7 to be in digital output mode as we did in the last lesson:
+In your inspect window (Inspector on a PotRemoteBoard), let's initialize the led and set the PIN#7 to be in digital output mode as we did in the last lesson:
 
 [[[
-led := gpio7.
+led := gpio4.
 led beDigitalOutput.
 ]]]
 
