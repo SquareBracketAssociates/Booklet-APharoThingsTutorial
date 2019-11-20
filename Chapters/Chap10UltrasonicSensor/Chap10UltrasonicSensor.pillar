@@ -31,7 +31,7 @@ It uses our Raspberry Pi to send a signal using the TRIG pin, which triggers the
 Pulse waves reflect against any nearby objects and some are reflected back to the sensor.
 The duration of the echo signal is proportional to the distance: we can approximate the distance using the speed of sound (≈340m.s−1).
 
-+HSRO4 ultrasonic sensor working principle.>figures/HSR04.pdf|width=100|label=physicalSonicSensors+
++HSRO4 ultrasonic sensor working principle.>figures/HSR04.pdf|width=100|label=sonicSensorsWork+
 
 !!!! Limiting the return voltage with resistors
 

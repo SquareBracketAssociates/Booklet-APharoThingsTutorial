@@ -37,7 +37,7 @@ Now we will build the circuit. This circuit consists of an LED, a resistor to li
 
 The figure below shows how the electric connection is made:
 
-+Controlling LED by touch button.>figures/pharothings-raspberry-touchbutton.jpeg|width=85|label=Process8LEDs+
++Controlling LED by touch button.>figures/pharothings-raspberry-touchbutton.jpeg|width=85|label=LEDButton+
 
 !!! Connecting remotely
 

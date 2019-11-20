@@ -151,9 +151,9 @@ To change the value of the pin from on to off and the inverse, we call the metho
 	] 
 ]]]
 
-Run this code, as shown in Figure *@RemoteInspector* and... ==cool==! Now your LED is blinking!
+Run this code, as shown in Figure *@RemoteBoardInspector* and... ==cool==! Now your LED is blinking!
 
-+Remote board inspector.>figures/pharothings-board-inspector-blink-led.png|width=70|label=RemoteInspector+
++Remote board inspector.>figures/pharothings-board-inspector-blink-led.png|width=70|label=RemoteBoardInspector+
 
 Change the values to repeat more times and to wait less time between toggling. This will cause the LED to blink faster.
 
