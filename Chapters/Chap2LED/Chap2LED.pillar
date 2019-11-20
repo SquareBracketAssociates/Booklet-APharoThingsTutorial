@@ -147,7 +147,7 @@ To change the value of the pin from on to off and the inverse, we call the metho
 [[[
 6 timesRepeat: [
 	led toggleDigitalValue.
- 	(Delay forSeconds: 1) wait
+ 	1 second wait
 	] 
 ]]]
 
@@ -160,7 +160,7 @@ Change the values to repeat more times and to wait less time between toggling. 
 [[[
 10 timesRepeat: [
 	led toggleDigitalValue.
- 	(Delay forSeconds: 1) wait
+ 	0.5 second wait
 	] 
 ]]]
 
