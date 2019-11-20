@@ -109,7 +109,7 @@ remotePharo openProcessBrowser.
 
 And you can see the process running, terminate it, see the code etc. See figure *@AlarmAppProcessBrowser*
 
-+Alarm App Process Browser.>figures/pharothings-board-inspector-blink-led.png|width=70|label=AlarmAppProcessBrowser+
++Alarm App Process Browser.>figures/image-13.png|width=70|label=AlarmAppProcessBrowser+
 
 Anyway, the architecture of PharoThings provides some methods for you to better control your application. You can stop and start this application when you want, using the connect and disconnect methods. See figure *@AlarmAppPlaygroundComplete*
 
@@ -118,7 +118,7 @@ alarmApp disconnect.
 alarmApp connect.
 ]]]
 
-+Alarm App Playground Complete.>figures/pharothings-board-inspector-blink-led.png|width=70|label=AlarmAppPlaygroundComplete+
++Alarm App Playground Complete.>figures/image-14.png|width=70|label=AlarmAppPlaygroundComplete+
 
 Now you can save your remote image and when you start the Pharo Runtime in your Raspberry Pi, this application is already running.
 To save your remote image type in your local playground:
