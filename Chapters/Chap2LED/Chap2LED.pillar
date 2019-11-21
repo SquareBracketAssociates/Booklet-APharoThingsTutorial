@@ -47,7 +47,7 @@ In this experiment, we will use a 330ohm resistor. To identify the correct resis
 
 It does not matter which way round you connect the resistors (in this experiment). Current flows in both ways through them. This means that you can connect the resistor at the positive pole or the negative pole of the LED, as well as starting with the first or last color, as shown in Picture *@Ledpolarity*.
 
-But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way – they just will not turn on.
+But the LEDs will only work if the power is supplied correctly (if the polarity is correct). You will not burn the LEDs if they connect the wrong way - they just will not turn on.
 
 +LED polarity and resistors.>figures/pharothings-led-polarity-resistors.png|width=60|label=Ledpolarity+
 
@@ -77,7 +77,7 @@ The Figure *@physicalLed* shows how the electric connection is made:
 
 !!! Experimental code
 
-With PharoThings, we have some tools for remote development. We'll explain about them in the next chapters, so for now, you just need to know that Pharo has four main tools: ==Remote Playground==, ==Remote Board Inspector==, Remote Process Browser== and ==Remote Code Browser==.
+With PharoThings, we have some tools for remote development. We'll explain about them in the next chapters, so for now, you just need to know that Pharo has four main tools: Remote Playground, Remote Board Inspector, Remote Process Browser and Remote Code Browser.
 
 Now let's remotely connect from your computer to Raspberry and write some code in ==Remote Board Inspector== to control GPIOs using PharoThings and then turn on/off the LED.
 
