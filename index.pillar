@@ -2,38 +2,28 @@ In this booklet we will show you how to develop a little application that collec
 We will start to show how we can play with leds and others. 
 
 
-${inputFile:path=Chapters/ChapAboutPharoThings/ChapAboutPharoThings.pillar}$
-${inputFile:path=Chapters/ChapSyntax/ChapSyntax.pillar}$
-${inputFile:path=Chapters/ChapSyntaxSummary/ChapSyntaxSummary.pillar}$
-
+${inputFile:path=Chapters/Chap01-AboutPharoThings/Chap01-AboutPharoThings.pillar}$
+${inputFile:path=Chapters/Chap02-Syntax/Chap02-Syntax.pillar}$
+${inputFile:path=Chapters/Chap03-SyntaxSummary/Chap03-SyntaxSummary.pillar}$
 %Installation
-${inputFile:path=Chapters/Chap1GettingStarted/Chap1GettingStarted.pillar}$
+${inputFile:path=Chapters/Chap04-GettingStarted/Chap04-GettingStarted.pillar}$
 %First touch
-${inputFile:path=Chapters/Chap2LED/Chap2LED.pillar}$
-%Merge with the two chapters
+${inputFile:path=Chapters/Chap05-LED/Chap05-LED.pillar}$
+${inputFile:path=Chapters/Chap06-UsingPharoThingsTools/Chap06-UsingPharoThingsTools.pillar}$
+${inputFile:path=Chapters/Chap07-PharoThingsAppArchitecture/Chap07-PharoThingsAppArchitecture.pillar}$
+${inputFile:path=Chapters/Chap08-UsingDevices/Chap08-UsingDevices.pillar}$
 
-${inputFile:path=Chapters/Chap3PharoThingsAppArchitecture/Chap3PharoThingsAppArchitecture.pillar}$
-
-${inputFile:path=Chapters/Chap4IntroductiontoPharoOOP/Chap4IntroductiontoPharoOOP.pillar}$
-%%Using the tools
-
-${inputFile:path=Chapters/Chap4bIntermezzo/Chap4bIntermezzo.pillar}$
-
-${inputFile:path=Chapters/Chap5LEDFlowingLights/Chap5LEDFlowingLights.pillar}$
-${inputFile:path=Chapters/Chap6LEDFlowingLightsOOP/Chap6LEDFlowingLightsOOP.pillar}$
-${inputFile:path=Chapters/Chap7LEDBreathingPWM/Chap7LEDBreathingPWM.pillar}$
-${inputFile:path=Chapters/Chap8ControllingLEDByButton/Chap8ControllingLEDByButton.pillar}$
-
-${inputFile:path=Chapters/Chap9I2CSensors/Chap9I2CSensors.pillar}$
-
-${inputFile:path=Chapters/Chap10UltrasonicSensor/Chap10UltrasonicSensor.pillar}$
-
-${inputFile:path=Chapters/Chap11LCDDisplay/Chap11LCDDisplay.pillar}$
-
-${inputFile:path=Chapters/Chap12BuildingaMiniWeatherStation/Chap12BuildingaMiniWeatherStation.pillar}$
-
-${inputFile:path=Chapters/Chap13BuildingaWebServerOnRaspberry/Chap13BuildingaWebServerOnRaspberry.pillar}$
-
-${inputFile:path=Chapters/Chap143DVisualizationGyroscopeSensor/Chap143DVisualizationGyroscopeSensor.pillar}$
-
-${inputFile:path=Chapters/Chapter15Firmata/Chap15FirmataArduinoWithPharo.pillar}$
+${inputFile:path=Chapters/Chap09-LEDFlowingLights/Chap09-LEDFlowingLights.pillar}$
+${inputFile:path=Chapters/Chap10-LEDFlowingLightsOOP/Chap10-LEDFlowingLightsOOP.pillar}$
+${inputFile:path=Chapters/Chap11-LEDBreathingPWM/Chap11-LEDBreathingPWM.pillar}$
+${inputFile:path=Chapters/Chap12-ControllingLEDByButton/Chap12-ControllingLEDByButton.pillar}$
+%Sensors
+${inputFile:path=Chapters/Chap13-UltrasonicSensor/Chap13-UltrasonicSensor.pillar}$
+${inputFile:path=Chapters/Chap14-I2CSensors/Chap14-I2CSensors.pillar}$
+${inputFile:path=Chapters/Chap15-LCDDisplay/Chap15-LCDDisplay.pillar}$
+${inputFile:path=Chapters/Chap16-3DVisualizationGyroscopeSensor/Chap16-3DVisualizationGyroscopeSensor.pillar}$
+%Applications
+${inputFile:path=Chapters/Chap17-BuildingaMiniWeatherStation/Chap17-BuildingaMiniWeatherStation.pillar}$
+${inputFile:path=Chapters/Chap18-BuildingaWebServerOnRaspberry/Chap18-BuildingaWebServerOnRaspberry.pillar}$
+%Arduino
+${inputFile:path=Chapters/Chap19-PharoThingsArduino/Chap19-PharoThingsArduino.pillar}$
