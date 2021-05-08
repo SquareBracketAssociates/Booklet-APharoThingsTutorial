@@ -83,7 +83,8 @@ Blinker >> initialize
 
 	self delay: 1 second.
 	board := RpiBoard3B current.
-	pin := board pinWithId: 4; beDigitalOutput.
+	pin := board pinWithId: 4.
+	pin beDigitalOutput.
 ]]]
 
 Here we refer directly to the board and we will revisit this decision in the following chapter using ==PotDevice== and PharoThings board.
