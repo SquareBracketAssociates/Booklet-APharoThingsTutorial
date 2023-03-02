@@ -109,7 +109,7 @@ We create the method ==blinkerBody== so that subclass and change specialize or c
 Since we would like to avoid to block the Raspberry when an instance of Blinker is working, we will use a Pharo process to execute the blinker behavior in a concurrent manner.
 To create a process in Pharo, we should send the message ==fork== or ==forkNamed:== to a block closure.
 So we revisit the initialization to store a block closure that will invoke the ==blinkerBody== method. 
-We will store the block closure in the instance variable body so that we can kill the process and start a new one.
+We will store the block closure in the instance variable, loopBody, so that we can kill the process and start a new one.
 [[[
 Blinker >> initialize 
 
@@ -125,7 +125,7 @@ The ==start== method forks a process and store it in the instance variable ==pro
 
 [[[
 Blinker >> start
-	process := body forkNamed: 'Blinker'
+	process := loopBody forkNamed: 'Blinker'
 ]]]
 
 The method ==stop== will just simply kills the process. 
