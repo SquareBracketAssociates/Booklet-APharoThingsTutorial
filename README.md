@@ -13,3 +13,4 @@ GitHub: [pharo-iot/PharoThings](https://github.com/pharo-iot/PharoThings)
 Website: [www.pharoiot.org](http://www.pharoiot.org/)
 
 Discord channel: [Pharo iot](https://discord.com/channels/223421264751099906/400217588531200001)
+
