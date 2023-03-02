@@ -135,10 +135,11 @@ We define the method ==lcdStart== as follows:
 
 [[[
 DisplayLCD >> lcdStart
-    
-    lcdprocess := [
-       [| text |
-       text := 'Temp: ', self temperature,'\H:', self humidity,' P:', self pressure.
+    | cr |
+    cr := Character cr asString.
+    lcdprocess := [ [
+       | text |
+       text := 'Temp: ', self temperature,cr,'\H:', self humidity,' P:', self pressure.
        lcd returnHome.
        lcd showMessage: text.
        (Delay forSeconds: 1) wait.] repeat ] forkNamed: 'lcdprocess'
@@ -151,7 +152,6 @@ We then define the method ==lcdStop== to stop and terminate the update process.
 [[[
 DisplayLCD >> lcdStop
     lcdprocess terminate.
-    lcd clear
 ]]]
 
 !!! Creating the subclass PostData
@@ -196,8 +196,8 @@ PostData >> dataStart
 						<< '&field2=';
 						<< self humidity;
 						<< '&field3=';
-						<< self pressure.
-        ZnClient new get: uri.]
+						<< self pressure ].
+        ZnClient new get: uri.
     	(Delay forSeconds: 60) wait. 
     ] repeat ] forkNamed: 'postprocess'
 ]]]
@@ -212,13 +212,13 @@ To start the application, we need to start the two subclasses.
 To start the LCD application run this in the remote playground:
 
 [[[
-DisplayLCD new lcdStart.
+lcdTask := DisplayLCD new lcdStart.
 ]]]
 
 and to start to send the data to the Cloud, use this, replacing to your apiKey of Thingspeak:
 
 [[[
-PostData new apiKey:'F1MKEG7PJ44930L8'; dataStart.
+postTask := PostData new apiKey:'F1MKEG7PJ44930L8'; dataStart.
 ]]]
 
 Remember, when you run these commands, you are creating a process running in the background in Raspberry. So if you run this commands many times, will be created many processes. Take care to don't do this. 
