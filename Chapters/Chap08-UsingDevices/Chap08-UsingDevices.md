@@ -180,7 +180,7 @@ remotePharo applyChangesToClient
 ```
 
 
-This way you can package your code and publish it on github or other versionning systems.
+This way you can package your code and publish it on GitHub or other versioning systems.
 
 ### Another use case
 
@@ -192,5 +192,5 @@ Change the proposed code to introduce this.
 ### Conclusion
 
 
-In subsequent chapter you will learn how to write a breathing led. 
+In a subsequent chapter, you will learn how to write a breathing led. 
 We suggest that once you have it running, you revisit it using the same approach that the one proposed in this chapter.
