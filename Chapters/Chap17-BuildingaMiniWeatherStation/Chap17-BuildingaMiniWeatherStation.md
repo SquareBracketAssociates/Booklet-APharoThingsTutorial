@@ -1,0 +1,59 @@
+## Building a Mini-Weather StationIn previous lessons, we learned how to control LEDs, sensors, LCD displays and how to use Object-Oriented Programming to create applications to control them. Now we will use everything that we learned to build a Mini-Weather Station. We will send data to an online service. ### What do we need?In this lesson, we will use a setup with an LCD Display 1602 and BME280 sensor.#### Components- 1 Raspberry Pi connected to your network \(wired or wireless\)- 1 Breadboard- 1 BME280 temperature, humidity and pressure sensor- 1 LCD Display 1602 + I2C interface- 1 Potentiometer \(10K ohms\)- Jumper wires### Experimental theoryBefore constructing any circuit, you must know the parameters of the components in the circuit, such as their operating voltage, operating circuit, etc.In this lesson, we will get the temperature, pressure, and humidity using the BME280 sensor, show this information on the LCD Display each 1 second and send this data to a Cloud Server every 60 seconds. ### Experimental procedureConnect the sensor and LCD Display on your breadboard as we did in previous lessons. ### Creating the ThingSpeak account To store the measures collected by the weather station, we will use a web service called ThingSpeak. ThingSpeak is a cloud application that is dedicated to IoT \(Internet of Things\).Before we start to create an application, let's create our account on the website Thingspeak. We will go to use this website to receive and store the data.Follow this tutorial to create your account and your channel:`https://roboindia.com/tutorials/thingspeak-setup`Once you've created your channel, you need to enable three channels on it.Let's use Field1 to Temperature, Field2 to Humidity and Field3 to Pressure.You can see in Figure *@ThingspeakChannelConf@* how your channel will look like.![ThingSpeak Channel Configuration.](figures/pharothings-thingspeak-conf.png width=85&label=ThingspeakChannelConf)You can test your channel by simulating sending some data to it. Let's for example send the values:- 25 to Temperature field \(field1\);- 56 to Humidity field \(field2\);- and 1012 to Pressure field \(field3\).To test your channel, just copy the following URI and passed in your web browser, changing YOUR-WRITE-API-KEY to your ThingSpeak write API code. You can find it on the API Keys tab.`https://api.thingspeak.com/update?api_key=YOUR-WRITE-API-KEY&
+field1=25&field2=56&field3=1012`So check you channel to see if it was updated with this values:`https://thingspeak.com/channels/YOUR-CHANNEL-ID`### Creating the applicationThe first step is to create a superclass to initialize and install all devices that we will use. Then we will create 2 subclasses to do the actions. The first will display this information on the LCD and the second will send the data to the cloud. Your final code will look like Figure *@MiniWeatherStationcode@*.![Mini Weather Station code.](figures/pharothings-weather-station.png width=85&label=MiniWeatherStationcode)### Creating the superclassWe create a superclass named `WeatherStation` with two instance variables `sensor` and `lcd`.```Object subclass: #WeatherStation
+    instanceVariableNames: 'sensor lcd'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'```#### Creating the initialize methodWe will use the I2C interface of the LCD display, using only 4 wires to connect it in the Raspberry \(5v power, ground and SDA/SCL\). You can also use directly with GPIOs without an I2C interface, just pay attention to use the `PotLCD1602Device` driver instead of the `PotLCD1602DeviceI2C` one.We define a new method `currentBoard` to return the current board.It will help us to change it if necessary.```WeatherStation >> currentBoard
+	^ RpiBoard3B current```We define the following `initialize` method. We creates the two elements```WeatherStation >> initialize
+	lcd := self currentBoard installDevice: PotLCD1602DeviceI2C new.
+	sensor := self currentBoard installDevice: PotBME280Device new```#### Creating accessor methodsWe write now, in a dirty way, three accessors.Note that this is not really good because we duplicate the logic of the transformation in each method instead of defining it once and reusing it.See the Exercises at the end of this chapter to fix this problem.```WeatherStation >> humidity
+   ^ ((sensor readParameters at: 3) printShowingDecimalPlaces: 2) asString``````WeatherStation >> pressure
+   ^ ((sensor readParameters at: 2) printShowingDecimalPlaces: 2) asString``````WeatherStation >> temperature 
+   ^ ((sensor readParameters at: 1) printShowingDecimalPlaces: 2) asString```### Creating the subclass DisplayLCDWe create now a subclass of `WeatherStation` named `DisplayLCD`. ```WeatherStation subclass: #DisplayLCD
+    instanceVariableNames: 'lcdprocess'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'```We define the method `lcdStart` as follows: ```DisplayLCD >> lcdStart
+    | cr |
+    cr := Character cr asString.
+    lcdprocess := [ [
+       | text |
+       text := 'Temp: ', self temperature,cr,'\H:', self humidity,' P:', self pressure.
+       lcd returnHome.
+       lcd showMessage: text.
+       (Delay forSeconds: 1) wait.] repeat ] forkNamed: 'lcdprocess'```This method is doing an active loop regularly sending information to the LCD.Note that the two first line of the treatment could be extracted in a separate method.We then define the method `lcdStop` to stop and terminate the update process. ```DisplayLCD >> lcdStop
+    lcdprocess terminate.```### Creating the subclass PostDataNow we create a second subclass named `PostData` that will send the data to the server.It has two instance variables `apiKey` and `postProcess`. ```WeatherStation subclass: #PostData
+	instanceVariableNames: 'apiKey postProcess'
+	classVariableNames: ''
+	package: 'PharoThings-MiniWeatherStation'```We define some simple accessors methods.```PostData >> apiKey
+    ^ apiKey``````PostData >> apiKey: anString
+    apiKey := anString```We define the method that will send regularly data to the server.Note that the body of this method could be extracted in a separate method to be able to test it. We are passing the data as argument of the url.```PostData >> dataStart
+    |url |
+    url := 'https://api.thingspeak.com/update'.
+    postProcess :=  [ [  
+        | uri |
+        uri := String streamContents: [: s |
+        			s << url;
+						<< '?api_key=';
+						<< self apiKey;
+						<< '&field1=';
+						<< self temperature;
+						<< '&field2=';
+						<< self humidity;
+						<< '&field3=';
+						<< self pressure ].
+        ZnClient new get: uri.
+    	(Delay forSeconds: 60) wait. 
+    ] repeat ] forkNamed: 'postprocess'``````PostData >> dataStop
+    postProcess terminate```### Starting the applicationTo start the application, we need to start the two subclasses.To start the LCD application run this in the remote playground:```lcdTask := DisplayLCD new lcdStart.```and to start to send the data to the Cloud, use this, replacing to your apiKey of Thingspeak:```postTask := PostData new apiKey:'F1MKEG7PJ44930L8'; dataStart.```Remember, when you run these commands, you are creating a process running in the background in Raspberry. So if you run this commands many times, will be created many processes. Take care to don't do this. ### Visualizating your dataTo see if your channel is receiving the data of your PharoThings, just access your channel and check if the data is being updated:`https://thingspeak.com/channels/YOUR-CHANNEL-ID`You will see some graphics like the Picture *@ThingspeakChannel@*. ![ThingSpeak Channel.](figures/pharothings-thingspeak.png width=85&label=ThingspeakChannel)### ExercisesIntroduce the method `stringForParameter:` to remove the duplication logic in `humidity`, `pressure` and `temperature`.With the method `stringForParameter:`, the method `humidity` should look like ```WeatherStation >> humidity
+   ^ self stringForParameter: 3```- In fact a similar method already exist in the sensor class, find it and use it instead of `stringForParameter:`.### TODO: make sure that the weatherStation We propose a design to support the execution of multiple services concurrently.It is defined on two classes: a `Service` and a `ServiceRunner` class.The `Service` class that encapsulates some behavior that can be executed on demand.The class `ServiceRunner` that runs concurrently a list of services.### Creating the ServiceRunner classWe create a superclass named `WeatherStation` with two instance variables `sensor` and `lcd`.```Object subclass: #ServiceRunner
+    instanceVariableNames: 'services process body'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'``````ServiceRunner >> initialize
+	services := OrderedCollection new.
+	body := [ self run ]``````ServiceRunner >> addService: aService
+	services add: aService``````ServiceRunner >> run
+	services do: [:each | each execute]``````ServiceRunner >> start
+	process := body forkNamed: 'ServiceRunner'```### Creating the Service class```Object subclass: #Service
+    instanceVariableNames: 'name'
+    classVariableNames: ''
+    package: 'PharoThings-MiniWeatherStation'``````ServiceRunner >> execute
+	self subclassResponsibility```### LCD service### PostData Service
